@@ -94,9 +94,9 @@
                     <div class="float-right">
                         <select name="lengthMenu" id="lengthMenu" class="form-control form-control-sm dt-length">
                             <option value="10">10</option>
-                            <option value="19">20</option>
-                            <option value="49">50</option>
-                            <option value="99">100</option>
+                            <option value="25">25</option>
+                            <option value="50">50</option>
+                            <option value="100">100</option>
                         </select>
                     </div>
                 </div>
