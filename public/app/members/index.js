@@ -24,23 +24,40 @@ function initDatatable() {
                 data: 'email', name:'email', orderable: true, searchable: true
             },
             {
-                data: 'status_id', name:'status_id', orderable: true, searchable: true
+                data: 'status', name:'status', orderable: true, searchable: true,
+                render: function(data, type, row){
+                    statusBadge = '<span class="badge badge-primary">Aktif</span>';
+                    if(data != 1){
+                        statusBadge = '<span class="badge badge-danger">Non Aktif</span>'; 
+                    }
+
+                    return statusBadge;
+                }
             },
             
         ],
         function (data, type, row) {
+            const status = row.status
             const path = 'members/' + row.id
             let updateBtn = '',
+            detailBtn = '',
             updateStatusBtn = ''
 
             // if (permission.update) {
+                detailBtn = '<a href="'+ path +'" class="btn btn-sm btn-outline-info" data-toggle="tooltip" data-placement="top" title="Detail"><i class="fas fa-fw fa-eye"></i></a>'
                 updateBtn = '<a href="'+ path +'/edit" class="btn btn-sm btn-outline-warning" data-toggle="tooltip" data-placement="top" title="Ubah"><i class="fas fa-fw fa-edit"></i></a>'
+                if(status == 1){
+                updateStatusBtn = '<a href="'+ path +'/update/status" class="btn btn-sm btn-outline-danger" data-toggle="tooltip" data-placement="top" title="Nonatifkan"><i class="fas fa-fw fa-xmark"></i></a>'
+                }else{
+                    updateStatusBtn = '<a href="'+ path +'/update/status" class="btn btn-sm btn-outline-success" data-toggle="tooltip" data-placement="top" title="Aktifkan"><i class="fas fa-fw fa-check"></i></a>'
+                }
             // } 
 
-            content = updateBtn +' '+ updateStatusBtn
+            content = detailBtn +' '+ updateBtn + ' '+ updateStatusBtn
 
             return content
         },
+        
         [[ 1, 'asc' ]],
         function(d) {
         return d
