@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\API\DatatableController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -16,4 +17,15 @@ use Illuminate\Support\Facades\Route;
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
+});
+
+
+Route::group([
+    'namespace' => 'API',
+], function(){
+    Route::group([
+        'prefix' => 'datatables',
+    ], function(){
+        Route::get('/members', [DatatableController::class, 'getMembers']);
+    });
 });

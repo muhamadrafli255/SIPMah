@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class MembersController extends Controller
@@ -9,7 +10,8 @@ class MembersController extends Controller
     public function index()
     {
         $title = "Daftar Anggota";
-        return view('content.members.index', compact('title'));
+        $users = User::get();
+        return view('content.members.index', compact('title', 'users'));
     }
 
     public function create()

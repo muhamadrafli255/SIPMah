@@ -29,7 +29,7 @@
                             <button class="btn btn-sm btn-secondary col w-75 mb-2"><i class="fa-solid fa-print"></i> Print</button>
                         </div>
                     </div>
-                    <a href="/racks/create" class="btn btn-sm btn-outline-primary rounded mb-2"><i
+                    <a href="/loans/create" class="btn btn-sm btn-outline-primary rounded mb-2"><i
                             class="fa-solid fa-plus"></i> Tambah</a>
                     <div class="float-right ml-2">
                         <div class="input-group input-group-sm">

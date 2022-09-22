@@ -31,6 +31,22 @@ Route::get('/dashboard', function(){
     return view('content.index', compact('title'));
 });
 
+Route::group([
+    'namespace' => 'App',
+    'middleware' => ['guest'],
+], function(){
+    Route::prefix('members')->group(function(){
+        Route::get('/', [MembersController::class, 'index']);
+
+        Route::group([
+            'prefix' => 'create',
+        ], function(){
+            Route::get('/', [MembersController::class, 'create']);
+            Route::post('/', [MembersController::class, 'store']);
+        });
+    });
+});
+
 Route::get('/', [AuthController::class, 'login']);
 Route::get('/login', [AuthController::class, 'attempt']);
 Route::get('/register', [AuthController::class, 'register']);
@@ -84,3 +100,5 @@ Route::get('/books/id/edit', [BooksController::class, 'edit']);
 Route::get('/books/id/update', [BooksController::class, 'update']);
 Route::get('/books/id/destroy', [BooksController::class, 'destroy']);
 Route::get('/loans', [LoansController::class, 'index']);
+Route::get('/loans/create', [LoansController::class, 'create']);
+Route::get('/loans/store', [LoansController::class, 'store']);

@@ -12,9 +12,15 @@ class LoansController extends Controller
         return view('content.loans.index', compact('title'));
     }
 
+    public function create()
+    {
+        $title = "Tambah Peminjaman";
+        return view('content.loans.create', compact('title'));
+    }
+
     public function store()
     {
-
+        return redirect('/loans')->with('Berhasil', 'Peminjaman berhasil ditambahkan');
     }
 
     public function detail()
