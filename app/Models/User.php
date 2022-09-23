@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use GuzzleHttp\Psr7\Request;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -61,4 +62,16 @@ class User extends Authenticatable
         return $this->belongsTo(Village::class);
     }
 
+    public static function getMembers($request)
+    {
+        $members = User::select([
+            'id',
+            'nis',
+            'email',
+            'name',
+            'status',
+        ]);
+
+        return $members;
+    }
 }
