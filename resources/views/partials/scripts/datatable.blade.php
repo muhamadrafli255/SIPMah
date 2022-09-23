@@ -162,7 +162,7 @@
         })
     }
 
-     function getFileName() {
-         return $('head title').text() + ' ' + moment().format('YYYY-MM-DD')
-     }
+    function getFileName() {
+        return $('head title').text() + ' ' + moment().format('YYYY-MM-DD')
+    }
 </script>
