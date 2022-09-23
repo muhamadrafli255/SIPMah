@@ -21,13 +21,14 @@
                     <div class="card-body text-center">
                         <!-- Profile picture image-->
                         <img class="img-fluid rounded mb-4"
-                            src="https://laksmipamuntjak.com/public/uploads/2017/01/Liberaturpreis%202016%20Photo%20FINAL%20FINAL%20COVER%20OP%201.jpg"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUfytN3doVZit6vSK5E3BngqpmSwoSADfK5Q&usqp=CAU"
                             alt="" width="170px" height="170px">
                         <!-- Profile picture upload button-->
                         <div class="form-group">
-                            <label for="ubahBuku">Ubah Buku</label>
+                            <label for="ubahBuku">Pilih Buku</label>
                             <select name="" id="ubahBuku" class="form-control">
-                                <option value="" selected disabled>Amba</option>
+                                <option value="" selected disabled>Judul Buku</option>
+                                <option value="">Amba</option>
                                 <option value="">Negeri Diujung Tanduk</option>
                                 <option value="">Orang - Orang Biasa</option>
                                 <option value="">Matematika Kelas 11</option>
@@ -38,17 +39,17 @@
             </div>
             <div class="col-xl-8">
                 <!-- Account details card-->
-                <div class="card mb-4">
+                <div class="card mb-4 py-2">
                     <div class="card-header">
                         <p class="h5 text-gray-800">Data Peminjaman</p>
                     </div>
                     <div class="card-body">
-                        <form action="/loans/id/update">
+                        <form action="/loans/store">
                             <!-- Form Group (username)-->
-                            <div class="mb-3">
+                            <div class="col-lg-12 mb-3">
                                 <label class="small mb-1" for="selectPeminjam">Nama Peminjam</label>
                                 <select name="" id="selectPeminjam" class="form-control">
-                                    <option value="" selected disabled>Robi Firmansyah | 20221063</option>
+                                    <option value="" selected disabled>Nama | NIS/NUPTK</option>
                                     <option value="">Rudiansyah Fakhrul | 20221056</option>
                                     <option value="">Jujun Saputra | 20221057</option>
                                     <option value="">Dani Fitriani | 20221058</option>
@@ -56,23 +57,27 @@
                                     <option value="">Queensha Marsya | 20221060</option>
                                     <option value="">Raina Aqila | 20221061</option>
                                     <option value="">Sadiya Marshanda | 20221062</option>
+                                    <option value="">Robi Firmansyah | 20221063</option>
                                     <option value="">Dodi Permana | 20221064</option>
                                 </select>
                             </div>
                             <!-- Form Row-->
-                            <div class="row gx-3 mb-3">
                                 <!-- Form Group (first name)-->
-                                <div class="col-lg-12">
+                                <div class="col-lg-12 mb-3">
+                                    <label class="small mb-1" for="inputTanggal">Tanggal Pinjam</label>
+                                    <input type="date" class="form-control" required>
+                                </div>
+
+                                <div class="col-lg-12 mb-4">
                                     <label class="small mb-1" for="inputTanggal">Tanggal Dikembalikan</label>
                                     <input type="date" class="form-control" required>
                                 </div>
-                            </div>
                                 <!-- Form Group (last name)-->
                             <!-- Save changes button-->
                             <div class="col-lg-12">
                                 <div class="text-right">
                                     <a href="/loans" class="btn btn-sm btn-outline-secondary" type="button">Kembali</a>
-                                    <button type="submit" class="btn btn-sm btn-outline-primary">Ubah</button>
+                                    <button type="submit" class="btn btn-sm btn-outline-primary">Tambah</button>
                                 </div>
                             </div>
                         </form>

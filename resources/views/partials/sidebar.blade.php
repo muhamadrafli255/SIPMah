@@ -54,8 +54,8 @@
                     <span>Peminjaman</span>
                 </a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="ui-colors.html">
+            <li class="nav-item {{ Request::is('report*') ? 'active' : '' }}">
+                <a class="nav-link" href="/report">
                     <i class="fa-solid fa-file"></i>
                     <span>Laporan</span>
                 </a>

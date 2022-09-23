@@ -78,6 +78,56 @@
         });
 
     </script>
+
+    <script>
+        $(document).ready(function () {
+            var oTable = $('#dataTableHover1').DataTable({
+                responsive: true,
+                "dom": "lrtip",
+                "bLengthMenu": false,
+                "bInfo": false,
+                "bLengthChange": false,
+
+            });
+
+            // new $.fn.dataTable.FixedHeader(oTable);
+
+            $('#lengthMenu').on('change', function () {
+                let row = $("#lengthMenu").val()
+                oTable.page.len(row).draw();
+            });
+            $('#SearchBox').keyup(function () {
+                oTable.search($(this).val()).draw();
+            });
+            $('[data-toggle="tooltip"]').tooltip(); 
+        });
+
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            var oTable = $('#dataTableHover2').DataTable({
+                responsive: true,
+                "dom": "lrtip",
+                "bLengthMenu": false,
+                "bInfo": false,
+                "bLengthChange": false,
+
+            });
+
+            // new $.fn.dataTable.FixedHeader(oTable);
+
+            $('#lengthMenu').on('change', function () {
+                let row = $("#lengthMenu").val()
+                oTable.page.len(row).draw();
+            });
+            $('#SearchBox').keyup(function () {
+                oTable.search($(this).val()).draw();
+            });
+            $('[data-toggle="tooltip"]').tooltip(); 
+        });
+
+    </script>
     {{-- End - Datatables --}}
 </body>
 

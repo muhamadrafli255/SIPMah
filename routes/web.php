@@ -8,6 +8,7 @@ use App\Http\Controllers\MembersController;
 use App\Http\Controllers\OfficersController;
 use App\Http\Controllers\PublishersController;
 use App\Http\Controllers\RacksController;
+use App\Http\Controllers\ReportController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -85,5 +86,10 @@ Route::get('/books/id/update', [BooksController::class, 'update']);
 Route::get('/books/id/destroy', [BooksController::class, 'destroy']);
 Route::get('/loans', [LoansController::class, 'index']);
 Route::get('loans/id', [LoansController::class, 'detail']);
+Route::get('loans/create', [LoansController::class, 'create']);
+Route::get('loans/store', [LoansController::class, 'store']);
 Route::get('loans/id2', [LoansController::class, 'detail2']);
 Route::get('loans/id/edit', [LoansController::class, 'edit']);
+Route::get('loans/id/update', [LoansController::class, 'update']);
+Route::get('loans/id/return', [LoansController::class, 'return']);
+Route::get('/report', [ReportController::class, 'index']);

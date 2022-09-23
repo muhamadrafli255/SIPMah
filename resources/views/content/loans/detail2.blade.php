@@ -18,9 +18,9 @@
                     <div class="card-header"><p class="h5 text-gray-800">Gambar Buku</p></div>
                     <div class="card-body text-center">
                         <!-- Profile picture image-->
-                        <img class="img-fluid rounded mb-2" src="https://ebooks.gramedia.com/ebook-covers/42421/image_highres/ID_NUT2018MTH05NUT.jpg" alt="" width="170px" height="170px">
-                        <h4>Negeri Diujung Tanduk</h4>
-                        <p>BKS - 0001</p>
+                        <img class="img-fluid rounded mb-2" src="https://laksmipamuntjak.com/public/uploads/2017/01/Liberaturpreis%202016%20Photo%20FINAL%20FINAL%20COVER%20OP%201.jpg" alt="" width="170px" height="170px">
+                        <h4>Amba</h4>
+                        <p>BKS - 0002</p>
                     </div>
                 </div>
             </div>
@@ -90,7 +90,7 @@
                                 <div class="float-right">
                                     <a href="/loans" class="btn btn-sm btn-outline-secondary">Kembali</a>
                                     <a href="/loans/id/edit" class="btn btn-sm btn-outline-primary">Ubah</a>
-                                    <a href="/loans/id/return" class="btn btn-sm btn-outline-warning">Kembalikan</a>
+                                    <button data-toggle="modal" data-target="#modalPengembalian" class="btn btn-sm btn-outline-warning">Kembalikan</button>
                                 </div>
                             </div>
                         </div>
@@ -102,7 +102,7 @@
 </div>
 
 <!-- Modal Nonaktif-->
-<div class="modal fade" id="nonaktifModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="modalPengembalian" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -112,11 +112,11 @@
                 </button>
             </div>
             <div class="modal-body">
-                Apakah anda yakin akan menghapus buku ini?
+                Apakah anda yakin akan mengembalikan peminjaman ini?
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Batal</button>
-                <a href="/books/id/destroy" class="btn btn-outline-danger">Yakin</a>
+                <a href="/loans/id/return" class="btn btn-outline-success">Yakin</a>
             </div>
         </div>
     </div>

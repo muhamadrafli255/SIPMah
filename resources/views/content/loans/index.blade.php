@@ -32,7 +32,7 @@
                                 Print</button>
                         </div>
                     </div>
-                    <a href="/racks/create" class="btn btn-sm btn-outline-primary rounded mb-2"><i
+                    <a href="/loans/create" class="btn btn-sm btn-outline-primary rounded mb-2"><i
                             class="fa-solid fa-plus"></i> Tambah</a>
                     <div class="float-right ml-2">
                         <div class="input-group input-group-sm">
@@ -118,12 +118,14 @@
                                     <div class="mx-auto">
                                         <a href="/loans/id2" class="btn btn-sm btn-outline-success" data-toggle="tooltip"
                                             data-placement="top" title="Detail"><i class="fa-solid fa-eye"></i></a>
-                                        <a href="" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
+                                        <a href="/loans/id/edit" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
                                             data-placement="top" title="Ubah"><i
                                                 class="fa-solid fa-pen-to-square"></i></a>
-                                        <a href="" class="btn btn-sm btn-outline-info" data-toggle="tooltip"
+                                            <span data-toggle="modal" data-target="#modalPengembalian">
+                                        <button class="btn btn-sm btn-outline-info" data-toggle="tooltip"
                                             data-placement="top" title="Pengembalian"><i
-                                                class="fa-solid fa-reply"></i></a>
+                                                class="fa-solid fa-reply"></i></button>
+                                            </span>
                                     </div>
                                 </td>
                             </tr>
@@ -138,18 +140,17 @@
                                     <h6><span class="badge badge-warning">Sedang Dipinjam</span></h6>
                                 </td>
                                 <td class="text-center">
-                                    <div class="text-center">
-                                        <div class="mx-auto">
-                                            <a href="/members/id" class="btn btn-sm btn-outline-success"
-                                                data-toggle="tooltip" data-placement="top" title="Detail"><i
-                                                    class="fa-solid fa-eye"></i></a>
-                                            <a href="" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
-                                                data-placement="top" title="Ubah"><i
-                                                    class="fa-solid fa-pen-to-square"></i></a>
-                                            <a href="" class="btn btn-sm btn-outline-info" data-toggle="tooltip"
-                                                data-placement="top" title="Pengembalian"><i
-                                                    class="fa-solid fa-reply"></i></a>
-                                        </div>
+                                    <div class="mx-auto">
+                                        <a href="/loans/id2" class="btn btn-sm btn-outline-success" data-toggle="tooltip"
+                                            data-placement="top" title="Detail"><i class="fa-solid fa-eye"></i></a>
+                                        <a href="/loans/id/edit" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
+                                            data-placement="top" title="Ubah"><i
+                                                class="fa-solid fa-pen-to-square"></i></a>
+                                            <span data-toggle="modal" data-target="#modalPengembalian">
+                                        <button class="btn btn-sm btn-outline-info" data-toggle="tooltip"
+                                            data-placement="top" title="Pengembalian"><i
+                                                class="fa-solid fa-reply"></i></button>
+                                            </span>
                                     </div>
                                 </td>
                             </tr>
@@ -164,18 +165,17 @@
                                     <h6><span class="badge badge-warning">Sedang Dipinjam</span></h6>
                                 </td>
                                 <td class="text-center">
-                                    <div class="text-center">
-                                        <div class="mx-auto">
-                                            <a href="/members/id" class="btn btn-sm btn-outline-success"
-                                                data-toggle="tooltip" data-placement="top" title="Detail"><i
-                                                    class="fa-solid fa-eye"></i></a>
-                                            <a href="" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
-                                                data-placement="top" title="Ubah"><i
-                                                    class="fa-solid fa-pen-to-square"></i></a>
-                                            <a href="" class="btn btn-sm btn-outline-info" data-toggle="tooltip"
-                                                data-placement="top" title="Pengembalian"><i
-                                                    class="fa-solid fa-reply"></i></a>
-                                        </div>
+                                    <div class="mx-auto">
+                                        <a href="/loans/id2" class="btn btn-sm btn-outline-success" data-toggle="tooltip"
+                                            data-placement="top" title="Detail"><i class="fa-solid fa-eye"></i></a>
+                                        <a href="/loans/id/edit" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
+                                            data-placement="top" title="Ubah"><i
+                                                class="fa-solid fa-pen-to-square"></i></a>
+                                            <span data-toggle="modal" data-target="#modalPengembalian">
+                                        <button class="btn btn-sm btn-outline-info" data-toggle="tooltip"
+                                            data-placement="top" title="Pengembalian"><i
+                                                class="fa-solid fa-reply"></i></button>
+                                            </span>
                                     </div>
                                 </td>
                             </tr>
@@ -188,7 +188,7 @@
 </div>
 
 <!-- Modal Nonaktif-->
-<div class="modal fade" id="nonaktifModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="modalPengembalian" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -198,34 +198,15 @@
                 </button>
             </div>
             <div class="modal-body">
-                Apakah anda yakin akan menghapus rak ini?
+                Apakah anda yakin akan mengembalikan peminjaman ini?
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Batal</button>
-                <a href="/racks/id/destroy" class="btn btn-outline-danger">Yakin</a>
+                <a href="/loans/id/return" class="btn btn-outline-success">Yakin</a>
             </div>
         </div>
     </div>
 </div>
 
-<!-- Modal Kategori < 0 -->
-<div class="modal fade" id="modalGagal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Perhatian!</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                Masih ada kategori di dalam rak ini, silahkan pindahkan terlebih dahulu
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Batal</button>
-            </div>
-        </div>
-    </div>
-</div>
 <!---Container Fluid-->
 @endsection
