@@ -23,6 +23,12 @@ class LoansController extends Controller
         return view('content.loans.detail', compact('title'));  
     }
 
+    public function detail2()
+    {
+        $title = "Detail Peminjaman";
+        return view('content.loans.detail2', compact('title'));  
+    }
+
     public function edit()
     {
         $title = "Edit Peminjaman";

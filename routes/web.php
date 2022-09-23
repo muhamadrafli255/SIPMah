@@ -84,3 +84,6 @@ Route::get('/books/id/edit', [BooksController::class, 'edit']);
 Route::get('/books/id/update', [BooksController::class, 'update']);
 Route::get('/books/id/destroy', [BooksController::class, 'destroy']);
 Route::get('/loans', [LoansController::class, 'index']);
+Route::get('loans/id', [LoansController::class, 'detail']);
+Route::get('loans/id2', [LoansController::class, 'detail2']);
+Route::get('loans/id/edit', [LoansController::class, 'edit']);

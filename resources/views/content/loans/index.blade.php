@@ -24,9 +24,12 @@
                             <i class="fa-solid fa-download"></i>
                         </button>
                         <div class="dropdown-menu w-100 text-center">
-                            <button class="btn btn-sm btn-success col w-75 mb-2"><i class="fa-solid fa-file-excel"></i> Excel</button>
-                            <button class="btn btn-sm btn-danger col w-75 mb-2"><i class="fa-solid fa-file-pdf"></i> PDF</button>
-                            <button class="btn btn-sm btn-secondary col w-75 mb-2"><i class="fa-solid fa-print"></i> Print</button>
+                            <button class="btn btn-sm btn-success col w-75 mb-2"><i class="fa-solid fa-file-excel"></i>
+                                Excel</button>
+                            <button class="btn btn-sm btn-danger col w-75 mb-2"><i class="fa-solid fa-file-pdf"></i>
+                                PDF</button>
+                            <button class="btn btn-sm btn-secondary col w-75 mb-2"><i class="fa-solid fa-print"></i>
+                                Print</button>
                         </div>
                     </div>
                     <a href="/racks/create" class="btn btn-sm btn-outline-primary rounded mb-2"><i
@@ -78,12 +81,9 @@
                                     <h6><span class="badge badge-success">Sudah Dikembalikan</span></h6>
                                 </td>
                                 <td class="text-center">
-                                    <div class="">
-                                        <span data-toggle="modal" data-target="#modalGagal">
-                                            <button class="btn btn-sm btn-outline-success" data-toggle="tooltip"
-                                                data-placement="top" title="Detail"><i
-                                                    class="fa-solid fa-eye"></i></button>
-                                        </span>
+                                    <div>
+                                        <a href="/loans/id" class="btn btn-sm btn-outline-success" data-toggle="tooltip"
+                                            data-placement="top" title="Detail"><i class="fa-solid fa-eye"></i></a>
                                     </div>
                                 </td>
                             </tr>
@@ -98,12 +98,9 @@
                                     <h6><span class="badge badge-success">Sudah Dikembalikan</span></h6>
                                 </td>
                                 <td class="text-center">
-                                    <div class="">
-                                        <span data-toggle="modal" data-target="#modalGagal">
-                                            <button class="btn btn-sm btn-outline-success" data-toggle="tooltip"
-                                                data-placement="top" title="Detail"><i
-                                                    class="fa-solid fa-eye"></i></button>
-                                        </span>
+                                    <div>
+                                        <a href="/loans/id" class="btn btn-sm btn-outline-success" data-toggle="tooltip"
+                                        data-placement="top" title="Detail"><i class="fa-solid fa-eye"></i></a>
                                     </div>
                                 </td>
                             </tr>
@@ -119,12 +116,14 @@
                                 </td>
                                 <td class="text-center">
                                     <div class="mx-auto">
-                                        <a href="/members/id" class="btn btn-sm btn-outline-success" data-toggle="tooltip"
+                                        <a href="/loans/id2" class="btn btn-sm btn-outline-success" data-toggle="tooltip"
                                             data-placement="top" title="Detail"><i class="fa-solid fa-eye"></i></a>
                                         <a href="" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
-                                            data-placement="top" title="Ubah"><i class="fa-solid fa-pen-to-square"></i></a>
+                                            data-placement="top" title="Ubah"><i
+                                                class="fa-solid fa-pen-to-square"></i></a>
                                         <a href="" class="btn btn-sm btn-outline-info" data-toggle="tooltip"
-                                            data-placement="top" title="Pengembalian"><i class="fa-solid fa-reply"></i></a>
+                                            data-placement="top" title="Pengembalian"><i
+                                                class="fa-solid fa-reply"></i></a>
                                     </div>
                                 </td>
                             </tr>
@@ -141,12 +140,15 @@
                                 <td class="text-center">
                                     <div class="text-center">
                                         <div class="mx-auto">
-                                            <a href="/members/id" class="btn btn-sm btn-outline-success" data-toggle="tooltip"
-                                                data-placement="top" title="Detail"><i class="fa-solid fa-eye"></i></a>
+                                            <a href="/members/id" class="btn btn-sm btn-outline-success"
+                                                data-toggle="tooltip" data-placement="top" title="Detail"><i
+                                                    class="fa-solid fa-eye"></i></a>
                                             <a href="" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
-                                                data-placement="top" title="Ubah"><i class="fa-solid fa-pen-to-square"></i></a>
+                                                data-placement="top" title="Ubah"><i
+                                                    class="fa-solid fa-pen-to-square"></i></a>
                                             <a href="" class="btn btn-sm btn-outline-info" data-toggle="tooltip"
-                                                data-placement="top" title="Pengembalian"><i class="fa-solid fa-reply"></i></a>
+                                                data-placement="top" title="Pengembalian"><i
+                                                    class="fa-solid fa-reply"></i></a>
                                         </div>
                                     </div>
                                 </td>
@@ -164,12 +166,15 @@
                                 <td class="text-center">
                                     <div class="text-center">
                                         <div class="mx-auto">
-                                            <a href="/members/id" class="btn btn-sm btn-outline-success" data-toggle="tooltip"
-                                                data-placement="top" title="Detail"><i class="fa-solid fa-eye"></i></a>
+                                            <a href="/members/id" class="btn btn-sm btn-outline-success"
+                                                data-toggle="tooltip" data-placement="top" title="Detail"><i
+                                                    class="fa-solid fa-eye"></i></a>
                                             <a href="" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
-                                                data-placement="top" title="Ubah"><i class="fa-solid fa-pen-to-square"></i></a>
+                                                data-placement="top" title="Ubah"><i
+                                                    class="fa-solid fa-pen-to-square"></i></a>
                                             <a href="" class="btn btn-sm btn-outline-info" data-toggle="tooltip"
-                                                data-placement="top" title="Pengembalian"><i class="fa-solid fa-reply"></i></a>
+                                                data-placement="top" title="Pengembalian"><i
+                                                    class="fa-solid fa-reply"></i></a>
                                         </div>
                                     </div>
                                 </td>
