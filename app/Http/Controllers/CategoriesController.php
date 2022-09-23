@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Routing\Route;
 
 class CategoriesController extends Controller
 {
@@ -20,7 +21,8 @@ class CategoriesController extends Controller
     public function detail()
     {
         $title = "Detail Kategori";
-        return view('content.categories.detail', compact('title'));
+        $title1 = "Daftar Buku";
+        return view('content.categories.detail', compact('title', 'title1'));
     }
 
     public function create()
@@ -43,5 +45,11 @@ class CategoriesController extends Controller
     public function update()
     {
         return redirect('/categories')->with('Berhasil', 'Kategori berhasil diubah');
+    }
+
+    public function user()
+    {
+        $title = 'Daftar Kategori';
+        return view('content.categories.user', compact('title'));
     }
 }

@@ -3,13 +3,12 @@
 <!-- Container Fluid-->
 <div class="container-fluid" id="container-wrapper">
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">{{ $title }}</h1>
+        <h1 class="h3 mb-4 text-gray-800">{{ $title }}</h1>
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/books">Buku</a></li>
             <li class="breadcrumb-item active" aria-current="page">{{ $title }}</li>
         </ol>
     </div>
-    <div class="container-xl px-4 mt-4 mb-4">
         <!-- Account page navigation-->
         <div class="row">
             <div class="col-xl-4">
@@ -84,6 +83,14 @@
                                 <h6 class="text-muted">: 2013</h6>
                             </div>
                             {{-- End No Telepon Detail --}}
+                            @if (Request::is('dashboard3*'))
+                            <div class="col-lg-12 mt-2 mb-1">
+                                <div class="float-right">
+                                    <a href="/dashboard3/home" class="btn btn-sm btn-outline-secondary">Kembali</a>
+                                    <a href="/books/id/edit" class="btn btn-sm btn-outline-primary">Pinjam</a>
+                                </div>
+                            </div>
+                            @else
                             <div class="col-lg-12 mt-2 mb-1">
                                 <div class="float-right">
                                     <a href="/books" class="btn btn-sm btn-outline-secondary">Kembali</a>
@@ -91,12 +98,12 @@
                                     <button data-toggle="modal" data-target="#nonaktifModal" class="btn btn-sm btn-outline-danger">Hapus</button>
                                 </div>
                             </div>
+                            @endif
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 </div>
 
 <!-- Modal Nonaktif-->

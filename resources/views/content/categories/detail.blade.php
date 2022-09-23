@@ -3,14 +3,60 @@
 <!-- Container Fluid-->
 <div class="container-fluid" id="container-wrapper">
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        @if (Request::is('dashboard3/categories/id'))
+        <h1 class="h3 mb-0 text-gray-800">{{ $title1 }}</h1>
+        @else
         <h1 class="h3 mb-0 text-gray-800">{{ $title }}</h1>
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="/officers">Kategori</a></li>
             <li class="breadcrumb-item active" aria-current="page">{{ $title }}</li>
         </ol>
+        @endif
     </div>
-    <div class="container-xl px-4 mt-4 mb-4">
         <!-- Account page navigation-->
+        @if (Request::is('dashboard3/categories/id'))
+            <div class="row">
+                    <div class="col-lg-2 col-md-6 col-sm-12 mb-4">
+                      <a href="/dashboard3/books/id" class="text-decoration-none">
+                      <div class="card mx-auto" style="width: 16rem;">
+                          <img src="https://ebooks.gramedia.com/ebook-covers/42421/image_highres/ID_NUT2018MTH05NUT.jpg" height="384px" class="card-img-top" alt="...">
+                          <div class="card-body">
+                              <p class="text-muted mb-2">Tere Liye</p>
+                              <h5 class="text-gray-800 mb-2">Negeri Diujung Tanduk</h5>
+                              <span class="badge badge-pill badge-primary">120X Dipinjam</span>
+                          </div>
+                      </div>
+                  </a>
+                  </div>
+
+                  <div class="col-lg-2 col-md-6 col-sm-12 mb-4">
+                    <a href="/books/id" class="text-decoration-none">
+                <div class="card mx-auto" style="width: 16rem;">
+                    <img src="https://ebooks.gramedia.com/ebook-covers/37335/big_covers/ID_GPU2017MTH05AMBA_B.jpg" height="384px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="text-muted mb-2">Laksmi Pamuntjak</p>
+                      <h5 class="text-gray-800 mb-2">Amba</h5>
+                      <span class="badge badge-pill badge-primary">70X Dipinjam</span>
+                    </div>
+                  </div>
+                </a>
+                </div>
+
+
+                <div class="col-lg-2 col-md-6 col-sm-12 mb-4">
+                    <a href="dashboard3/books/id" class="text-decoration-none">
+                    <div class="card mx-auto" style="width: 16rem;">
+                        <img src="https://www.gramedia.com/blog/content/images/2019/05/orang-orang-biasa-4.jpg" height="384px" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="text-muted mb-2">Andrea Hirata</p>
+                            <h5 class="text-gray-800 mb-2">Orang - Orang Biasa</h5>
+                            <span class="badge badge-pill badge-primary">130X Dipinjam</span>
+                        </div>
+                      </div>
+                    </a>
+                </div>
+            </div>
+        @else
         <div class="row">
             <div class="col-xl-12">
                 <!-- Account details card-->
@@ -54,6 +100,6 @@
                 </div>
             </div>
         </div>
-    </div>
+        @endif
 </div>
 @endsection

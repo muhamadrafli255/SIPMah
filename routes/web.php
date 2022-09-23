@@ -32,6 +32,21 @@ Route::get('/dashboard', function(){
     return view('content.index', compact('title'));
 });
 
+Route::get('/dashboard3/home', function(){
+    $title = 'Beranda';
+    return view('content.index', compact('title'));
+});
+
+Route::get('/dashboard2', function(){
+    $title = 'Dasbor';
+    return view('content.index', compact('title'));
+});
+
+Route::get('/dashboard3', function(){
+    $title = 'Dasbor';
+    return view('content.index', compact('title'));
+});
+
 Route::get('/', [AuthController::class, 'login']);
 Route::get('/login', [AuthController::class, 'attempt']);
 Route::get('/register', [AuthController::class, 'register']);
@@ -59,6 +74,8 @@ Route::get('/officers/id/update', [OfficersController::class, 'update']);
 Route::get('/officers/id/disable', [OfficersController::class, 'disable']);
 Route::get('/officers/id/edit', [OfficersController::class, 'edit']);
 Route::get('racks', [RacksController::class, 'index']);
+Route::get('dashboard3/racks', [RacksController::class, 'index']);
+Route::get('dashboard3/racks/id', [CategoriesController::class, 'user']);
 Route::get('racks/store', [RacksController::class, 'store']);
 Route::get('racks/id', [RacksController::class, 'detail']);
 Route::get('racks/id/destroy', [RacksController::class, 'destroy']);
@@ -66,6 +83,7 @@ Route::get('racks/create', [RacksController::class, 'create']);
 Route::get('/categories', [CategoriesController::class, 'index']);
 Route::get('/categories/store', [CategoriesController::class, 'store']);
 Route::get('/categories/id', [CategoriesController::class, 'detail']);
+Route::get('/dashboard3/categories/id', [CategoriesController::class, 'detail']);
 Route::get('/categories/id/update', [CategoriesController::class, 'update']);
 Route::get('/categories/id/destroy', [CategoriesController::class, 'destroy']);
 Route::get('/categories/create', [CategoriesController::class, 'create']);
@@ -81,6 +99,7 @@ Route::get('/books', [BooksController::class, 'index']);
 Route::get('/books/create', [BooksController::class, 'create']);
 Route::get('/books/store', [BooksController::class, 'store']);
 Route::get('/books/id', [BooksController::class, 'detail']);
+Route::get('/dashboard3/books/id', [BooksController::class, 'detail']);
 Route::get('/books/id/edit', [BooksController::class, 'edit']);
 Route::get('/books/id/update', [BooksController::class, 'update']);
 Route::get('/books/id/destroy', [BooksController::class, 'destroy']);
