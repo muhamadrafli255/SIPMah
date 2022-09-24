@@ -10,7 +10,7 @@
                             <div class="col-lg-12">
                                 <div class="login-form">
                                     <div class="text-center">
-                                        <h1 class="h4 text-gray-900 mb-4">Lupa Kata Sandi</h1>
+                                        <h1 class="h4 text-gray-900 mb-4">Atur Ulang Kata Sandi</h1>
                                     </div>
                                     <form class="user">
                                         <div class="form-group">
@@ -24,7 +24,7 @@
                                     <hr>
                                     <div class="col-lg-12 mt-5">
                                         <div class="text-center">
-                                            <p>Ingat Kata Sandi? <a href="">Masuk!</a></p>
+                                            <p>Ingat Kata Sandi? <a href="/">Masuk!</a></p>
                                         </div>
                                     </div>
                                 </div>

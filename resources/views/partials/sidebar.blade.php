@@ -74,7 +74,7 @@
                     <span>Peminjaman</span>
                 </a>
             </li>
-            @if (Request::is('dashboard') || Request::is('dashboard2'))
+            @if (Request::is('dashboard', 'members', 'officers', 'racks', 'categories', 'publishers', 'books', 'report', 'loans') || Request::is('dashboard2'))
             <li class="nav-item {{ Request::is('report*') ? 'active' : '' }}">
                 <a class="nav-link" href="/report">
                     <i class="fa-solid fa-file"></i>

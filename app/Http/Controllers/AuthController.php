@@ -38,7 +38,7 @@ class AuthController extends Controller
 
     public function active()
     {
-        return redirect('/')->with('Berhasil', 'Aktivasi berhasil silahkan login');
+        return redirect('/')->with('Berhasil', 'Kata sandi berhasil diperbarui, Silahkan Login!');
     }
 
     public function forgot()
@@ -60,6 +60,6 @@ class AuthController extends Controller
 
     public function update_password()
     {
-        return redirect('/')->with('Berhasil', 'Kata sandi berhasil diatur ulang silahkan login');
+        return redirect('/')->with('Berhasil', 'Kata sandi berhasil diperbarui, silahkan login!');
     }
 }

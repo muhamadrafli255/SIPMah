@@ -10,7 +10,7 @@
                             <div class="col-lg-12">
                                 <div class="login-form">
                                     <div class="text-center">
-                                        <h1 class="h4 text-gray-900 mb-4">Aktivasi Akun</h1>
+                                        <h1 class="h4 text-gray-900 mb-4">Atur Ulang Kata Sandi</h1>
                                     </div>
                                     <form class="user">
                                         <div class="form-group">
@@ -22,7 +22,7 @@
                                                 aria-describedby="emailHelp" placeholder="Konfirmasi Kata sandi">
                                         </div>
                                         <div class="form-group">
-                                            <a href="/active" class="btn btn-primary btn-block">Aktivasi Akun</a>
+                                            <a href="/active" class="btn btn-primary btn-block">Atur Ulang Kata Sandi</a>
                                         </div>
                                     </form>
                                     <hr>

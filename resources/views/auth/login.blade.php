@@ -23,11 +23,11 @@
                                 <form class="user">
                                     <div class="form-group">
                                         <input type="email" class="form-control" id="exampleInputEmail"
-                                            aria-describedby="emailHelp" placeholder="Enter Email Address">
+                                            aria-describedby="emailHelp" placeholder="Alamat Email">
                                     </div>
                                     <div class="form-group">
                                         <input type="password" class="form-control" id="exampleInputPassword"
-                                            placeholder="Password">
+                                            placeholder="Kata Sandi">
                                     </div>
                                     <div class="form-group">
                                         <div class="custom-control custom-checkbox small" style="line-height: 1.5rem;">
