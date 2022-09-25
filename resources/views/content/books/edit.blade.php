@@ -73,7 +73,7 @@
                             <div class="row gx-3 mb-3">
                                 <!-- Form Group (first name)-->
                                 <div class="col-md-12">
-                                    <label class="small mb-1" for="inputStatus">Status</label>
+                                    <label class="small mb-1" for="inputStatus">Kondisi</label>
                                     <select name="" id="inputStatus" class="form-control">
                                         <option value="">Baik</option>
                                         <option value="">Rusak</option>

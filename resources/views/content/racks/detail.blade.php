@@ -9,51 +9,154 @@
             <li class="breadcrumb-item active" aria-current="page">{{ $title }}</li>
         </ol>
     </div>
-    <div class="container-xl px-4 mt-4 mb-4">
         <!-- Account page navigation-->
         <div class="row">
             <div class="col-xl-12">
                 <!-- Account details card-->
                 <div class="card mb-4">
-                    <div class="card-header"><p class="h4 text-gray-800">Data Rak</p></div>
-                    <div class="card-body">
-                        <div class="row">
-                            {{-- NIS / NUPTK Detail --}}
-                            <div class="col-lg-6">
-                                <h6 class="text-gray-800">Kode Rak</h6>
-                            </div>
-                            <div class="col-lg 3">
-                                <h6 class="text-muted">: RCK - 01</h6>
-                            </div>
-                            {{-- END NIS / NUPTK Detail --}}
-                            {{-- Full Name Detail --}}
-                            <div class="col-lg-6">
-                                <h6 class="text-gray-800">Nomor Rak</h6>
-                            </div>
-                            <div class="col-lg-6">
-                                <h6 class="text-muted">: 1</h6>
-                            </div>
-                            {{-- End Full Name Detail --}}
-                            {{-- Email Detail --}}
-                            <div class="col-lg-6">
-                                <h6 class="text-gray-800">Kategori Dalam Rak</h6>
-                            </div>
-                            <div class="col-lg-6">
-                                <h6 class="text-muted">: Novel, Biologi, Agama</h6>
-                            </div>
-                            {{-- End Email Detail --}}
-                            <div class="col-lg-12 mt-2">
-                                <div class="float-right">
-                                    <a href="/racks" class="btn btn-sm btn-outline-secondary">Kembali</a>
-                                    <a href="/racks/id/edit" class="btn btn-sm btn-outline-primary">Ubah</a>
-                                    <a href="/officers/id/edit" class="btn btn-sm btn-outline-danger">Hapus</a>
+                    <div class="col-lg-12 mt-3">
+                        <div class="float-left">
+                            <h5 class="m-2">Kategori Dalam Rak</h5>
+                        </div>
+                        <div class="float-right ml-2">
+                            <div class="input-group input-group-sm">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1"><i
+                                            class="fa-solid fa-search"></i></span>
                                 </div>
+                                <input type="text" id="SearchBox" class="form-control form-control-sm"
+                                    placeholder="Masukan Kata Kunci" aria-label="Username" aria-describedby="basic-addon1">
                             </div>
                         </div>
+                        <div class="float-right">
+                            <select name="lengthMenu" id="lengthMenu" class="form-control form-control-sm">
+                                <option value="10">10</option>
+                                <option value="19">20</option>
+                                <option value="49">50</option>
+                                <option value="99">100</option>
+                            </select>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="table-responsive p-3">
+                        <table class="table align-items-center table-bordered table-striped table-hover w-100"
+                            id="dataTableHover">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th>No</th>
+                                    <th>Nama Kategori</th>
+                                    <th>Jumlah Buku</th>
+                                    <th class="px-5">Aksi</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-right">1</td>
+                                    <td>Novel</td>
+                                    <td class="text-right">6</td>
+                                    <td class="text-center">
+                                        <div class="">
+                                            <a href="/categories/id" class="btn btn-sm btn-outline-success"
+                                            data-toggle="tooltip" data-placement="top" title="Detail"><i
+                                                class="fa-solid fa-eye"></i></a>
+                                        <a href="/categories/id/edit" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
+                                            data-placement="top" title="Ubah"><i
+                                                class="fa-solid fa-pen-to-square"></i></a>
+                                            <span data-toggle="modal" data-target="#modalGagal">
+                                                <button class="btn btn-sm btn-outline-danger" data-toggle="tooltip"
+                                                    data-placement="top" title="Hapus"><i
+                                                        class="fa-solid fa-trash"></i></button>
+                                            </span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-right">2</td>
+                                    <td>Biologi</td>
+                                    <td class="text-right">3</td>
+                                    <td class="text-center">
+                                        <div class="">
+                                            <a href="/categories/id" class="btn btn-sm btn-outline-success"
+                                            data-toggle="tooltip" data-placement="top" title="Detail"><i
+                                                class="fa-solid fa-eye"></i></a>
+                                        <a href="/categories/id/edit" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
+                                            data-placement="top" title="Ubah"><i
+                                                class="fa-solid fa-pen-to-square"></i></a>
+                                            <span data-toggle="modal" data-target="#modalGagal">
+                                                <button class="btn btn-sm btn-outline-danger" data-toggle="tooltip"
+                                                    data-placement="top" title="Hapus"><i
+                                                        class="fa-solid fa-trash"></i></button>
+                                            </span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-right">3</td>
+                                    <td>Filosofi</td>
+                                    <td class="text-right">3</td>
+                                    <td class="text-center">
+                                        <div class="">
+                                            <a href="/category/id" class="btn btn-sm btn-outline-success"
+                                            data-toggle="tooltip" data-placement="top" title="Detail"><i
+                                                class="fa-solid fa-eye"></i></a>
+                                        <a href="/category/id/edit" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
+                                            data-placement="top" title="Ubah"><i
+                                                class="fa-solid fa-pen-to-square"></i></a>
+                                            <span data-toggle="modal" data-target="#modalGagal">
+                                                <button class="btn btn-sm btn-outline-danger" data-toggle="tooltip"
+                                                    data-placement="top" title="Hapus"><i
+                                                        class="fa-solid fa-trash"></i></button>
+                                            </span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- Modal Nonaktif-->
+<div class="modal fade" id="nonaktifModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Perhatian!</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Apakah anda yakin akan menghapus rak ini?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Batal</button>
+                <a href="/categories/id/destroy" class="btn btn-outline-danger">Yakin</a>
+            </div>
+        </div>
+    </div>
 </div>
+
+<!-- Modal Kategori < 0 -->
+<div class="modal fade" id="modalGagal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Perhatian!</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Masih ada buku di dalam kategori ini, silahkan pindahkan terlebih dahulu
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">OK</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!---Container Fluid-->
 @endsection

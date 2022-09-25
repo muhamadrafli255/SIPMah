@@ -9,7 +9,6 @@
             <li class="breadcrumb-item active" aria-current="page">{{ $title }}</li>
         </ol>
     </div>
-    <div class="container-xl px-4 mt-4 mb-4">
         <!-- Account page navigation-->
         <div class="row">
             <div class="col-xl-4">
@@ -18,15 +17,13 @@
                     <div class="card-header"><p class="h5 text-gray-800">Gambar Buku</p></div>
                     <div class="card-body text-center">
                         <!-- Profile picture image-->
-                        <img class="img-fluid rounded mb-2" src="https://ebooks.gramedia.com/ebook-covers/42421/image_highres/ID_NUT2018MTH05NUT.jpg" alt="" width="170px" height="170px">
-                        <h4>Negeri Diujung Tanduk</h4>
-                        <p>BKS - 0001</p>
+                        <img class="img-fluid rounded mb-2" src="https://ebooks.gramedia.com/ebook-covers/42421/image_highres/ID_NUT2018MTH05NUT.jpg" alt="" width="170px" height="170px"></p>
                     </div>
                 </div>
             </div>
             <div class="col-xl-8">
                 <!-- Account details card-->
-                <div class="card mb-4 mb-xl-0 py-2">
+                <div class="card mb-4 mb-xl-0">
                     <div class="card-header"><p class="h5 text-gray-800">Detail Peminjaman</p></div>
                     <div class="card-body">
                         <div class="row">
@@ -82,7 +79,7 @@
                             <div class="col-lg-3">
                                 <h6 class="text-gray-800">Status Peminjaman</h6>
                             </div>
-                            <div class="col-lg-9 mb-5">
+                            <div class="col-lg-9 mb-3">
                                 <h6 class="text-muted">: <span class="badge badge-success">Sudah Dikembalikan</span></h6>
                             </div>
                             {{-- End No Telepon Detail --}}
@@ -97,10 +94,9 @@
             </div>
         </div>
     </div>
-</div>
 
 <!-- Modal Nonaktif-->
-<div class="modal fade" id="nonaktifModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="modalPengembalian" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -110,11 +106,37 @@
                 </button>
             </div>
             <div class="modal-body">
-                Apakah anda yakin akan menghapus buku ini?
+                <form action="">
+                    <div class="col-lg-12 mb-2">
+                        <label for="selectPengembali">Nama Pengembali</label>
+                        <select name="" id="selectPengembali" class="form-control">
+                            <option value="" selected disabled>Nama Pengembali</option>
+                            <option value="">Robi Firmansyah</option>
+                            <option value="">Dani Fitriani</option>
+                            <option value="">Dodi Permana</option>
+                            <option value="">Queensha Marsya</option>
+                        </select>
+                    </div>
+
+                    <div class="col-lg-12 mb-2">
+                        <label for="inputDate">Tanggal Kembali</label>
+                        <input type="date" id="inputDate" class="form-control" placeholder="Tanggal Kembali">
+                    </div>
+
+                    <div class="col-lg-12 mb-2">
+                        <label for="selectKondisi">Kondisi</label>
+                        <select name="" id="selectKondisi" class="form-control">
+                            <option value="" selected disabled>Kondisi Buku</option>
+                            <option value="">Baik</option>
+                            <option value="">Rusak</option>
+                            <option value="">Hilang</option>
+                        </select>
+                    </div>
+                </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Batal</button>
-                <a href="/books/id/destroy" class="btn btn-outline-danger">Yakin</a>
+                <button type="button" class="btn btn-sm btn-outline-secondary" data-dismiss="modal">Batal</button>
+                <a href="/loans/id/return" class="btn btn-sm btn-outline-success">Kembalikan</a>
             </div>
         </div>
     </div>

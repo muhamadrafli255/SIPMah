@@ -69,7 +69,7 @@
                                 </div>
 
                                 <div class="col-lg-12 mb-4">
-                                    <label class="small mb-1" for="inputTanggal">Tanggal Dikembalikan</label>
+                                    <label class="small mb-1" for="inputTanggal">Estimasi Dikembalikan</label>
                                     <input type="date" class="form-control" required>
                                 </div>
                                 <!-- Form Group (last name)-->

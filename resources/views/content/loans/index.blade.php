@@ -214,11 +214,21 @@
                         <label for="inputDate">Tanggal Kembali</label>
                         <input type="date" id="inputDate" class="form-control" placeholder="Tanggal Kembali">
                     </div>
+
+                    <div class="col-lg-12 mb-2">
+                        <label for="selectKondisi">Kondisi</label>
+                        <select name="" id="selectKondisi" class="form-control">
+                            <option value="" selected disabled>Kondisi Buku</option>
+                            <option value="">Baik</option>
+                            <option value="">Rusak</option>
+                            <option value="">Hilang</option>
+                        </select>
+                    </div>
                 </form>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-sm btn-outline-secondary" data-dismiss="modal">Batal</button>
-                <a href="/loans/id/return" class="btn btn-sm btn-outline-success">Yakin</a>
+                <a href="/loans/id/return" class="btn btn-sm btn-outline-success">Kembalikan</a>
             </div>
         </div>
     </div>

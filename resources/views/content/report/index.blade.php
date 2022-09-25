@@ -34,7 +34,7 @@
 
     <div class="card mb-4 pb-3">
         <div class="p-2 mx-auto mt-4">
-            <h5>Peminjaman yang belum dikembalikan</h5>
+            <h5>Sedang Dipinjam</h5>
         </div>
         <hr class="mx-3">
         <div class="table-responsive px-3">
@@ -46,7 +46,7 @@
                         <th>Judul Buku</th>
                         <th>Nama Peminjam</th>
                         <th>Petugas Peminjam</th>
-                        <th>Tanggal Pinjam</th>
+                        <th>Estimasi Dikembalikan</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -92,7 +92,7 @@
 
     <div class="card mb-4 pb-3">
         <div class="p-2 mx-auto mt-4">
-            <h5>Peminjaman kategori terbanyak</h5>
+            <h5>Kategori buku yang banyak dipinjam</h5>
         </div>
         <hr class="mx-3">
         <div class="table-responsive px-2">
@@ -138,7 +138,7 @@
 
     <div class="card mb-4 pb-3">
         <div class="p-2 mx-auto mt-4">
-            <h5>Member dengan peminjaman terbanyak</h5>
+            <h5>Peminjaman Peranggota</h5>
         </div>
         <hr class="mx-3">
         <div class="table-responsive px-2">

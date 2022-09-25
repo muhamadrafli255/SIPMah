@@ -19,14 +19,12 @@
                     <div class="card-body text-center">
                         <!-- Profile picture image-->
                         <img class="img-fluid rounded mb-2" src="https://laksmipamuntjak.com/public/uploads/2017/01/Liberaturpreis%202016%20Photo%20FINAL%20FINAL%20COVER%20OP%201.jpg" alt="" width="170px" height="170px">
-                        <h4>Amba</h4>
-                        <p>BKS - 0002</p>
                     </div>
                 </div>
             </div>
             <div class="col-xl-8">
                 <!-- Account details card-->
-                <div class="card mb-4 mb-xl-0 py-2">
+                <div class="card mb-4 mb-xl-0">
                     <div class="card-header"><p class="h5 text-gray-800">Detail Peminjaman</p></div>
                     <div class="card-body">
                         <div class="row">
@@ -66,13 +64,7 @@
                                 <h6 class="text-muted">: 15/09/2022</h6>
                             </div>
                             <div class="col-lg-3">
-                                <h6 class="text-gray-800">Petugas Pengembalian</h6>
-                            </div>
-                            <div class="col-lg-9">
-                                <h6 class="text-muted">: </h6>
-                            </div>
-                            <div class="col-lg-3">
-                                <h6 class="text-gray-800">Tanggal Kembali</h6>
+                                <h6 class="text-gray-800">Estimasi Dikembalikan</h6>
                             </div>
                             <div class="col-lg-9">
                                 <h6 class="text-muted">: 20/09/2022</h6>
@@ -82,11 +74,11 @@
                             <div class="col-lg-3">
                                 <h6 class="text-gray-800">Status Peminjaman</h6>
                             </div>
-                            <div class="col-lg-9 mb-5">
+                            <div class="col-lg-9 mb-4">
                                 <h6 class="text-muted">: <span class="badge badge-warning">Sedang Dipinjam</span></h6>
                             </div>
                             {{-- End No Telepon Detail --}}
-                            <div class="col-lg-12 mt-2 mb-1">
+                            <div class="col-lg-12 mt-3 mb-2">
                                 <div class="float-right">
                                     <a href="/loans" class="btn btn-sm btn-outline-secondary">Kembali</a>
                                     <a href="/loans/id/edit" class="btn btn-sm btn-outline-primary">Ubah</a>
@@ -112,11 +104,37 @@
                 </button>
             </div>
             <div class="modal-body">
-                Apakah anda yakin akan mengembalikan peminjaman ini?
+                <form action="">
+                    <div class="col-lg-12 mb-2">
+                        <label for="selectPengembali">Nama Pengembali</label>
+                        <select name="" id="selectPengembali" class="form-control">
+                            <option value="" selected disabled>Nama Pengembali</option>
+                            <option value="">Robi Firmansyah</option>
+                            <option value="">Dani Fitriani</option>
+                            <option value="">Dodi Permana</option>
+                            <option value="">Queensha Marsya</option>
+                        </select>
+                    </div>
+
+                    <div class="col-lg-12 mb-2">
+                        <label for="inputDate">Tanggal Kembali</label>
+                        <input type="date" id="inputDate" class="form-control" placeholder="Tanggal Kembali">
+                    </div>
+
+                    <div class="col-lg-12 mb-2">
+                        <label for="selectKondisi">Kondisi</label>
+                        <select name="" id="selectKondisi" class="form-control">
+                            <option value="" selected disabled>Kondisi Buku</option>
+                            <option value="">Baik</option>
+                            <option value="">Rusak</option>
+                            <option value="">Hilang</option>
+                        </select>
+                    </div>
+                </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Batal</button>
-                <a href="/loans/id/return" class="btn btn-outline-success">Yakin</a>
+                <button type="button" class="btn btn-sm btn-outline-secondary" data-dismiss="modal">Batal</button>
+                <a href="/loans/id/return" class="btn btn-sm btn-outline-success">Kembalikan</a>
             </div>
         </div>
     </div>

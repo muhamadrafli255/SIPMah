@@ -18,8 +18,6 @@
                     <div class="card-body text-center">
                         <!-- Profile picture image-->
                         <img class="img-fluid rounded mb-2" src="https://ebooks.gramedia.com/ebook-covers/42421/image_highres/ID_NUT2018MTH05NUT.jpg" alt="" width="170px" height="170px">
-                        <h4>Negeri Diujung Tanduk</h4>
-                        <p>BKS - 0001</p>
                     </div>
                 </div>
             </div>
@@ -47,12 +45,6 @@
                             {{-- End Full Name Detail --}}
                             {{-- Email Detail --}}
                             <div class="col-lg-3">
-                                <h6 class="text-gray-800">Status Buku</h6>
-                            </div>
-                            <div class="col-lg-9">
-                                <h6 class="text-muted">: Baik</h6>
-                            </div>
-                            <div class="col-lg-3">
                                 <h6 class="text-gray-800">Deskripsi Buku</h6>
                             </div>
                             <div class="col-lg-9">
@@ -79,8 +71,14 @@
                             <div class="col-lg-3">
                                 <h6 class="text-gray-800">Tahun Terbit</h6>
                             </div>
-                            <div class="col-lg-9 mb-5">
+                            <div class="col-lg-9">
                                 <h6 class="text-muted">: 2013</h6>
+                            </div>
+                            <div class="col-lg-3">
+                                <h6 class="text-gray-800">Kondisi Buku</h6>
+                            </div>
+                            <div class="col-lg-9 mb-5">
+                                <h6 class="text-muted">: <span class="badge badge-success">Baik</span></h6>
                             </div>
                             {{-- End No Telepon Detail --}}
                             @if (Request::is('dashboard3*'))
