@@ -56,7 +56,7 @@
                             </div>
                                 <!-- Form Group (first name)-->
                                 <div class="col-lg-12">
-                                    <label class="small mb-1" for="inputFirstName">Email</label>
+                                    <label class="small mb-1" for="inputFirstName">Alamat Email</label>
                                     <input class="form-control" id="inputEmail" type="email"
                                         placeholder="Email Petugas" value="rudiansyah@example.com" disabled>
                                 </div>

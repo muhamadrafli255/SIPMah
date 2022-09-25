@@ -54,22 +54,6 @@
                                     <input class="form-control" id="inputFirstName" type="text"
                                         placeholder="Nama Lengkap Anggota" value="" required>
                                 </div>
-                                <!-- Form Group (last name)-->
-                                <div class="col-md-6">
-                                    <label class="small mb-1" for="inputLastName">Email</label>
-                                    <input class="form-control" id="inputLastName" type="email"
-                                        placeholder="Email Anggota" value="" required> 
-                                </div>
-                            </div>
-                            <!-- Form Row        -->
-                            <div class="row gx-3 mb-3">
-                                <!-- Form Group (organization name)-->
-                                <div class="col-md-6">
-                                    <label class="small mb-1" for="inputOrgName">No Telepon</label>
-                                    <input class="form-control" id="inputOrgName" type="number"
-                                        placeholder="No Telepon Anggota" value="" required>
-                                </div>
-                                <!-- Form Group (location)-->
                                 <div class="col-md-6">
                                     <label class="small mb-1" for="selectJenisKelamin">Jenis Kelamin</label>
                                     <select name="" id="selectJenisKelamin" class="form-control" required>
@@ -78,8 +62,27 @@
                                         <option value="">Perempuan</option>
                                     </select>
                                 </div>
+                                <!-- Form Group (last name)-->
+                                <div class="col-md-6">
+                                    <label class="small mb-1" for="inputLastName">Alamat Email</label>
+                                    <input class="form-control" id="inputLastName" type="email"
+                                        placeholder="Alamat Email" value="" required> 
+                                </div>
+                            <!-- Form Row        -->
+                                <!-- Form Group (organization name)-->
+                                <div class="col-md-6">
+                                    <label class="small mb-1" for="inputOrgName">No Telepon</label>
+                                    <input class="form-control" id="inputOrgName" type="number"
+                                        placeholder="No Telepon Anggota" value="" required>
+                                </div>
+                                <!-- Form Group (location)-->
                             </div>
                             <div class="row">
+                                <div class="col-lg-12 mb-3">
+                                    <label class="small mb-1" for="selectAddress">Alamat</label>
+                                    <textarea name="" id="" cols="30" rows="10" placeholder="Alamat Lengkap Anggota"
+                                        class="form-control" required></textarea>
+                                </div>
                                 <div class="col-md-6 mb-3">
                                     <label class="small mb-1" for="selectProvinsi">Provinsi</label>
                                     <select class="form-control" name="" id="selectProvinsi" required>
@@ -124,13 +127,19 @@
                                         <option value="">Katapang</option>
                                     </select>
                                 </div>
+                                <div class="col-md-12 mb-3">
+                                    <label class="small mb-1" for="selectKodePos">Kode Pos</label>
+                                    <select class="form-control" id="selectKodePos" required>
+                                        <option value="" selected disabled>Kode Pos</option>
+                                        <option value="">40921</option>
+                                        <option value="">40961</option>
+                                        <option value="">54553</option>
+                                        <option value="">12456</option>
+                                        <option value="">321321</option>
+                                    </select>
+                                </div>
                             </div>
                             <!-- Form Group (email address)-->
-                            <div class="mb-3">
-                                <label class="small mb-1" for="selectAddress">Alamat</label>
-                                <textarea name="" id="" cols="30" rows="10" placeholder="Alamat Lengkap Anggota"
-                                    class="form-control" required></textarea>
-                            </div>
                             <!-- Save changes button-->
                             <div class="col-lg-12">
                                 <div class="text-right">

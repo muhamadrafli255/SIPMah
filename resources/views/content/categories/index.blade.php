@@ -67,12 +67,15 @@
                         <tbody>
                             <tr>
                                 <td class="text-right">1</td>
-                                <td class="text-right">CTG - 01</td>
-                                <td class="text-right">Novel</td>
-                                <td class="text-right">RCK - 01</td>
+                                <td>CTG - 01</td>
+                                <td>Novel</td>
+                                <td>RCK - 01</td>
                                 <td class="text-right">16</td>
                                 <td class="text-center">
                                     <div class="">
+                                        <a href="/categories/id" class="btn btn-sm btn-outline-success" data-toggle="tooltip" data-placement="top" title="Detail">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
                                                 <a href="/categories/id/edit" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
                                                 data-placement="top" title="Ubah"><i
                                                     class="fa-solid fa-pen-to-square"></i></a>
@@ -86,12 +89,15 @@
                             </tr>
                             <tr>
                                 <td class="text-right">2</td>
-                                <td class="text-right">CTG - 02</td>
-                                <td class="text-right">Komik</td>
-                                <td class="text-right">RCK - 02</td>
+                                <td>CTG - 02</td>
+                                <td>Komik</td>
+                                <td>RCK - 02</td>
                                 <td class="text-right">0</td>
                                 <td class="text-center">
                                     <div class="">
+                                        <a href="/categories/id" class="btn btn-sm btn-outline-success" data-toggle="tooltip" data-placement="top" title="Detail">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
                                                 <a href="/categories/id/edit" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
                                                 data-placement="top" title="Ubah"><i
                                                     class="fa-solid fa-pen-to-square"></i></a>
@@ -105,12 +111,15 @@
                             </tr>
                             <tr>
                                 <td class="text-right">3</td>
-                                <td class="text-right">CTG - 03</td>
-                                <td class="text-right">Dongeng</td>
-                                <td class="text-right">RCK - 03</td>
+                                <td>CTG - 03</td>
+                                <td>Dongeng</td>
+                                <td>RCK - 03</td>
                                 <td class="text-right">5</td>
                                 <td class="text-center">
                                     <div class="">
+                                        <a href="/categories/id" class="btn btn-sm btn-outline-success" data-toggle="tooltip" data-placement="top" title="Detail">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
                                                 <a href="/categories/id/edit" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
                                                 data-placement="top" title="Ubah"><i
                                                     class="fa-solid fa-pen-to-square"></i></a>
@@ -124,12 +133,15 @@
                             </tr>
                             <tr>
                                 <td class="text-right">4</td>
-                                <td class="text-right">CTG - 04</td>
-                                <td class="text-right">Filosofi</td>
-                                <td class="text-right">RCK - 02</td>
+                                <td>CTG - 04</td>
+                                <td>Filosofi</td>
+                                <td>RCK - 02</td>
                                 <td class="text-right">20</td>
                                 <td class="text-center">
                                     <div class="">
+                                        <a href="/categories/id" class="btn btn-sm btn-outline-success" data-toggle="tooltip" data-placement="top" title="Detail">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
                                                 <a href="/categories/id/edit" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
                                                 data-placement="top" title="Ubah"><i
                                                     class="fa-solid fa-pen-to-square"></i></a>
@@ -143,12 +155,15 @@
                             </tr>
                             <tr>
                                 <td class="text-right">5</td>
-                                <td class="text-right">CTG - 05</td>
-                                <td class="text-right">Biologi</td>
-                                <td class="text-right">RCK - 02</td>
+                                <td>CTG - 05</td>
+                                <td>Biologi</td>
+                                <td>RCK - 02</td>
                                 <td class="text-right">32</td>
                                 <td class="text-center">
                                     <div class="">
+                                        <a href="/categories/id" class="btn btn-sm btn-outline-success" data-toggle="tooltip" data-placement="top" title="Detail">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
                                                 <a href="/categories/id/edit" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
                                                 data-placement="top" title="Ubah"><i
                                                     class="fa-solid fa-pen-to-square"></i></a>
@@ -162,12 +177,15 @@
                             </tr>
                             <tr>
                                 <td class="text-right">6</td>
-                                <td class="text-right">CTG - 06</td>
-                                <td class="text-right">Biografi</td>
-                                <td class="text-right">RCK - 02</td>
+                                <td>CTG - 06</td>
+                                <td>Biografi</td>
+                                <td>RCK - 02</td>
                                 <td class="text-right">10</td>
                                 <td class="text-center">
                                     <div class="">
+                                        <a href="/categories/id" class="btn btn-sm btn-outline-success" data-toggle="tooltip" data-placement="top" title="Detail">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
                                                 <a href="/categories/id/edit" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
                                                 data-placement="top" title="Ubah"><i
                                                     class="fa-solid fa-pen-to-square"></i></a>
@@ -181,12 +199,15 @@
                             </tr>
                             <tr>
                                 <td class="text-right">7</td>
-                                <td class="text-right">CTG - 07</td>
-                                <td class="text-right">Karya Ilmiah</td>
-                                <td class="text-right">RCK - 03</td>
+                                <td>CTG - 07</td>
+                                <td>Karya Ilmiah</td>
+                                <td>RCK - 03</td>
                                 <td class="text-right">18</td>
                                 <td class="text-center">
                                     <div class="">
+                                        <a href="/categories/id" class="btn btn-sm btn-outline-success" data-toggle="tooltip" data-placement="top" title="Detail">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
                                                 <a href="/categories/id/edit" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
                                                 data-placement="top" title="Ubah"><i
                                                     class="fa-solid fa-pen-to-square"></i></a>
@@ -200,12 +221,15 @@
                             </tr>
                             <tr>
                                 <td class="text-right">8</td>
-                                <td class="text-right">CTG - 08</td>
-                                <td class="text-right">Matematika</td>
-                                <td class="text-right">RCK - 03</td>
+                                <td>CTG - 08</td>
+                                <td>Matematika</td>
+                                <td>RCK - 03</td>
                                 <td class="text-right">50</td>
                                 <td class="text-center">
                                     <div class="">
+                                        <a href="/categories/id" class="btn btn-sm btn-outline-success" data-toggle="tooltip" data-placement="top" title="Detail">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
                                                 <a href="/categories/id/edit" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
                                                 data-placement="top" title="Ubah"><i
                                                     class="fa-solid fa-pen-to-square"></i></a>
@@ -219,12 +243,15 @@
                             </tr>
                             <tr>
                                 <td class="text-right">9</td>
-                                <td class="text-right">CTG - 09</td>
-                                <td class="text-right">Agama</td>
-                                <td class="text-right">RCK - 03</td>
+                                <td>CTG - 09</td>
+                                <td>Agama</td>
+                                <td>RCK - 03</td>
                                 <td class="text-right">28</td>
                                 <td class="text-center">
                                     <div class="">
+                                        <a href="/categories/id" class="btn btn-sm btn-outline-success" data-toggle="tooltip" data-placement="top" title="Detail">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
                                                 <a href="/categories/id/edit" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
                                                 data-placement="top" title="Ubah"><i
                                                     class="fa-solid fa-pen-to-square"></i></a>
@@ -238,12 +265,15 @@
                             </tr>
                             <tr>
                                 <td class="text-right">10</td>
-                                <td class="text-right">CTG - 10</td>
-                                <td class="text-right">Teknologi</td>
-                                <td class="text-right">RCK - 05</td>
+                                <td>CTG - 10</td>
+                                <td>Teknologi</td>
+                                <td>RCK - 05</td>
                                 <td class="text-right">13</td>
                                 <td class="text-center">
                                     <div class="">
+                                        <a href="/categories/id" class="btn btn-sm btn-outline-success" data-toggle="tooltip" data-placement="top" title="Detail">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
                                                 <a href="/categories/id/edit" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
                                                 data-placement="top" title="Ubah"><i
                                                     class="fa-solid fa-pen-to-square"></i></a>
@@ -257,12 +287,15 @@
                             </tr>
                             <tr>
                                 <td class="text-right">11</td>
-                                <td class="text-right">CTG - 11</td>
-                                <td class="text-right">Budaya</td>
-                                <td class="text-right">RCK - 05</td>
+                                <td>CTG - 11</td>
+                                <td>Budaya</td>
+                                <td>RCK - 05</td>
                                 <td class="text-right">18</td>
                                 <td class="text-center">
                                     <div class="">
+                                        <a href="/categories/id" class="btn btn-sm btn-outline-success" data-toggle="tooltip" data-placement="top" title="Detail">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
                                                 <a href="/categories/id/edit" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
                                                 data-placement="top" title="Ubah"><i
                                                     class="fa-solid fa-pen-to-square"></i></a>
@@ -276,12 +309,15 @@
                             </tr>
                             <tr>
                                 <td class="text-right">12</td>
-                                <td class="text-right">CTG - 12</td>
-                                <td class="text-right">Bahasa</td>
-                                <td class="text-right">RCK - 05</td>
+                                <td>CTG - 12</td>
+                                <td>Bahasa</td>
+                                <td>RCK - 05</td>
                                 <td class="text-right">22</td>
                                 <td class="text-center">
                                     <div class="">
+                                        <a href="/categories/id" class="btn btn-sm btn-outline-success" data-toggle="tooltip" data-placement="top" title="Detail">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
                                                 <a href="/categories/id/edit" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
                                                 data-placement="top" title="Ubah"><i
                                                     class="fa-solid fa-pen-to-square"></i></a>

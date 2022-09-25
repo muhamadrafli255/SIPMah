@@ -24,6 +24,17 @@ class RacksController extends Controller
         return view('content.racks.create', compact('title'));
     }
 
+    public function edit()
+    {
+        $title = "Edit Rak";
+        return view('content.racks.edit', compact('title'));
+    }
+
+    public function update()
+    {
+        return redirect('/racks')->with('Berhasil', 'Rak 1 Berhasil Diperbarui!');
+    }
+
     public function destroy()
     {
         return redirect('/racks')->with('Berhasil', 'Rak berhasil dihapus');

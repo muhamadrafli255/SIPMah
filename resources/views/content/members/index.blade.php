@@ -99,7 +99,7 @@
                                 <th>No</th>
                                 <th>NIS / NUPTK</th>
                                 <th>Nama</th>
-                                <th>Email</th>
+                                <th>Alamat Email</th>
                                 <th>Status</th>
                                 <th class="px-5">Aksi</th>
                             </tr>
@@ -666,11 +666,11 @@
                 </button>
             </div>
             <div class="modal-body">
-                Apakah anda yakin akan menonaktifkan anggota ini?
+                Apakah anda yakin akan mengubah status anggota ini?
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Batal</button>
-                <a href="/members/id/disable" class="btn btn-outline-danger">Yakin</a>
+                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Tidak</button>
+                <a href="/members/id/disable" class="btn btn-outline-success">Ya</a>
             </div>
         </div>
     </div>

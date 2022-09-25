@@ -80,6 +80,8 @@ Route::get('dashboard3/racks', [RacksController::class, 'index']);
 Route::get('dashboard3/racks/id', [CategoriesController::class, 'user']);
 Route::get('racks/store', [RacksController::class, 'store']);
 Route::get('racks/id', [RacksController::class, 'detail']);
+Route::get('racks/id/edit', [RacksController::class, 'edit']);
+Route::get('racks/id/update', [RacksController::class, 'update']);
 Route::get('racks/id/destroy', [RacksController::class, 'destroy']);
 Route::get('racks/create', [RacksController::class, 'create']);
 Route::get('/categories', [CategoriesController::class, 'index']);

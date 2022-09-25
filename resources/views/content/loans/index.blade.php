@@ -198,11 +198,27 @@
                 </button>
             </div>
             <div class="modal-body">
-                Apakah anda yakin akan mengembalikan peminjaman ini?
+                <form action="">
+                    <div class="col-lg-12 mb-2">
+                        <label for="selectPengembali">Nama Pengembali</label>
+                        <select name="" id="selectPengembali" class="form-control">
+                            <option value="" selected disabled>Nama Pengembali</option>
+                            <option value="">Robi Firmansyah</option>
+                            <option value="">Dani Fitriani</option>
+                            <option value="">Dodi Permana</option>
+                            <option value="">Queensha Marsya</option>
+                        </select>
+                    </div>
+
+                    <div class="col-lg-12 mb-2">
+                        <label for="inputDate">Tanggal Kembali</label>
+                        <input type="date" id="inputDate" class="form-control" placeholder="Tanggal Kembali">
+                    </div>
+                </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Batal</button>
-                <a href="/loans/id/return" class="btn btn-outline-success">Yakin</a>
+                <button type="button" class="btn btn-sm btn-outline-secondary" data-dismiss="modal">Batal</button>
+                <a href="/loans/id/return" class="btn btn-sm btn-outline-success">Yakin</a>
             </div>
         </div>
     </div>

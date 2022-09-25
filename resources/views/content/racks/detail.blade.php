@@ -36,15 +36,16 @@
                             {{-- End Full Name Detail --}}
                             {{-- Email Detail --}}
                             <div class="col-lg-6">
-                                <h6 class="text-gray-800">Jumlah Kategori Pada Rak</h6>
+                                <h6 class="text-gray-800">Kategori Dalam Rak</h6>
                             </div>
                             <div class="col-lg-6">
-                                <h6 class="text-muted">: 3</h6>
+                                <h6 class="text-muted">: Novel, Biologi, Agama</h6>
                             </div>
                             {{-- End Email Detail --}}
                             <div class="col-lg-12 mt-2">
                                 <div class="float-right">
                                     <a href="/racks" class="btn btn-sm btn-outline-secondary">Kembali</a>
+                                    <a href="/racks/id/edit" class="btn btn-sm btn-outline-primary">Ubah</a>
                                     <a href="/officers/id/edit" class="btn btn-sm btn-outline-danger">Hapus</a>
                                 </div>
                             </div>

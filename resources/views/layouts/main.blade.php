@@ -9,6 +9,7 @@
     <meta name="author" content="">
     <link href="/img/logo/logo.png" rel="icon">
     <title>{{ env('APP_NAME') }} - {{ $title }}</title>
+    <link rel="stylesheet" href="/css/chosen.min.css">
     <link rel="stylesheet" type="text/css"
         href="https://cdn.datatables.net/fixedheader/3.1.5/css/fixedHeader.bootstrap.min.css">
     <link rel="stylesheet" type="text/css"
@@ -18,6 +19,7 @@
     <link href="/css/ruang-admin.min.css" rel="stylesheet">
     <link href="/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/mystyle.css">
+    
 </head>
 
 <body id="page-top">
@@ -50,10 +52,10 @@
     <script src="https://cdn.datatables.net/fixedheader/3.1.5/js/dataTables.fixedHeader.min.js"></script>
     <script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
     <script src="https://cdn.datatables.net/responsive/2.2.3/js/responsive.bootstrap.min.js"></script>
-
     {{-- Datatables --}}
     {{-- <script src="/vendor/datatables/jquery.dataTables.min.js"></script> --}}
     <script src="/vendor/datatables/dataTables.bootstrap4.js"></script>
+    <script src="/js/chosen.jquery.min.js"></script>
     <script>
         $(document).ready(function () {
             var oTable = $('#dataTableHover').DataTable({
@@ -128,7 +130,14 @@
         });
 
     </script>
+
     {{-- End - Datatables --}}
+
+    <script>
+        $(document).ready(function(){
+            $('#selectKategori').chosen();
+        });
+    </script>
 </body>
 
 </html>

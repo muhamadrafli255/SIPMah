@@ -3,7 +3,7 @@
 <!-- Container Fluid-->
 <div class="container-fluid" id="container-wrapper">
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800 ml-5">{{ $title }}</h1>
+        <h1 class="h3 mb-0 text-gray-800 {{ Request::is('racks*') ? '' : 'ml-5' }}">{{ $title }}</h1>
     </div>
 
     <div class="row">
@@ -68,11 +68,17 @@
                         <tbody>
                             <tr>
                                 <td class="text-right">1</td>
-                                <td class="text-right">RCK - 01</td>
+                                <td>RCK - 01</td>
                                 <td class="text-right">1</td>
                                 <td class="text-right">3</td>
                                 <td class="text-center">
                                     <div class="">
+                                        <a href="/racks/id" class="btn btn-sm btn-outline-success"
+                                        data-toggle="tooltip" data-placement="top" title="Detail"><i
+                                            class="fa-solid fa-eye"></i></a>
+                                    <a href="/racks/id/edit" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
+                                        data-placement="top" title="Ubah"><i
+                                            class="fa-solid fa-pen-to-square"></i></a>
                                         <span data-toggle="modal" data-target="#modalGagal">
                                             <button class="btn btn-sm btn-outline-danger" data-toggle="tooltip"
                                                 data-placement="top" title="Hapus"><i
@@ -83,11 +89,17 @@
                             </tr>
                             <tr>
                                 <td class="text-right">2</td>
-                                <td class="text-right">RCK - 02</td>
+                                <td>RCK - 02</td>
                                 <td class="text-right">1</td>
                                 <td class="text-right">3</td>
                                 <td class="text-center">
                                     <div class="">
+                                        <a href="/racks/id" class="btn btn-sm btn-outline-success"
+                                        data-toggle="tooltip" data-placement="top" title="Detail"><i
+                                            class="fa-solid fa-eye"></i></a>
+                                    <a href="/racks/id/edit" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
+                                        data-placement="top" title="Ubah"><i
+                                            class="fa-solid fa-pen-to-square"></i></a>
                                         <span data-toggle="modal" data-target="#modalGagal">
                                             <button class="btn btn-sm btn-outline-danger" data-toggle="tooltip"
                                                 data-placement="top" title="Hapus"><i
@@ -98,11 +110,17 @@
                             </tr>
                             <tr>
                                 <td class="text-right">3</td>
-                                <td class="text-right">RCK - 03</td>
+                                <td>RCK - 03</td>
                                 <td class="text-right">1</td>
                                 <td class="text-right">3</td>
                                 <td class="text-center">
                                     <div class="">
+                                        <a href="/racks/id" class="btn btn-sm btn-outline-success"
+                                        data-toggle="tooltip" data-placement="top" title="Detail"><i
+                                            class="fa-solid fa-eye"></i></a>
+                                    <a href="/racks/id/edit" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
+                                        data-placement="top" title="Ubah"><i
+                                            class="fa-solid fa-pen-to-square"></i></a>
                                         <span data-toggle="modal" data-target="#modalGagal">
                                             <button class="btn btn-sm btn-outline-danger" data-toggle="tooltip"
                                                 data-placement="top" title="Hapus"><i
@@ -113,11 +131,17 @@
                             </tr>
                             <tr>
                                 <td class="text-right">4</td>
-                                <td class="text-right">RCK - 04</td>
+                                <td>RCK - 04</td>
                                 <td class="text-right">2</td>
                                 <td class="text-right">0</td>
                                 <td class="text-center">
                                     <div class="">
+                                        <a href="/racks/id" class="btn btn-sm btn-outline-success"
+                                        data-toggle="tooltip" data-placement="top" title="Detail"><i
+                                            class="fa-solid fa-eye"></i></a>
+                                    <a href="/racks/id/edit" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
+                                        data-placement="top" title="Ubah"><i
+                                            class="fa-solid fa-pen-to-square"></i></a>
                                         <span data-toggle="modal" data-target="#nonaktifModal">
                                             <button class="btn btn-sm btn-outline-danger" data-toggle="tooltip"
                                                 data-placement="top" title="Hapus"><i
@@ -128,11 +152,17 @@
                             </tr>
                             <tr>
                                 <td class="text-right">5</td>
-                                <td class="text-right">RCK - 05</td>
+                                <td>RCK - 05</td>
                                 <td class="text-right">2</td>
                                 <td class="text-right">3</td>
                                 <td class="text-center">
                                     <div class="">
+                                        <a href="/racks/id" class="btn btn-sm btn-outline-success"
+                                        data-toggle="tooltip" data-placement="top" title="Detail"><i
+                                            class="fa-solid fa-eye"></i></a>
+                                    <a href="/racks/id/edit" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
+                                        data-placement="top" title="Ubah"><i
+                                            class="fa-solid fa-pen-to-square"></i></a>
                                         <span data-toggle="modal" data-target="#modalGagal">
                                             <button class="btn btn-sm btn-outline-danger" data-toggle="tooltip"
                                                 data-placement="top" title="Hapus"><i
@@ -268,7 +298,7 @@
                 Masih ada kategori di dalam rak ini, silahkan pindahkan terlebih dahulu
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Batal</button>
+                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">OK</button>
             </div>
         </div>
     </div>

@@ -50,20 +50,6 @@
                                     <label class="small mb-1" for="inputFirstName">Nama Lengkap</label>
                                     <input class="form-control" id="inputFirstName" type="text" placeholder="Nama Lengkap Anggota" value="Rudiansyah Fakhrul">
                                 </div>
-                                <!-- Form Group (last name)-->
-                                <div class="col-md-6">
-                                    <label class="small mb-1" for="inputLastName">Email</label>
-                                    <input class="form-control" id="inputLastName" type="email" placeholder="Email Anggota" value="rudiansyah@example.com">
-                                </div>
-                            </div>
-                            <!-- Form Row        -->
-                            <div class="row gx-3 mb-3">
-                                <!-- Form Group (organization name)-->
-                                <div class="col-md-6">
-                                    <label class="small mb-1" for="inputOrgName">No Telepon</label>
-                                    <input class="form-control" id="inputOrgName" type="number" placeholder="No Telepon Anggota" value="083844752389">
-                                </div>
-                                <!-- Form Group (location)-->
                                 <div class="col-md-6">
                                     <label class="small mb-1" for="selectJenisKelamin">Jenis Kelamin</label>
                                     <select name="" id="selectJenisKelamin" class="form-control">
@@ -71,17 +57,79 @@
                                         <option value="">Perempuan</option>
                                     </select>
                                 </div>
+                                <!-- Form Group (last name)-->
+                                <div class="col-md-6">
+                                    <label class="small mb-1" for="inputLastName">Email</label>
+                                    <input class="form-control" id="inputLastName" type="email" placeholder="Email Anggota" value="rudiansyah@example.com">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="small mb-1" for="inputOrgName">No Telepon</label>
+                                    <input class="form-control" id="inputOrgName" type="number" placeholder="No Telepon Anggota" value="083844752389">
+                                </div>
                             </div>
+                            <!-- Form Row        -->
                             <!-- Form Group (email address)-->
                             <div class="mb-3">
                                 <label class="small mb-1" for="inputEmailAddress">Alamat</label>
-                                <textarea name="" id="" cols="30" rows="10" placeholder="Alamat Anggota" class="form-control">JL Junti Hilir, Sangkanhurip, Katapang, Bandung, Jawa Barat, 40921</textarea>
+                                <textarea name="" id="" cols="30" rows="10" placeholder="Alamat Anggota" class="form-control">JL Junti Hilir</textarea>
                             </div>
+                            <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="small mb-1" for="selectProvinsi">Provinsi</label>
+                                <select class="form-control" name="" id="selectProvinsi" required>
+                                    <option value="">Jawa Barat</option>
+                                    <option value="">Jawa Tengah</option>
+                                    <option value="">Jawa Timur</option>
+                                    <option value="">Sumatera Barat</option>
+                                    <option value="">Sumatera Utara</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="small mb-1" for="selectKota">Kabupaten / Kota</label>
+                                <select class="form-control" name="" id="selectKota" required>
+                                    <option value="">Bandung</option>
+                                    <option value="">Kota Bandung</option>
+                                    <option value="">Purwakarta</option>
+                                    <option value="">Bogor</option>
+                                    <option value="">Cianjur</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="small mb-1" for="selectKecamatan">Kecamatan</label>
+                                <select class="form-control" id="selectKecamatan" required>
+                                    <option value="">Katapang</option>
+                                    <option value="">Arjasari</option>
+                                    <option value="">Baleendah</option>
+                                    <option value="">Kutawaringin</option>
+                                    <option value="">Cangkuang </option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="small mb-1" for="selectDesa">Desa</label>
+                                <select class="form-control" id="selectDesa" required>
+                                    <option value="">Sangkanhurip</option>
+                                    <option value="">Sukamukti</option>
+                                    <option value="">Cilampeni</option>
+                                    <option value="">Gandasari</option>
+                                    <option value="">Katapang</option>
+                                </select>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <label class="small mb-1" for="selectKodePos">Kode Pos</label>
+                                <select class="form-control" id="selectKodePos" required>
+                                    <option value="">40921</option>
+                                    <option value="">40961</option>
+                                    <option value="">54553</option>
+                                    <option value="">12456</option>
+                                    <option value="">321321</option>
+                                </select>
+                            </div>
+                        </div>
                             <!-- Save changes button-->
                             <div class="col-lg-12">
                                 <div class="text-right">
-                                    <a href="/members" class="btn btn-outline-secondary" type="button">Kembali</a>
-                                    <a href="/members/id/update" class="btn btn-outline-primary" type="button">Simpan</a>
+                                    <a href="/officers" class="btn btn-outline-secondary" type="button">Kembali</a>
+                                    <a href="/officers/id/update" class="btn btn-outline-primary" type="button">Simpan</a>
                                 </div>
                             </div>
                         </form>

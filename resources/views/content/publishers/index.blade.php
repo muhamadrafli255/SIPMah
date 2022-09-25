@@ -77,6 +77,9 @@
                                 <td>29</td>
                                 <td class="text-center">
                                     <div class="">
+                                        <a href="/publishers/id" class="btn btn-sm btn-outline-success" data-toggle="tooltip" data-placement="top" title="Detail">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
                                                 <a href="/publishers/id/edit" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
                                                 data-placement="top" title="Ubah"><i
                                                     class="fa-solid fa-pen-to-square"></i></a>
@@ -98,6 +101,9 @@
                                 <td>27</td>
                                 <td class="text-center">
                                     <div class="">
+                                        <a href="" class="btn btn-sm btn-outline-success" data-toggle="tooltip" data-placement="top" title="Detail">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
                                                 <a href="/publishers/id/edit" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
                                                 data-placement="top" title="Ubah"><i
                                                     class="fa-solid fa-pen-to-square"></i></a>
@@ -119,6 +125,9 @@
                                 <td>24</td>
                                 <td class="text-center">
                                     <div class="">
+                                        <a href="" class="btn btn-sm btn-outline-success" data-toggle="tooltip" data-placement="top" title="Detail">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
                                                 <a href="/publishers/id/edit" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
                                                 data-placement="top" title="Ubah"><i
                                                     class="fa-solid fa-pen-to-square"></i></a>
@@ -140,6 +149,9 @@
                                 <td>12</td>
                                 <td class="text-center">
                                     <div class="">
+                                        <a href="" class="btn btn-sm btn-outline-success" data-toggle="tooltip" data-placement="top" title="Detail">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
                                                 <a href="/publishers/id/edit" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
                                                 data-placement="top" title="Ubah"><i
                                                     class="fa-solid fa-pen-to-square"></i></a>

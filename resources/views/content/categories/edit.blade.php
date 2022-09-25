@@ -9,7 +9,6 @@
             <li class="breadcrumb-item active" aria-current="page">{{ $title }}</li>
         </ol>
     </div>
-    <div class="container-xl px-4 mt-4 mb-4">
         <!-- Account page navigation-->
         <div class="row">
             <div class="col-xl-12">
@@ -18,14 +17,16 @@
                     <div class="card-header"><p class="h4 text-gray-800">Data Kategori</p></div>
                     <div class="card-body">
                         <div class="row">
-                            <div class="col-lg-12 mb-3">
+                            <div class="col-lg-12 mb-2">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" value="CTG - 01" disabled>
+                                    <label class="small mb-1" for="inputKode">Kode</label>
+                                    <input type="text" id="inputKode" class="form-control" value="CTG - 01" disabled>
                                 </div>
                             </div>
-                            <div class="col-lg-12 mb-3">
+                            <div class="col-lg-12 mb-2">
                                 <div class="form-group">
-                                    <select class="form-control" name="" id="">
+                                    <label class="small mb-1" for="selectRak">Rak</label>
+                                    <select class="form-control" name="" id="selectRak">
                                         <option value="" selected disabled>Rak</option>
                                         <option value="">RCK - 01</option>
                                         <option value="">RCK - 02</option>
@@ -34,8 +35,9 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-lg-12 mb-3">
+                            <div class="col-lg-12 mb-2">
                                 <div class="form-group">
+                                    <label class="small mb-1" for="inputName">Nama Kategori</label>
                                     <input type="text" class="form-control" placeholder="Nama Kategori" value="Novel">
                                 </div>
                             </div>
@@ -50,6 +52,5 @@
                 </div>
             </div>
         </div>
-    </div>
 </div>
 @endsection

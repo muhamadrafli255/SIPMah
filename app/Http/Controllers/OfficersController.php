@@ -37,7 +37,7 @@ class OfficersController extends Controller
 
     public function disable()
     {
-        return redirect('/officers')->with('Berhasil', 'Petugas berhasil dihapus');
+        return redirect('/officers')->with('Berhasil', 'Petugas Rudiansyah Fakhrul berhasil dihapus');
     }
 
     public function reset()
@@ -47,6 +47,6 @@ class OfficersController extends Controller
 
     public function update()
     {
-        return redirect('/officers')->with('Berhasil', 'Petugas berhasil diubah');
+        return redirect('/officers')->with('Berhasil', 'Petugas Rudiansyah Fakhrul berhasil diubah');
     }
 }

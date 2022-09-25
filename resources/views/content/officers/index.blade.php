@@ -59,7 +59,7 @@
                                 <th>No</th>
                                 <th>NIS / NUPTK</th>
                                 <th>Nama</th>
-                                <th>Email</th>
+                                <th>Alamat Email</th>
                                 <th class="px-5">Aksi</th>
                             </tr>
                         </thead>

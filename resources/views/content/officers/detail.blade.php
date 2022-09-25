@@ -19,8 +19,6 @@
                     <div class="card-body text-center">
                         <!-- Profile picture image-->
                         <img class="img-account-profile rounded-circle mb-4" src="http://bootdey.com/img/Content/avatar/avatar1.png" alt="" width="170px" height="170px">
-                        <h4>Rudiansyah Fakhrul</h4>
-                        <p>20221056</p>
                     </div>
                 </div>
             </div>
@@ -40,10 +38,16 @@
                             {{-- END NIS / NUPTK Detail --}}
                             {{-- Full Name Detail --}}
                             <div class="col-lg-3">
-                                <h6 class="text-gray-800">Full Name</h6>
+                                <h6 class="text-gray-800">Nama Lengkap</h6>
                             </div>
                             <div class="col-lg-9">
                                 <h6 class="text-muted">: Rudiansyah Fakhrul</h6>
+                            </div>
+                            <div class="col-lg-3">
+                                <h6 class="text-gray-800">Jenis Kelamin</h6>
+                            </div>
+                            <div class="col-lg-9">
+                                <h6 class="text-muted">: Laki - Laki</h6>
                             </div>
                             {{-- End Full Name Detail --}}
                             {{-- Email Detail --}}
@@ -55,12 +59,6 @@
                             </div>
                             {{-- End Email Detail --}}
                             {{-- Jenis Kelamin Detail --}}
-                            <div class="col-lg-3">
-                                <h6 class="text-gray-800">Jenis Kelamin</h6>
-                            </div>
-                            <div class="col-lg-9">
-                                <h6 class="text-muted">: Laki - Laki</h6>
-                            </div>
                             {{-- End Jenis Kelamin Detail --}}
                             {{-- No Telepon Detail --}}
                             <div class="col-lg-3">
@@ -74,8 +72,38 @@
                             <div class="col-lg-3">
                                 <h6 class="text-gray-800">Alamat</h6>
                             </div>
-                            <div class="col-lg-9 mb-5">
-                                <h6 class="text-muted">: JL Junti Hilir, Sangkanhurip, Katapang, Bandung, Jawa Barat, 40921</h6>
+                            <div class="col-lg-9">
+                                <h6 class="text-muted">: JL Junti Hilir</h6>
+                            </div>
+                            <div class="col-lg-3">
+                                <h6 class="text-gray-800">Desa</h6>
+                            </div>
+                            <div class="col-lg-9">
+                                <h6 class="text-muted">: Sangkanhurip</h6>
+                            </div>
+                            <div class="col-lg-3">
+                                <h6 class="text-gray-800">Kecamatan</h6>
+                            </div>
+                            <div class="col-lg-9">
+                                <h6 class="text-muted">: Katapang</h6>
+                            </div>
+                            <div class="col-lg-3">
+                                <h6 class="text-gray-800">Kabupaten / Kota</h6>
+                            </div>
+                            <div class="col-lg-9">
+                                <h6 class="text-muted">: Bandung</h6>
+                            </div>
+                            <div class="col-lg-3">
+                                <h6 class="text-gray-800">Provinsi</h6>
+                            </div>
+                            <div class="col-lg-9">
+                                <h6 class="text-muted">: Jawa Barat</h6>
+                            </div>
+                            <div class="col-lg-3">
+                                <h6 class="text-gray-800">Kode Pos</h6>
+                            </div>
+                            <div class="col-lg-9">
+                                <h6 class="text-muted">: 40921</h6>
                             </div>
                             {{-- End No Telepon Detail --}}
                             <div class="col-lg-12 mt-2 mb-1">
