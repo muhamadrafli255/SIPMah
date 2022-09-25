@@ -32,21 +32,26 @@ class MembersController extends Controller
 
     public function store()
     {
-        return redirect('/members')->with('Berhasil', 'Data anggota berhasil ditambahkan');
+        return redirect('/members')->with('Berhasil', 'Data anggota Muhamad Rafli berhasil ditambahkan');
     }
 
     public function update()
     {
-        return redirect('/members')->with('Berhasil', 'Data anggota berhasil dirubah');
+        return redirect('/members')->with('Berhasil', 'Data anggota Rudiansyah Fakhrul berhasil dirubah');
     }
 
     public function disable()
     {
-        return redirect('/members')->with('Berhasil', 'Data anggota berhasil dinonaktifkan');
+        return redirect('/members')->with('Berhasil', 'Status Rudiansyah Fakhrul  berhasil diperbarui');
     }
 
     public function reset()
     {
         return redirect('/members')->with('Berhasil', 'Tautan atur ulang kata sandi berhasil dikirim');
+    }
+
+    public function verify()
+    {
+        return redirect('/members')->with('Berhasil', 'Data anggota Queensha Marsya berhasil diverifikasi');
     }
 }

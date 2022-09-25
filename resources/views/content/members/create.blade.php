@@ -9,7 +9,6 @@
             <li class="breadcrumb-item active" aria-current="page">{{ $title }}</li>
         </ol>
     </div>
-    <div class="container-xl px-4 mt-4 mb-4">
         <!-- Account page navigation-->
         <div class="row">
             <div class="col-xl-4">
@@ -81,9 +80,9 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <label class="small mb-1 col-12" for="selectAddress">Alamat</label>
                                 <div class="col-md-6 mb-3">
-                                    <select class="form-control" name="" id="selectAddress" required>
+                                    <label class="small mb-1" for="selectProvinsi">Provinsi</label>
+                                    <select class="form-control" name="" id="selectProvinsi" required>
                                         <option value="" selected disabled>Provinsi</option>
                                         <option value="">Jawa Barat</option>
                                         <option value="">Jawa Tengah</option>
@@ -93,7 +92,8 @@
                                     </select>
                                 </div>
                                 <div class="col-md-6 mb-3">
-                                    <select class="form-control" name="" id="" required>
+                                    <label class="small mb-1" for="selectKota">Kabupaten / Kota</label>
+                                    <select class="form-control" name="" id="selectKota" required>
                                         <option value="" selected disabled>Kabupaten / Kota</option>
                                         <option value="">Bandung</option>
                                         <option value="">Kota Bandung</option>
@@ -103,7 +103,8 @@
                                     </select>
                                 </div>
                                 <div class="col-md-6 mb-3">
-                                    <select class="form-control" id="exampleFormControlSelect1" required>
+                                    <label class="small mb-1" for="selectKecamatan">Kecamatan</label>
+                                    <select class="form-control" id="selectKecamatan" required>
                                         <option value="" selected disabled>Kecamatan</option>
                                         <option value="">Katapang</option>
                                         <option value="">Arjasari</option>
@@ -113,7 +114,8 @@
                                     </select>
                                 </div>
                                 <div class="col-md-6 mb-3">
-                                    <select class="form-control" id="exampleFormControlSelect1" required>
+                                    <label class="small mb-1" for="selectDesa">Desa</label>
+                                    <select class="form-control" id="selectDesa" required>
                                         <option value="" selected disabled>Desa</option>
                                         <option value="">Sangkanhurip</option>
                                         <option value="">Sukamukti</option>
@@ -125,6 +127,7 @@
                             </div>
                             <!-- Form Group (email address)-->
                             <div class="mb-3">
+                                <label class="small mb-1" for="selectAddress">Alamat</label>
                                 <textarea name="" id="" cols="30" rows="10" placeholder="Alamat Lengkap Anggota"
                                     class="form-control" required></textarea>
                             </div>
@@ -140,6 +143,5 @@
                 </div>
             </div>
         </div>
-    </div>
 </div>
 @endsection

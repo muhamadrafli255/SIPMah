@@ -5,12 +5,22 @@
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
         <h1 class="h3 mb-0 text-gray-800">{{ $title }}</h1>
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="/members">Anggota</a></li>
+            <li class="breadcrumb-item"><a href="/members">Profil</a></li>
             <li class="breadcrumb-item active" aria-current="page">{{ $title }}</li>
         </ol>
     </div>
         <!-- Account page navigation-->
         <div class="row">
+            <div class="col-lg-12">
+                @if (session('Berhasil'))
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    {{ session('Berhasil') }}
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                @endif
+            </div>
             <div class="col-xl-4">
                 <!-- Profile picture card-->
                 <div class="card mb-4 mb-xl-0">
@@ -32,23 +42,13 @@
             <div class="col-xl-8">
                 <!-- Account details card-->
                 <div class="card mb-4">
-                    <div class="card-header"><p class="h5 text-gray-800">Data Anggota</p></div>
+                    <div class="card-header"><p class="h5 text-gray-800">Data Akun</p></div>
                     <div class="card-body">
                         <form>
-                            <!-- Form Group (username)-->
-                            <div class="mb-3">
-                                <label class="small mb-1" for="inputUsername">NIS / NUPTK</label>
-                                <input class="form-control" id="inputUsername" type="number" placeholder="NIS / NUPTK Anggota" value="20221056">
-                            </div>
                             <!-- Form Row-->
                             <div class="row gx-3 mb-3">
-                                <!-- Form Group (first name)-->
-                                <div class="col-md-6">
-                                    <label class="small mb-1" for="inputFirstName">Nama Lengkap</label>
-                                    <input class="form-control" id="inputFirstName" type="text" placeholder="Nama Lengkap Anggota" value="Rudiansyah Fakhrul">
-                                </div>
                                 <!-- Form Group (last name)-->
-                                <div class="col-md-6">
+                                <div class="col-md-12">
                                     <label class="small mb-1" for="inputLastName">Email</label>
                                     <input class="form-control" id="inputLastName" type="email" placeholder="Email Anggota" value="rudiansyah@example.com">
                                 </div>
@@ -56,18 +56,11 @@
                             <!-- Form Row        -->
                             <div class="row gx-3 mb-3">
                                 <!-- Form Group (organization name)-->
-                                <div class="col-md-6">
+                                <div class="col-md-12">
                                     <label class="small mb-1" for="inputOrgName">No Telepon</label>
                                     <input class="form-control" id="inputOrgName" type="number" placeholder="No Telepon Anggota" value="083844752389">
                                 </div>
                                 <!-- Form Group (location)-->
-                                <div class="col-md-6">
-                                    <label class="small mb-1" for="selectJenisKelamin">Jenis Kelamin</label>
-                                    <select name="" id="selectJenisKelamin" class="form-control">
-                                        <option value="">Laki - Laki</option>
-                                        <option value="">Perempuan</option>
-                                    </select>
-                                </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-6 mb-3">
@@ -119,8 +112,8 @@
                             <!-- Save changes button-->
                             <div class="col-lg-12">
                                 <div class="text-right">
-                                    <a href="/members" class="btn btn-outline-secondary" type="button">Kembali</a>
-                                    <a href="/members/id/update" class="btn btn-outline-primary" type="button">Simpan</a>
+                                    <a href="/dashboard" class="btn btn-outline-secondary" type="button">Kembali</a>
+                                    <a href="/accounts/update" class="btn btn-outline-primary" type="button">Simpan</a>
                                 </div>
                             </div>
                         </form>

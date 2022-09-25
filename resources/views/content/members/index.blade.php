@@ -198,7 +198,7 @@
                                 <td class="text-right">20221060</td>
                                 <td>Queensha Marsya</td>
                                 <td>queensha.marsya@example.com</td>
-                                <td><h6><span class="badge badge-success">Aktif</span></h6></td>
+                                <td><h6><span class="badge badge-warning">Belum Diverifikasi</span></h6></td>
                                 <td>
                                     <div class="mx-auto">
                                         <a href="/members/id" class="btn btn-sm btn-outline-success"
@@ -207,11 +207,9 @@
                                         <a href="" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
                                             data-placement="top" title="Ubah"><i
                                                 class="fa-solid fa-pen-to-square"></i></a>
-                                        <span data-toggle="modal" data-target="#nonaktifModal">
-                                            <button class="btn btn-sm btn-outline-danger" data-toggle="tooltip"
-                                                data-placement="top" title="Non Aktifkan"><i
-                                                    class="fa-solid fa-xmark"></i></button>
-                                        </span>
+                                            <a href="/members/verify" class="btn btn-sm btn-outline-info" data-toggle="tooltip"
+                                                data-placement="top" title="Verifikasi"><i
+                                                    class="fa-solid fa-check"></i></a>
                                     </div>
                                 </td>
                             </tr>

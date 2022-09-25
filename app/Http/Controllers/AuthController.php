@@ -49,7 +49,7 @@ class AuthController extends Controller
 
     public function change_password()
     {
-        return redirect('/')->with('Berhasil', 'Tautan atur ulang kata sandi berhasil dikirim silahkan cek email anda');
+        return redirect('/')->with('Berhasil', 'Tautan atur ulang kata sandi berhasil dikirim ke email');
     }
 
     public function reset_password()

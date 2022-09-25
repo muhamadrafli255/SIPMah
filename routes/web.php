@@ -1,15 +1,16 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\BooksController;
-use App\Http\Controllers\CategoriesController;
 use App\Http\Controllers\LoansController;
-use App\Http\Controllers\MembersController;
-use App\Http\Controllers\OfficersController;
-use App\Http\Controllers\PublishersController;
 use App\Http\Controllers\RacksController;
 use App\Http\Controllers\ReportController;
-use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MembersController;
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\OfficersController;
+use App\Http\Controllers\CategoriesController;
+use App\Http\Controllers\PublishersController;
 
 /*
 |--------------------------------------------------------------------------
@@ -60,6 +61,7 @@ Route::get('/update-password', [AuthController::class, 'update_password']);
 Route::get('/members', [MembersController::class, 'index']);
 Route::get('/members/store', [MembersController::class, 'store']);
 Route::get('/members/create', [MembersController::class, 'create']);
+Route::get('/members/verify', [MembersController::class, 'verify']);
 Route::get('/members/id', [MembersController::class, 'detail']);
 Route::get('/members/id/edit', [MembersController::class, 'edit']);
 Route::get('/members/id/update', [MembersController::class, 'update']);
@@ -112,3 +114,6 @@ Route::get('loans/id/edit', [LoansController::class, 'edit']);
 Route::get('loans/id/update', [LoansController::class, 'update']);
 Route::get('loans/id/return', [LoansController::class, 'return']);
 Route::get('/report', [ReportController::class, 'index']);
+Route::get('/accounts', [ProfileController::class, 'account']);
+Route::get('/accounts/password', [ProfileController::class, 'change_password']);
+Route::get('/accounts/update', [ProfileController::class, 'update']);
