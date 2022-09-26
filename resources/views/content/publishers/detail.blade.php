@@ -13,53 +13,6 @@
         </ol>
         @endif
     </div>
-    <!-- Account page navigation-->
-    @if (Request::is('dashboard3/books/id'))
-    <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-12 mb-2 mb-4">
-            <a href="/dashboard3/books/id" class="text-decoration-none">
-                <div class="card mx-auto" style="width: 15rem;">
-                    <img src="https://ebooks.gramedia.com/ebook-covers/42421/image_highres/ID_NUT2018MTH05NUT.jpg"
-                        height="364px" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="text-muted mb-2">Tere Liye</p>
-                        <h5 class="text-gray-800 mb-2">Negeri Diujung Tanduk</h5>
-                        <span class="badge badge-pill badge-primary">120X Dipinjam</span>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-        <div class="col-lg-6 col-md-6 col-sm-12 mb-2 mb-4">
-            <a href="/books/id" class="text-decoration-none">
-                <div class="card mx-auto" style="width: 15rem;">
-                    <img src="https://ebooks.gramedia.com/ebook-covers/37335/big_covers/ID_GPU2017MTH05AMBA_B.jpg"
-                        height="364px" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="text-muted mb-2">Laksmi Pamuntjak</p>
-                        <h5 class="text-gray-800 mb-2">Amba</h5>
-                        <span class="badge badge-pill badge-primary">70X Dipinjam</span>
-                    </div>
-                </div>
-            </a>
-        </div>
-
-
-        <div class="col-lg-6 col-md-6 col-sm-12 mb-2 mb-4">
-            <a href="dashboard3/books/id" class="text-decoration-none">
-                <div class="card mx-auto" style="width: 15rem;">
-                    <img src="https://www.gramedia.com/blog/content/images/2019/05/orang-orang-biasa-4.jpg"
-                        height="364px" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="text-muted mb-2">Andrea Hirata</p>
-                        <h5 class="text-gray-800 mb-2">Orang - Orang Biasa</h5>
-                        <span class="badge badge-pill badge-primary">130X Dipinjam</span>
-                    </div>
-                </div>
-            </a>
-        </div>
-    </div>
-    @else
     <div class="row">
         <div class="col-xl-12">
             <!-- Account details card-->
@@ -106,9 +59,11 @@
                                 <td>Negeri Diujung Tanduk</td>
                                 <td class="text-center">
                                     <div class="">
-                                        <a href="/books/id" class="btn btn-sm btn-outline-success"
+                                        <a href="{{ Request::is('dashboard3*') ? '/dashboard3/books/id' : '/books/id' }}" class="btn btn-sm btn-outline-success"
                                         data-toggle="tooltip" data-placement="top" title="Detail"><i
                                             class="fa-solid fa-eye"></i></a>
+
+                                            @if (Request::is('dashboard2*', 'books*'))
                                     <a href="/books/id/edit" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
                                         data-placement="top" title="Ubah"><i
                                             class="fa-solid fa-pen-to-square"></i></a>
@@ -117,6 +72,9 @@
                                                 data-placement="top" title="Hapus"><i
                                                     class="fa-solid fa-trash"></i></button>
                                         </span>
+                                            @else
+
+                                            @endif
                                     </div>
                                 </td>
                             </tr>
@@ -126,9 +84,11 @@
                                 <td>Amba</td>
                                 <td class="text-center">
                                     <div class="">
-                                        <a href="/books/id" class="btn btn-sm btn-outline-success"
+                                        <a href="{{ Request::is('dashboard3*') ? '/dashboard3/books/id' : '/books/id' }}" class="btn btn-sm btn-outline-success"
                                         data-toggle="tooltip" data-placement="top" title="Detail"><i
                                             class="fa-solid fa-eye"></i></a>
+
+                                            @if (Request::is('dashboard2*', 'books*'))
                                     <a href="/books/id/edit" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
                                         data-placement="top" title="Ubah"><i
                                             class="fa-solid fa-pen-to-square"></i></a>
@@ -137,6 +97,9 @@
                                                 data-placement="top" title="Hapus"><i
                                                     class="fa-solid fa-trash"></i></button>
                                         </span>
+                                            @else
+
+                                            @endif
                                     </div>
                                 </td>
                             </tr>
@@ -146,9 +109,11 @@
                                 <td>Orang - Orang Biasa</td>
                                 <td class="text-center">
                                     <div class="">
-                                        <a href="/books/id" class="btn btn-sm btn-outline-success"
+                                        <a href="{{ Request::is('dashboard3*') ? '/dashboard3/books/id' : '/books/id' }}" class="btn btn-sm btn-outline-success"
                                         data-toggle="tooltip" data-placement="top" title="Detail"><i
                                             class="fa-solid fa-eye"></i></a>
+
+                                            @if (Request::is('dashboard2*', 'books*'))
                                     <a href="/books/id/edit" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
                                         data-placement="top" title="Ubah"><i
                                             class="fa-solid fa-pen-to-square"></i></a>
@@ -157,6 +122,9 @@
                                                 data-placement="top" title="Hapus"><i
                                                     class="fa-solid fa-trash"></i></button>
                                         </span>
+                                            @else
+
+                                            @endif
                                     </div>
                                 </td>
                             </tr>
@@ -165,7 +133,6 @@
                 </div>
             </div>
         </div>
-        @endif
     </div>
 
     <!-- Modal Nonaktif-->

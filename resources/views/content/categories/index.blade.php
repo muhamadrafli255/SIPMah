@@ -18,6 +18,7 @@
             @endif
             <div class="card mb-4">
                 <div class="col-lg-12 mt-3">
+                    @if (Request::is('categories', 'dashboard2/categories'))
                     <div class="btn-group dropright">
                         <button type="button" class="btn btn-sm btn-outline-secondary rounded mb-2"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -31,6 +32,9 @@
                     </div>
                     <a href="/categories/create" class="btn btn-sm btn-outline-primary rounded mb-2"><i
                             class="fa-solid fa-plus"></i> Tambah</a>
+                    @else
+
+                    @endif
                     <div class="float-right ml-2">
                         <div class="input-group input-group-sm">
                             <div class="input-group-prepend">
@@ -73,9 +77,12 @@
                                 <td class="text-right">16</td>
                                 <td class="text-center">
                                     <div class="">
-                                        <a href="/categories/id" class="btn btn-sm btn-outline-success" data-toggle="tooltip" data-placement="top" title="Detail">
+                                        <a href="{{ Request::is('/dashboard3*') ? '/dashboard3/categories/id' : 'categories/id' }}" class="btn btn-sm btn-outline-success" data-toggle="tooltip" data-placement="top" title="Detail">
                                             <i class="fas fa-eye"></i>
                                         </a>
+                                            @if (Request::is('dashboard3*'))
+                                                
+                                            @else
                                                 <a href="/categories/id/edit" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
                                                 data-placement="top" title="Ubah"><i
                                                     class="fa-solid fa-pen-to-square"></i></a>
@@ -84,6 +91,7 @@
                                                 data-placement="top" title="Hapus"><i
                                                     class="fa-solid fa-trash"></i></button>
                                         </span>
+                                            @endif
                                     </div>
                                 </td>
                             </tr>
@@ -95,9 +103,12 @@
                                 <td class="text-right">0</td>
                                 <td class="text-center">
                                     <div class="">
-                                        <a href="/categories/id" class="btn btn-sm btn-outline-success" data-toggle="tooltip" data-placement="top" title="Detail">
+                                        <a href="{{ Request::is('/dashboard3*') ? '/dashboard3/categories/id' : 'categories/id' }}" class="btn btn-sm btn-outline-success" data-toggle="tooltip" data-placement="top" title="Detail">
                                             <i class="fas fa-eye"></i>
                                         </a>
+                                            @if (Request::is('dashboard3*'))
+                                                
+                                            @else
                                                 <a href="/categories/id/edit" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
                                                 data-placement="top" title="Ubah"><i
                                                     class="fa-solid fa-pen-to-square"></i></a>
@@ -106,6 +117,7 @@
                                                 data-placement="top" title="Hapus"><i
                                                     class="fa-solid fa-trash"></i></button>
                                         </span>
+                                            @endif
                                     </div>
                                 </td>
                             </tr>
@@ -117,9 +129,12 @@
                                 <td class="text-right">5</td>
                                 <td class="text-center">
                                     <div class="">
-                                        <a href="/categories/id" class="btn btn-sm btn-outline-success" data-toggle="tooltip" data-placement="top" title="Detail">
+                                        <a href="{{ Request::is('/dashboard3*') ? '/dashboard3/categories/id' : 'categories/id' }}" class="btn btn-sm btn-outline-success" data-toggle="tooltip" data-placement="top" title="Detail">
                                             <i class="fas fa-eye"></i>
                                         </a>
+                                            @if (Request::is('dashboard3*'))
+                                                
+                                            @else
                                                 <a href="/categories/id/edit" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
                                                 data-placement="top" title="Ubah"><i
                                                     class="fa-solid fa-pen-to-square"></i></a>
@@ -128,6 +143,7 @@
                                                 data-placement="top" title="Hapus"><i
                                                     class="fa-solid fa-trash"></i></button>
                                         </span>
+                                            @endif
                                     </div>
                                 </td>
                             </tr>
@@ -139,9 +155,12 @@
                                 <td class="text-right">20</td>
                                 <td class="text-center">
                                     <div class="">
-                                        <a href="/categories/id" class="btn btn-sm btn-outline-success" data-toggle="tooltip" data-placement="top" title="Detail">
+                                        <a href="{{ Request::is('/dashboard3*') ? '/dashboard3/categories/id' : 'categories/id' }}" class="btn btn-sm btn-outline-success" data-toggle="tooltip" data-placement="top" title="Detail">
                                             <i class="fas fa-eye"></i>
                                         </a>
+                                            @if (Request::is('dashboard3*'))
+                                                
+                                            @else
                                                 <a href="/categories/id/edit" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
                                                 data-placement="top" title="Ubah"><i
                                                     class="fa-solid fa-pen-to-square"></i></a>
@@ -150,6 +169,7 @@
                                                 data-placement="top" title="Hapus"><i
                                                     class="fa-solid fa-trash"></i></button>
                                         </span>
+                                            @endif
                                     </div>
                                 </td>
                             </tr>
@@ -161,9 +181,12 @@
                                 <td class="text-right">32</td>
                                 <td class="text-center">
                                     <div class="">
-                                        <a href="/categories/id" class="btn btn-sm btn-outline-success" data-toggle="tooltip" data-placement="top" title="Detail">
+                                        <a href="{{ Request::is('/dashboard3*') ? '/dashboard3/categories/id' : 'categories/id' }}" class="btn btn-sm btn-outline-success" data-toggle="tooltip" data-placement="top" title="Detail">
                                             <i class="fas fa-eye"></i>
                                         </a>
+                                            @if (Request::is('dashboard3*'))
+                                                
+                                            @else
                                                 <a href="/categories/id/edit" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
                                                 data-placement="top" title="Ubah"><i
                                                     class="fa-solid fa-pen-to-square"></i></a>
@@ -172,6 +195,7 @@
                                                 data-placement="top" title="Hapus"><i
                                                     class="fa-solid fa-trash"></i></button>
                                         </span>
+                                            @endif
                                     </div>
                                 </td>
                             </tr>
@@ -183,9 +207,12 @@
                                 <td class="text-right">10</td>
                                 <td class="text-center">
                                     <div class="">
-                                        <a href="/categories/id" class="btn btn-sm btn-outline-success" data-toggle="tooltip" data-placement="top" title="Detail">
+                                        <a href="{{ Request::is('/dashboard3*') ? '/dashboard3/categories/id' : 'categories/id' }}" class="btn btn-sm btn-outline-success" data-toggle="tooltip" data-placement="top" title="Detail">
                                             <i class="fas fa-eye"></i>
                                         </a>
+                                            @if (Request::is('dashboard3*'))
+                                                
+                                            @else
                                                 <a href="/categories/id/edit" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
                                                 data-placement="top" title="Ubah"><i
                                                     class="fa-solid fa-pen-to-square"></i></a>
@@ -194,6 +221,7 @@
                                                 data-placement="top" title="Hapus"><i
                                                     class="fa-solid fa-trash"></i></button>
                                         </span>
+                                            @endif
                                     </div>
                                 </td>
                             </tr>
@@ -205,9 +233,12 @@
                                 <td class="text-right">18</td>
                                 <td class="text-center">
                                     <div class="">
-                                        <a href="/categories/id" class="btn btn-sm btn-outline-success" data-toggle="tooltip" data-placement="top" title="Detail">
+                                        <a href="{{ Request::is('/dashboard3*') ? '/dashboard3/categories/id' : 'categories/id' }}" class="btn btn-sm btn-outline-success" data-toggle="tooltip" data-placement="top" title="Detail">
                                             <i class="fas fa-eye"></i>
                                         </a>
+                                            @if (Request::is('dashboard3*'))
+                                                
+                                            @else
                                                 <a href="/categories/id/edit" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
                                                 data-placement="top" title="Ubah"><i
                                                     class="fa-solid fa-pen-to-square"></i></a>
@@ -216,6 +247,7 @@
                                                 data-placement="top" title="Hapus"><i
                                                     class="fa-solid fa-trash"></i></button>
                                         </span>
+                                            @endif
                                     </div>
                                 </td>
                             </tr>
@@ -227,9 +259,12 @@
                                 <td class="text-right">50</td>
                                 <td class="text-center">
                                     <div class="">
-                                        <a href="/categories/id" class="btn btn-sm btn-outline-success" data-toggle="tooltip" data-placement="top" title="Detail">
+                                        <a href="{{ Request::is('/dashboard3*') ? '/dashboard3/categories/id' : 'categories/id' }}" class="btn btn-sm btn-outline-success" data-toggle="tooltip" data-placement="top" title="Detail">
                                             <i class="fas fa-eye"></i>
                                         </a>
+                                            @if (Request::is('dashboard3*'))
+                                                
+                                            @else
                                                 <a href="/categories/id/edit" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
                                                 data-placement="top" title="Ubah"><i
                                                     class="fa-solid fa-pen-to-square"></i></a>
@@ -238,6 +273,7 @@
                                                 data-placement="top" title="Hapus"><i
                                                     class="fa-solid fa-trash"></i></button>
                                         </span>
+                                            @endif
                                     </div>
                                 </td>
                             </tr>
@@ -249,9 +285,12 @@
                                 <td class="text-right">28</td>
                                 <td class="text-center">
                                     <div class="">
-                                        <a href="/categories/id" class="btn btn-sm btn-outline-success" data-toggle="tooltip" data-placement="top" title="Detail">
+                                        <a href="{{ Request::is('/dashboard3*') ? '/dashboard3/categories/id' : 'categories/id' }}" class="btn btn-sm btn-outline-success" data-toggle="tooltip" data-placement="top" title="Detail">
                                             <i class="fas fa-eye"></i>
                                         </a>
+                                            @if (Request::is('dashboard3*'))
+                                                
+                                            @else
                                                 <a href="/categories/id/edit" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
                                                 data-placement="top" title="Ubah"><i
                                                     class="fa-solid fa-pen-to-square"></i></a>
@@ -260,6 +299,7 @@
                                                 data-placement="top" title="Hapus"><i
                                                     class="fa-solid fa-trash"></i></button>
                                         </span>
+                                            @endif
                                     </div>
                                 </td>
                             </tr>
@@ -271,9 +311,12 @@
                                 <td class="text-right">13</td>
                                 <td class="text-center">
                                     <div class="">
-                                        <a href="/categories/id" class="btn btn-sm btn-outline-success" data-toggle="tooltip" data-placement="top" title="Detail">
+                                        <a href="{{ Request::is('/dashboard3*') ? '/dashboard3/categories/id' : 'categories/id' }}" class="btn btn-sm btn-outline-success" data-toggle="tooltip" data-placement="top" title="Detail">
                                             <i class="fas fa-eye"></i>
                                         </a>
+                                            @if (Request::is('dashboard3*'))
+                                                
+                                            @else
                                                 <a href="/categories/id/edit" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
                                                 data-placement="top" title="Ubah"><i
                                                     class="fa-solid fa-pen-to-square"></i></a>
@@ -282,6 +325,7 @@
                                                 data-placement="top" title="Hapus"><i
                                                     class="fa-solid fa-trash"></i></button>
                                         </span>
+                                            @endif
                                     </div>
                                 </td>
                             </tr>
@@ -293,9 +337,12 @@
                                 <td class="text-right">18</td>
                                 <td class="text-center">
                                     <div class="">
-                                        <a href="/categories/id" class="btn btn-sm btn-outline-success" data-toggle="tooltip" data-placement="top" title="Detail">
+                                        <a href="{{ Request::is('/dashboard3*') ? '/dashboard3/categories/id' : 'categories/id' }}" class="btn btn-sm btn-outline-success" data-toggle="tooltip" data-placement="top" title="Detail">
                                             <i class="fas fa-eye"></i>
                                         </a>
+                                            @if (Request::is('dashboard3*'))
+                                                
+                                            @else
                                                 <a href="/categories/id/edit" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
                                                 data-placement="top" title="Ubah"><i
                                                     class="fa-solid fa-pen-to-square"></i></a>
@@ -304,6 +351,7 @@
                                                 data-placement="top" title="Hapus"><i
                                                     class="fa-solid fa-trash"></i></button>
                                         </span>
+                                            @endif
                                     </div>
                                 </td>
                             </tr>
@@ -315,9 +363,12 @@
                                 <td class="text-right">22</td>
                                 <td class="text-center">
                                     <div class="">
-                                        <a href="/categories/id" class="btn btn-sm btn-outline-success" data-toggle="tooltip" data-placement="top" title="Detail">
+                                        <a href="{{ Request::is('/dashboard3*') ? '/dashboard3/categories/id' : 'categories/id' }}" class="btn btn-sm btn-outline-success" data-toggle="tooltip" data-placement="top" title="Detail">
                                             <i class="fas fa-eye"></i>
                                         </a>
+                                            @if (Request::is('dashboard3*'))
+                                                
+                                            @else
                                                 <a href="/categories/id/edit" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
                                                 data-placement="top" title="Ubah"><i
                                                     class="fa-solid fa-pen-to-square"></i></a>
@@ -326,6 +377,7 @@
                                                 data-placement="top" title="Hapus"><i
                                                     class="fa-solid fa-trash"></i></button>
                                         </span>
+                                            @endif
                                     </div>
                                 </td>
                             </tr>

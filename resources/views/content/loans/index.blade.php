@@ -18,6 +18,7 @@
             @endif
             <div class="card mb-4">
                 <div class="col-lg-12 mt-3">
+                    @if (Request::is('dashboard2*', 'loans*'))
                     <div class="btn-group dropright">
                         <button type="button" class="btn btn-sm btn-outline-secondary rounded mb-2"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -34,6 +35,9 @@
                     </div>
                     <a href="/loans/create" class="btn btn-sm btn-outline-primary rounded mb-2"><i
                             class="fa-solid fa-plus"></i> Tambah</a>
+                    @else
+
+                    @endif
                     <div class="float-right ml-2">
                         <div class="input-group input-group-sm">
                             <div class="input-group-prepend">
@@ -70,6 +74,25 @@
                             </tr>
                         </thead>
                         <tbody>
+                            @if (Request::is('dashboard3*'))
+                            <tr>
+                                <td class="text-right">1</td>
+                                <td>Negeri Diujung Tanduk</td>
+                                <td>Dani Fitriani</td>
+                                <td>Rudiansyah Fakhrul</td>
+                                <td>12/09/2022</td>
+                                <td>15/09/2022</td>
+                                <td>
+                                    <h6><span class="badge badge-success">Sudah Dikembalikan</span></h6>
+                                </td>
+                                <td class="text-center">
+                                    <div>
+                                        <a href="/dashboard3/loans/id" class="btn btn-sm btn-outline-success" data-toggle="tooltip"
+                                            data-placement="top" title="Detail"><i class="fa-solid fa-eye"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+                            @else
                             <tr>
                                 <td class="text-right">1</td>
                                 <td>Negeri Diujung Tanduk</td>
@@ -178,7 +201,8 @@
                                             </span>
                                     </div>
                                 </td>
-                            </tr>
+                            </tr>                              
+                            @endif
                         </tbody>
                     </table>
                 </div>

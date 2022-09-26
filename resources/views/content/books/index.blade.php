@@ -18,6 +18,7 @@
             @endif
             <div class="card mb-4">
                 <div class="col-lg-12 mt-3">
+                    @if (Request::is('dashboard2*', 'books'))
                     <div class="btn-group dropright">
                         <button type="button" class="btn btn-sm btn-outline-secondary rounded mb-2"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -31,6 +32,10 @@
                     </div>
                     <a href="/books/create" class="btn btn-sm btn-outline-primary rounded mb-2"><i
                             class="fa-solid fa-plus"></i> Tambah</a>
+                                            
+                        @else
+                        
+                        @endif
                     <div class="float-right ml-2">
                         <div class="input-group input-group-sm">
                             <div class="input-group-prepend">
@@ -131,11 +136,13 @@
                                 <td>Tere Liye</td>
                                 <td>Gramedia</td>
                                 <td>2018</td>
-                                <td>
+                                <td class="text-center">
                                     <div class="">
-                                        <a href="/books/id" class="btn btn-sm btn-outline-success"
+                                        <a href="{{ Request::is('dashboard3*') ? '/dashboard3/books/id' : '/books/id' }}" class="btn btn-sm btn-outline-success"
                                             data-toggle="tooltip" data-placement="top" title="Detail"><i
                                                 class="fa-solid fa-eye"></i></a>
+
+                                                @if (Request::is('dashboard2*', 'books*'))
                                         <a href="/books/id/edit" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
                                             data-placement="top" title="Ubah"><i
                                                 class="fa-solid fa-pen-to-square"></i></a>
@@ -144,7 +151,10 @@
                                                         data-placement="top" title="Hapus"><i
                                                             class="fa-solid fa-trash"></i></button>
                                                 </span>
-                                    </div>
+                                                @else
+
+                                                @endif
+                                            </div>
                                 </td>
                             </tr>
                             <tr>
@@ -155,11 +165,13 @@
                                 <td>Laksmi Pamuntjak</td>
                                 <td>Gramedia</td>
                                 <td>2017</td>
-                                <td>
+                                <td class="text-center">
                                     <div class="">
-                                        <a href="/books/id" class="btn btn-sm btn-outline-success"
+                                        <a href="{{ Request::is('dashboard3*') ? '/dashboard3/books/id' : '/books/id' }}" class="btn btn-sm btn-outline-success"
                                             data-toggle="tooltip" data-placement="top" title="Detail"><i
                                                 class="fa-solid fa-eye"></i></a>
+
+                                                @if (Request::is('dashboard2*', 'books*'))
                                         <a href="/books/id/edit" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
                                             data-placement="top" title="Ubah"><i
                                                 class="fa-solid fa-pen-to-square"></i></a>
@@ -168,7 +180,10 @@
                                                         data-placement="top" title="Hapus"><i
                                                             class="fa-solid fa-trash"></i></button>
                                                 </span>
-                                    </div>
+                                                @else
+
+                                                @endif
+                                            </div>
                                 </td>
                             </tr>
                             <tr>
@@ -179,11 +194,13 @@
                                 <td>Andrea Hirata</td>
                                 <td>Bentang Pustaka</td>
                                 <td>2019</td>
-                                <td>
+                                <td class="text-center">
                                     <div class="">
-                                        <a href="/books/id" class="btn btn-sm btn-outline-success"
+                                        <a href="{{ Request::is('dashboard3*') ? '/dashboard3/books/id' : '/books/id' }}" class="btn btn-sm btn-outline-success"
                                             data-toggle="tooltip" data-placement="top" title="Detail"><i
                                                 class="fa-solid fa-eye"></i></a>
+
+                                                @if (Request::is('dashboard2*', 'books*'))
                                         <a href="/books/id/edit" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
                                             data-placement="top" title="Ubah"><i
                                                 class="fa-solid fa-pen-to-square"></i></a>
@@ -192,7 +209,10 @@
                                                         data-placement="top" title="Hapus"><i
                                                             class="fa-solid fa-trash"></i></button>
                                                 </span>
-                                    </div>
+                                                @else
+
+                                                @endif
+                                            </div>
                                 </td>
                             </tr>
                             <tr>
@@ -203,11 +223,13 @@
                                 <td>Andrea Hirata</td>
                                 <td>Bentang Pustaka</td>
                                 <td>2019</td>
-                                <td>
+                                <td class="text-center">
                                     <div class="">
-                                        <a href="/books/id" class="btn btn-sm btn-outline-success"
+                                        <a href="{{ Request::is('dashboard3*') ? '/dashboard3/books/id' : '/books/id' }}" class="btn btn-sm btn-outline-success"
                                             data-toggle="tooltip" data-placement="top" title="Detail"><i
                                                 class="fa-solid fa-eye"></i></a>
+
+                                                @if (Request::is('dashboard2*', 'books*'))
                                         <a href="/books/id/edit" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
                                             data-placement="top" title="Ubah"><i
                                                 class="fa-solid fa-pen-to-square"></i></a>
@@ -216,7 +238,10 @@
                                                         data-placement="top" title="Hapus"><i
                                                             class="fa-solid fa-trash"></i></button>
                                                 </span>
-                                    </div>
+                                                @else
+
+                                                @endif
+                                            </div>
                                 </td>
                             </tr>
                             <tr>
@@ -227,11 +252,13 @@
                                 <td>Sukino</td>
                                 <td>Erlangga</td>
                                 <td>2017</td>
-                                <td>
+                                <td class="text-center">
                                     <div class="">
-                                        <a href="/books/id" class="btn btn-sm btn-outline-success"
+                                        <a href="{{ Request::is('dashboard3*') ? '/dashboard3/books/id' : '/books/id' }}" class="btn btn-sm btn-outline-success"
                                             data-toggle="tooltip" data-placement="top" title="Detail"><i
                                                 class="fa-solid fa-eye"></i></a>
+
+                                                @if (Request::is('dashboard2*', 'books*'))
                                         <a href="/books/id/edit" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
                                             data-placement="top" title="Ubah"><i
                                                 class="fa-solid fa-pen-to-square"></i></a>
@@ -240,7 +267,10 @@
                                                         data-placement="top" title="Hapus"><i
                                                             class="fa-solid fa-trash"></i></button>
                                                 </span>
-                                    </div>
+                                                @else
+
+                                                @endif
+                                            </div>
                                 </td>
                             </tr>
                         </tbody>

@@ -18,19 +18,26 @@
             @endif
             <div class="card mb-4">
                 <div class="col-lg-12 mt-3">
+                    @if (Request::is('publishers*', 'dashboard2/publishers*'))
                     <div class="btn-group dropright">
                         <button type="button" class="btn btn-sm btn-outline-secondary rounded mb-2"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="fa-solid fa-download"></i>
                         </button>
                         <div class="dropdown-menu w-100 text-center">
-                            <button class="btn btn-sm btn-success col w-75 mb-2"><i class="fa-solid fa-file-excel"></i> Excel</button>
-                            <button class="btn btn-sm btn-danger col w-75 mb-2"><i class="fa-solid fa-file-pdf"></i> PDF</button>
-                            <button class="btn btn-sm btn-secondary col w-75 mb-2"><i class="fa-solid fa-print"></i> Print</button>
+                            <button class="btn btn-sm btn-success col w-75 mb-2"><i class="fa-solid fa-file-excel"></i>
+                                Excel</button>
+                            <button class="btn btn-sm btn-danger col w-75 mb-2"><i class="fa-solid fa-file-pdf"></i>
+                                PDF</button>
+                            <button class="btn btn-sm btn-secondary col w-75 mb-2"><i class="fa-solid fa-print"></i>
+                                Print</button>
                         </div>
                     </div>
                     <a href="/publishers/create" class="btn btn-sm btn-outline-primary rounded mb-2"><i
                             class="fa-solid fa-plus"></i> Tambah</a>
+                    @else
+
+                    @endif
                     <div class="float-right ml-2">
                         <div class="input-group input-group-sm">
                             <div class="input-group-prepend">
@@ -77,17 +84,24 @@
                                 <td>29</td>
                                 <td class="text-center">
                                     <div class="">
-                                        <a href="/publishers/id" class="btn btn-sm btn-outline-success" data-toggle="tooltip" data-placement="top" title="Detail">
+                                        <a href="{{ Request::is('dashboard3*') ? '/dashboard3/publishers/id' : '/publishers/id' }}"
+                                            class="btn btn-sm btn-outline-success" data-toggle="tooltip"
+                                            data-placement="top" title="Detail">
                                             <i class="fas fa-eye"></i>
                                         </a>
-                                                <a href="/publishers/id/edit" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
-                                                data-placement="top" title="Ubah"><i
-                                                    class="fa-solid fa-pen-to-square"></i></a>
+
+                                        @if (Request::is('dashboard2*', 'publishers*'))
+                                        <a href="/publishers/id/edit" class="btn btn-sm btn-outline-warning"
+                                            data-toggle="tooltip" data-placement="top" title="Ubah"><i
+                                                class="fa-solid fa-pen-to-square"></i></a>
                                         <span data-toggle="modal" data-target="#modalGagal">
                                             <button class="btn btn-sm btn-outline-danger" data-toggle="tooltip"
                                                 data-placement="top" title="Hapus"><i
                                                     class="fa-solid fa-trash"></i></button>
                                         </span>
+                                        @else
+
+                                        @endif
                                     </div>
                                 </td>
                             </tr>
@@ -101,17 +115,23 @@
                                 <td>27</td>
                                 <td class="text-center">
                                     <div class="">
-                                        <a href="" class="btn btn-sm btn-outline-success" data-toggle="tooltip" data-placement="top" title="Detail">
+                                        <a href="{{ Request::is('dashboard3*') ? '/dashboard3/publishers/id' : '/publishers/id' }}"
+                                            class="btn btn-sm btn-outline-success" data-toggle="tooltip"
+                                            data-placement="top" title="Detail">
                                             <i class="fas fa-eye"></i>
                                         </a>
-                                                <a href="/publishers/id/edit" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
-                                                data-placement="top" title="Ubah"><i
-                                                    class="fa-solid fa-pen-to-square"></i></a>
+                                        @if (Request::is('dashboard2*', 'publishers*'))
+                                        <a href="/publishers/id/edit" class="btn btn-sm btn-outline-warning"
+                                            data-toggle="tooltip" data-placement="top" title="Ubah"><i
+                                                class="fa-solid fa-pen-to-square"></i></a>
                                         <span data-toggle="modal" data-target="#modalGagal">
                                             <button class="btn btn-sm btn-outline-danger" data-toggle="tooltip"
                                                 data-placement="top" title="Hapus"><i
                                                     class="fa-solid fa-trash"></i></button>
                                         </span>
+                                        @else
+
+                                        @endif
                                     </div>
                                 </td>
                             </tr>
@@ -125,17 +145,23 @@
                                 <td>24</td>
                                 <td class="text-center">
                                     <div class="">
-                                        <a href="" class="btn btn-sm btn-outline-success" data-toggle="tooltip" data-placement="top" title="Detail">
+                                        <a href="{{ Request::is('dashboard3*') ? '/dashboard3/publishers/id' : '/publishers/id' }}"
+                                            class="btn btn-sm btn-outline-success" data-toggle="tooltip"
+                                            data-placement="top" title="Detail">
                                             <i class="fas fa-eye"></i>
                                         </a>
-                                                <a href="/publishers/id/edit" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
-                                                data-placement="top" title="Ubah"><i
-                                                    class="fa-solid fa-pen-to-square"></i></a>
+                                        @if (Request::is('dashboard2*', 'publishers*'))
+                                        <a href="/publishers/id/edit" class="btn btn-sm btn-outline-warning"
+                                            data-toggle="tooltip" data-placement="top" title="Ubah"><i
+                                                class="fa-solid fa-pen-to-square"></i></a>
                                         <span data-toggle="modal" data-target="#modalGagal">
                                             <button class="btn btn-sm btn-outline-danger" data-toggle="tooltip"
                                                 data-placement="top" title="Hapus"><i
                                                     class="fa-solid fa-trash"></i></button>
                                         </span>
+                                        @else
+
+                                        @endif
                                     </div>
                                 </td>
                             </tr>
@@ -149,17 +175,23 @@
                                 <td>12</td>
                                 <td class="text-center">
                                     <div class="">
-                                        <a href="" class="btn btn-sm btn-outline-success" data-toggle="tooltip" data-placement="top" title="Detail">
+                                        <a href="{{ Request::is('dashboard3*') ? '/dashboard3/publishers/id' : '/publishers/id' }}"
+                                            class="btn btn-sm btn-outline-success" data-toggle="tooltip"
+                                            data-placement="top" title="Detail">
                                             <i class="fas fa-eye"></i>
                                         </a>
-                                                <a href="/publishers/id/edit" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
-                                                data-placement="top" title="Ubah"><i
-                                                    class="fa-solid fa-pen-to-square"></i></a>
-                                        <span data-toggle="modal" data-target="#nonaktifModal">
+                                        @if (Request::is('dashboard2*', 'publishers*'))
+                                        <a href="/publishers/id/edit" class="btn btn-sm btn-outline-warning"
+                                            data-toggle="tooltip" data-placement="top" title="Ubah"><i
+                                                class="fa-solid fa-pen-to-square"></i></a>
+                                        <span data-toggle="modal" data-target="#modalGagal">
                                             <button class="btn btn-sm btn-outline-danger" data-toggle="tooltip"
                                                 data-placement="top" title="Hapus"><i
                                                     class="fa-solid fa-trash"></i></button>
                                         </span>
+                                        @else
+
+                                        @endif
                                     </div>
                                 </td>
                             </tr>

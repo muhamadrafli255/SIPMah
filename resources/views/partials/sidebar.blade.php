@@ -71,13 +71,21 @@
                 </a>
             </li>
             <li class="nav-item {{ Request::is('books*') || Request::is('/dashboard3/books*') ? 'active' : '' }}">
+                @if (Request::is('dashboard3*'))
+                <a class="nav-link" href="/dashboard3/books">
+                @else
                 <a class="nav-link" href="{{ Request::is('dashboard2*') ? '/dashboard2/books/' : '/books' }}">
+                @endif
                     <i class="fa-solid fa-book"></i>
                     <span>Buku</span>
                 </a>
             </li>
             <li class="nav-item {{ Request::is('loans*') ? 'active' : '' }}">
+                @if (Request::is('dashboard3*'))
+                <a class="nav-link" href="/dashboard3/loans">
+                @else
                 <a class="nav-link" href="{{ Request::is('dashboard2*') ? '/dashboard2/loans' : '/loans' }}">
+                @endif
                     <i class="fa-solid fa-arrow-up-from-bracket"></i>
                     <span>Peminjaman</span>
                 </a>
