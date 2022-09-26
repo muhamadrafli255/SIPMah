@@ -3,7 +3,7 @@
 <!-- Container Fluid-->
 <div class="container-fluid" id="container-wrapper">
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800 {{ Request::is('racks*') ? '' : 'ml-5' }}">{{ $title }}</h1>
+        <h1 class="h3 mb-0 text-gray-800">{{ $title }}</h1>
     </div>
 
     <div class="row">
@@ -16,10 +16,9 @@
                 </button>
             </div>
             @endif
-
-            @if (Request::is('racks*'))
             <div class="card mb-4">
                 <div class="col-lg-12 mt-3">
+                    @if (Request::is('/racks', 'dashboard2*'))
                     <div class="btn-group dropright">
                         <button type="button" class="btn btn-sm btn-outline-secondary rounded mb-2"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -33,6 +32,9 @@
                     </div>
                     <a href="/racks/create" class="btn btn-sm btn-outline-primary rounded mb-2"><i
                             class="fa-solid fa-plus"></i> Tambah</a>
+                    @else
+
+                    @endif
                     <div class="float-right ml-2">
                         <div class="input-group input-group-sm">
                             <div class="input-group-prepend">
@@ -73,9 +75,12 @@
                                 <td class="text-right">3</td>
                                 <td class="text-center">
                                     <div class="">
-                                        <a href="/racks/id" class="btn btn-sm btn-outline-success"
+                                        <a href="{{ Request::is('dashboard3*') ? '/dashboard3/racks/id' : '/racks/id' }}" class="btn btn-sm btn-outline-success"
                                         data-toggle="tooltip" data-placement="top" title="Detail"><i
                                             class="fa-solid fa-eye"></i></a>
+                                            @if (Request::is('dashboard3*'))
+                                                
+                                            @else
                                     <a href="/racks/id/edit" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
                                         data-placement="top" title="Ubah"><i
                                             class="fa-solid fa-pen-to-square"></i></a>
@@ -84,6 +89,7 @@
                                                 data-placement="top" title="Hapus"><i
                                                     class="fa-solid fa-trash"></i></button>
                                         </span>
+                                        @endif
                                     </div>
                                 </td>
                             </tr>
@@ -94,9 +100,12 @@
                                 <td class="text-right">3</td>
                                 <td class="text-center">
                                     <div class="">
-                                        <a href="/racks/id" class="btn btn-sm btn-outline-success"
+                                        <a href="{{ Request::is('dashboard3*') ? '/dashboard3/racks/id' : '/racks/id' }}" class="btn btn-sm btn-outline-success"
                                         data-toggle="tooltip" data-placement="top" title="Detail"><i
                                             class="fa-solid fa-eye"></i></a>
+                                            @if (Request::is('dashboard3*'))
+                                                
+                                            @else
                                     <a href="/racks/id/edit" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
                                         data-placement="top" title="Ubah"><i
                                             class="fa-solid fa-pen-to-square"></i></a>
@@ -105,6 +114,7 @@
                                                 data-placement="top" title="Hapus"><i
                                                     class="fa-solid fa-trash"></i></button>
                                         </span>
+                                        @endif
                                     </div>
                                 </td>
                             </tr>
@@ -115,9 +125,12 @@
                                 <td class="text-right">3</td>
                                 <td class="text-center">
                                     <div class="">
-                                        <a href="/racks/id" class="btn btn-sm btn-outline-success"
+                                        <a href="{{ Request::is('dashboard3*') ? '/dashboard3/racks/id' : '/racks/id' }}" class="btn btn-sm btn-outline-success"
                                         data-toggle="tooltip" data-placement="top" title="Detail"><i
                                             class="fa-solid fa-eye"></i></a>
+                                            @if (Request::is('dashboard3*'))
+                                                
+                                            @else
                                     <a href="/racks/id/edit" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
                                         data-placement="top" title="Ubah"><i
                                             class="fa-solid fa-pen-to-square"></i></a>
@@ -126,6 +139,7 @@
                                                 data-placement="top" title="Hapus"><i
                                                     class="fa-solid fa-trash"></i></button>
                                         </span>
+                                        @endif
                                     </div>
                                 </td>
                             </tr>
@@ -136,9 +150,12 @@
                                 <td class="text-right">0</td>
                                 <td class="text-center">
                                     <div class="">
-                                        <a href="/racks/id" class="btn btn-sm btn-outline-success"
+                                        <a href="{{ Request::is('dashboard3*') ? '/dashboard3/racks/id' : '/racks/id' }}" class="btn btn-sm btn-outline-success"
                                         data-toggle="tooltip" data-placement="top" title="Detail"><i
                                             class="fa-solid fa-eye"></i></a>
+                                            @if (Request::is('dashboard3*'))
+                                                
+                                            @else
                                     <a href="/racks/id/edit" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
                                         data-placement="top" title="Ubah"><i
                                             class="fa-solid fa-pen-to-square"></i></a>
@@ -147,6 +164,7 @@
                                                 data-placement="top" title="Hapus"><i
                                                     class="fa-solid fa-trash"></i></button>
                                         </span>
+                                        @endif
                                     </div>
                                 </td>
                             </tr>
@@ -157,9 +175,12 @@
                                 <td class="text-right">3</td>
                                 <td class="text-center">
                                     <div class="">
-                                        <a href="/racks/id" class="btn btn-sm btn-outline-success"
+                                        <a href="{{ Request::is('dashboard3*') ? '/dashboard3/racks/id' : '/racks/id' }}" class="btn btn-sm btn-outline-success"
                                         data-toggle="tooltip" data-placement="top" title="Detail"><i
                                             class="fa-solid fa-eye"></i></a>
+                                            @if (Request::is('dashboard3*'))
+                                                
+                                            @else
                                     <a href="/racks/id/edit" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
                                         data-placement="top" title="Ubah"><i
                                             class="fa-solid fa-pen-to-square"></i></a>
@@ -168,6 +189,7 @@
                                                 data-placement="top" title="Hapus"><i
                                                     class="fa-solid fa-trash"></i></button>
                                         </span>
+                                        @endif
                                     </div>
                                 </td>
                             </tr>
@@ -175,90 +197,6 @@
                     </table>
                 </div>
             </div>
-            @else
-            <div class="row">
-                    <div class="col-lg-2 col-md-6 col-sm-12 mb-4">
-                        <a href="/dashboard3/racks/id" class="text-decoration-none">
-                            <div class="card mx-auto border border-primary" style="width: 10rem;">
-                                <img src="https://www.pngarts.com/files/12/Vector-Bookshelf-PNG-Photo.png" alt="" class="card-img-top mt-2">
-                                <div class="card-body mt-2">
-                                    <h5 class="text-center text-gray-800">RCK - 01</h5>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-2 col-md-6 col-sm-12 mb-4">
-                        <a href="/dashboard3/racks/id" class="text-decoration-none">
-                            <div class="card mx-auto border border-primary" style="width: 10rem;">
-                                <img src="https://www.pngarts.com/files/12/Vector-Bookshelf-PNG-Photo.png" alt="" class="card-img-top mt-2">
-                                <div class="card-body mt-2">
-                                    <h5 class="text-center text-gray-800">RCK - 02</h5>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-2 col-md-6 col-sm-12 mb-4">
-                        <a href="/dashboard3/racks/id" class="text-decoration-none">
-                            <div class="card mx-auto border border-primary" style="width: 10rem;">
-                                <img src="https://www.pngarts.com/files/12/Vector-Bookshelf-PNG-Photo.png" alt="" class="card-img-top mt-2">
-                                <div class="card-body mt-2">
-                                    <h5 class="text-center text-gray-800">RCK - 03</h5>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-2 col-md-6 col-sm-12 mb-4">
-                        <a href="/dashboard3/racks/id" class="text-decoration-none">
-                            <div class="card mx-auto border border-primary" style="width: 10rem;">
-                                <img src="https://www.pngarts.com/files/12/Vector-Bookshelf-PNG-Photo.png" alt="" class="card-img-top mt-2">
-                                <div class="card-body mt-2">
-                                    <h5 class="text-center text-gray-800">RCK - 04</h5>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-2 col-md-6 col-sm-12 mb-4">
-                        <a href="/dashboard3/racks/id" class="text-decoration-none">
-                            <div class="card mx-auto border border-primary" style="width: 10rem;">
-                                <img src="https://www.pngarts.com/files/12/Vector-Bookshelf-PNG-Photo.png" alt="" class="card-img-top mt-2">
-                                <div class="card-body mt-2">
-                                    <h5 class="text-center text-gray-800">RCK - 05</h5>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-2 col-md-6 col-sm-12 mb-4">
-                        <a href="/dashboard3/racks/id" class="text-decoration-none">
-                            <div class="card mx-auto border border-primary" style="width: 10rem;">
-                                <img src="https://www.pngarts.com/files/12/Vector-Bookshelf-PNG-Photo.png" alt="" class="card-img-top mt-2">
-                                <div class="card-body mt-2">
-                                    <h5 class="text-center text-gray-800">RCK - 06</h5>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-2 col-md-6 col-sm-12 mb-4">
-                        <a href="/dashboard3/racks/id" class="text-decoration-none">
-                            <div class="card mx-auto border border-primary" style="width: 10rem;">
-                                <img src="https://www.pngarts.com/files/12/Vector-Bookshelf-PNG-Photo.png" alt="" class="card-img-top mt-2">
-                                <div class="card-body mt-2">
-                                    <h5 class="text-center text-gray-800">RCK - 07</h5>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-2 col-md-6 col-sm-12 mb-4">
-                        <a href="/dashboard3/racks/id" class="text-decoration-none">
-                            <div class="card mx-auto border border-primary" style="width: 10rem;">
-                                <img src="https://www.pngarts.com/files/12/Vector-Bookshelf-PNG-Photo.png" alt="" class="card-img-top mt-2">
-                                <div class="card-body mt-2">
-                                    <h5 class="text-center text-gray-800">RCK - 08</h5>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            @endif
         </div>
     </div>
 </div>

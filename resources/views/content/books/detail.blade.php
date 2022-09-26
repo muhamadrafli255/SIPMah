@@ -23,7 +23,7 @@
             </div>
             <div class="col-xl-8">
                 <!-- Account details card-->
-                <div class="card mb-4 mb-xl-0 py-2">
+                <div class="card mb-4 mb-xl-0">
                     <div class="card-header"><p class="h5 text-gray-800">Detail Buku</p></div>
                     <div class="card-body">
                         <div class="row">
@@ -85,7 +85,7 @@
                             <div class="col-lg-12 mt-2 mb-1">
                                 <div class="float-right">
                                     <a href="/dashboard3/home" class="btn btn-sm btn-outline-secondary">Kembali</a>
-                                    <a href="/books/id/edit" class="btn btn-sm btn-outline-primary">Pinjam</a>
+                                    <button data-toggle="modal" data-target="#modalPinjam" class="btn btn-sm btn-outline-primary">Pinjam</button>
                                 </div>
                             </div>
                             @else
@@ -120,6 +120,31 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Batal</button>
                 <a href="/books/id/destroy" class="btn btn-outline-danger">Yakin</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal Nonaktif-->
+<div class="modal fade" id="modalPinjam" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Data Peminjaman</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <label for="inputDate">Estimasi Dikembalikan</label>
+                    <input type="date" id="inputDate" class="form-control" required>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Batal</button>
+                <a href="/books/id/borrow" class="btn btn-outline-success">Pinjam</a>
             </div>
         </div>
     </div>

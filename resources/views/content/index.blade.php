@@ -7,6 +7,7 @@
                     @else
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
                         <h1 class="h3 mb-4 text-gray-800">{{ $title }}</h1>
+                        @if (Request::is('dashboard*'))
                         @if (session('Berhasil'))
                         <div class="alert alert-success alert-dismissible fade show" role="alert">
                             {{ session('Berhasil') }}
@@ -15,7 +16,19 @@
                             </button>
                         </div>
                         @endif
+                        @endif
                     </div>
+                    @endif
+
+                    @if (Request::is('dashboard3*'))
+                    @if (session('Berhasil'))
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        {{ session('Berhasil') }}
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    @endif
                     @endif
 
                     @if (Request::is('dashboard3*'))
@@ -105,8 +118,8 @@
                       </div>
 
                       <div class="row">
-                          <div class="col-lg-2 col-md-6 col-sm-12 mb-4">
-                            <a href="dashboard3/books/id" class="text-decoration-none">
+                          <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                            <a href="/dashboard3/books/id" class="text-decoration-none">
                             <div class="card mx-auto" style="width: 16rem;">
                                 <img src="https://ebooks.gramedia.com/ebook-covers/42421/image_highres/ID_NUT2018MTH05NUT.jpg" height="384px" class="card-img-top" alt="...">
                                 <div class="card-body">
@@ -118,8 +131,8 @@
                         </a>
                         </div>
 
-                        <div class="col-lg-2 col-md-6 col-sm-12 mb-4">
-                                <a href="dashboard3/books/id" class="text-decoration-none">
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                                <a href="/dashboard3/books/id" class="text-decoration-none">
                             <div class="card mx-auto" style="width: 16rem;">
                                 <img src="https://ebooks.gramedia.com/ebook-covers/37335/big_covers/ID_GPU2017MTH05AMBA_B.jpg" height="384px" class="card-img-top" alt="...">
                                 <div class="card-body">
@@ -131,8 +144,8 @@
                             </a>
                             </div>
 
-                            <div class="col-lg-2 col-md-6 col-sm-12 mb-4">
-                            <a href="dashboard3/books/id" class="text-decoration-none">
+                            <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                            <a href="/dashboard3/books/id" class="text-decoration-none">
                             <div class="card mx-auto" style="width: 16rem;">
                                 <img src="https://www.gramedia.com/blog/content/images/2019/05/orang-orang-biasa-4.jpg" height="384px" class="card-img-top" alt="...">
                                 <div class="card-body">
@@ -144,8 +157,8 @@
                             </a>
                         </div>
                         
-                        <div class="col-lg-2 col-md-6 col-sm-12 mb-4">
-                            <a href="dashboard3/books/id" class="text-decoration-none">
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                            <a href="/dashboard3/books/id" class="text-decoration-none">
                             <div class="card mx-auto" style="width: 16rem;">
                                 <img src="https://cdn.gramedia.com/uploads/items/9786024246945_Laut-Bercerita.jpg" height="384px" class="card-img-top" alt="...">
                                 <div class="card-body">
@@ -157,8 +170,8 @@
                             </a>
                         </div>
 
-                        <div class="col-lg-2 col-md-6 col-sm-12 mb-4">
-                            <a href="dashboard3/books/id" class="text-decoration-none">
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                            <a href="/dashboard3/books/id" class="text-decoration-none">
                             <div class="card mx-auto" style="width: 16rem;">
                                 <img src="https://ebooks.gramedia.com/ebook-covers/45496/image_highres/ID_FITE2018MTH12.jpg" height="384px" class="card-img-top" alt="...">
                                     <div class="card-body">
@@ -170,8 +183,8 @@
                             </a>
                         </div>
 
-                        <div class="col-lg-2 col-md-6 col-sm-12 mb-4">
-                            <a href="dashboard3/books/id" class="text-decoration-none">
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                            <a href="/dashboard3/books/id" class="text-decoration-none">
                             <div class="card mx-auto" style="width: 16rem;">
                                 <img src="https://ebooks.gramedia.com/ebook-covers/48708/image_highres/ID_KIPANA2019MTH08.jpg" height="384px" class="card-img-top" alt="...">
                                 <div class="card-body">
@@ -183,8 +196,8 @@
                             </a>
                         </div>
 
-                        <div class="col-lg-2 col-md-6 col-sm-12 mb-4">
-                            <a href="dashboard3/books/id" class="text-decoration-none">
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                            <a href="/dashboard3/books/id" class="text-decoration-none">
                             <div class="card mx-auto" style="width: 16rem;">
                                 <img src="https://ebooks.gramedia.com/ebook-covers/13357/big_covers/ID_GPU2014MTH06BIND_B.jpg" height="384px" class="card-img-top" alt="...">
                                 <div class="card-body">
@@ -196,8 +209,8 @@
                             </a>
                         </div>
 
-                        <div class="col-lg-2 col-md-6 col-sm-12 mb-4">
-                            <a href="dashboard3/books/id" class="text-decoration-none">
+                        <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                            <a href="/dashboard3/books/id" class="text-decoration-none">
                             <div class="card mx-auto" style="width: 16rem;">
                                 <img src="https://ebooks.gramedia.com/ebook-covers/61049/image_highres/BLK_KARD2021311822.jpg" height="384px" class="card-img-top" alt="...">
                                 <div class="card-body">

@@ -32,7 +32,7 @@
                                 Print</button>
                         </div>
                     </div>
-                    <a href="/members/create" class="btn btn-sm btn-outline-primary rounded mb-2"><i
+                    <a href="{{ Request::is('dashboard2*') ? '/dashboard2/members/create' : 'members/create' }}" class="btn btn-sm btn-outline-primary rounded mb-2"><i
                             class="fa-solid fa-plus"></i> Tambah</a>
                     <div class="float-right ml-2">
                         <div class="input-group input-group-sm">
@@ -113,10 +113,10 @@
                                 <td><h6><span class="badge badge-success">Aktif</span></h6></td>
                                 <td>
                                     <div class="">
-                                        <a href="/members/id" class="btn btn-sm btn-outline-success"
+                                        <a href="{{ Request::is('dashboard2*') ? '/dashboard2/members/id' : 'members/id' }}" class="btn btn-sm btn-outline-success"
                                             data-toggle="tooltip" data-placement="top" title="Detail"><i
                                                 class="fa-solid fa-eye"></i></a>
-                                        <a href="/members/id/edit" class="btn btn-sm btn-outline-warning"
+                                        <a href="{{ Request::is('dashboard2*') ? '/dashboard2/members/id/edit' : 'members/id/edit' }}" class="btn btn-sm btn-outline-warning"
                                             data-toggle="tooltip" data-placement="top" title="Ubah"><i
                                                 class="fa-solid fa-pen-to-square"></i></a>
                                         <span data-toggle="modal" data-target="#nonaktifModal">

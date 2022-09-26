@@ -29,6 +29,11 @@ class BooksController extends Controller
         return view('content.books.create', compact('title'));
     }
 
+    public function borrow()
+    {
+        return redirect('/dashboard3')->with('Berhasil', 'Peminjaman Buku Negeri Diujung Tanduk Berhasil');
+    }
+
     public function edit()
     {
         $title = "Ubah Buku";

@@ -15,7 +15,7 @@
             </li>
             @else
             <li class="nav-item {{ Request::is('dashboard   ') ? 'active' : '' }}">
-                <a class="nav-link" href="/dashboard">
+                <a class="nav-link" href="{{ Request::is('dashboard2*') ? '/dashboard2' : 'dashboard' }}">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dasbor</span></a>
             </li>
@@ -24,13 +24,13 @@
                 
             @else
             <li class="nav-item {{ Request::is('members*') ? 'active' : '' }}">
-                <a class="nav-link" href="/members">
+                <a class="nav-link" href="{{ Request::is('dashboard2*') ? '/dashboard2/members' : 'members' }}">
                     <i class="fa-solid fa-users"></i>
                     <span>Anggota</span>
                 </a>
             </li>
             @endif
-            @if (Request::is('dashboard2') || Request::is('dashboard3*'))
+            @if (Request::is('dashboard2*') || Request::is('dashboard3*'))
 
             @else
             <li class="nav-item {{ Request::is('officers*') ? 'active' : '' }}">
@@ -44,45 +44,54 @@
                 @if (Request::is('dashboard3*'))
                 <a class="nav-link" href="/dashboard3/racks">
                 @else
-                <a class="nav-link" href="/racks">
+                <a class="nav-link" href="{{ Request::is('dashboard2*') ? '/dashboard2/racks' : '/dashboard' }}">
                 @endif
                     <i class="fa-solid fa-table-list"></i>
                     <span>Rak</span>
                 </a>
             </li>
             <li class="nav-item {{ Request::is('categories*') ? 'active' : '' }}">
-                <a class="nav-link" href="/categories">
+                @if (Request::is('dashboard3*'))
+                <a class="nav-link" href="/dashboard3/categories">
+                @else
+                <a class="nav-link" href="{{ Request::is('dashboard2*') ? '/dashboard2/categories' : '/categories' }}">
+                @endif
                     <i class="fa-solid fa-tag"></i>
                     <span>Kategori</span>
                 </a>
             </li>
             <li class="nav-item {{ Request::is('publishers*') ? 'active' : '' }}">
-                <a class="nav-link" href="/publishers">
+                @if (Request::is('dashboard3*'))
+                <a class="nav-link" href="/dashboard3/publishers">
+                @else
+                <a class="nav-link" href="{{ Request::is('dashboard2*') ? '/dashboard2/publishers' : '/publishers' }}">
+                @endif
                     <i class="fa-solid fa-building"></i>
                     <span>Penerbit</span>
                 </a>
             </li>
-            <li class="nav-item {{ Request::is('books*') || Request::is('dashboard3/books*') ? 'active' : '' }}">
-                <a class="nav-link" href="/books">
+            <li class="nav-item {{ Request::is('books*') || Request::is('/dashboard3/books*') ? 'active' : '' }}">
+                <a class="nav-link" href="{{ Request::is('dashboard2*') ? '/dashboard2/books/' : '/books' }}">
                     <i class="fa-solid fa-book"></i>
                     <span>Buku</span>
                 </a>
             </li>
             <li class="nav-item {{ Request::is('loans*') ? 'active' : '' }}">
-                <a class="nav-link" href="/loans">
+                <a class="nav-link" href="{{ Request::is('dashboard2*') ? '/dashboard2/loans' : '/loans' }}">
                     <i class="fa-solid fa-arrow-up-from-bracket"></i>
                     <span>Peminjaman</span>
                 </a>
             </li>
-            @if (Request::is('dashboard*', 'members*', 'officers*', 'racks*', 'categories*', 'publishers*', 'books*', 'report*', 'loans*') || Request::is('dashboard2'))
+            @if (Request::is('dashboard3*'))
+            
+            @elseif (Request::is('dashboard*', 'members*', 'officers*', 'racks*', 'categories*', 'publishers*', 'books*', 'report*', 'loans*') || Request::is('dashboard2'))
             <li class="nav-item {{ Request::is('report*') ? 'active' : '' }}">
-                <a class="nav-link" href="/report">
+                <a class="nav-link" href="{{ Request::is('dashboard2*') ? '/dashboard2/report' : '/report' }}">
                     <i class="fa-solid fa-file"></i>
                     <span>Laporan</span>
                 </a>
             </li>
-            @else
-
+            
             @endif
         </ul>
         <!-- Sidebar -->

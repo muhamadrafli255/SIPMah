@@ -12,11 +12,11 @@
                             </a>
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="userDropdown">
-                                <a href="/accounts" class="dropdown-item" href="#">
+                                <a href="{{ Request::is('dashboard2*') ? '/dashboard2/accounts' : 'accounts' }}" class="dropdown-item" href="#">
                                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Akun
                                 </a>
-                                <a href="/accounts/password" class="dropdown-item" href="#">
+                                <a href="{{ Request::is('dashboard2*') ? '/dashboard2/accounts/password' : 'accounts/password' }}" class="dropdown-item" href="#">
                                     <i class="fas fa-key fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Kata Sandi
                                 </a>

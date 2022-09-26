@@ -56,9 +56,12 @@
                                     <td class="text-right">6</td>
                                     <td class="text-center">
                                         <div class="">
-                                            <a href="/categories/id" class="btn btn-sm btn-outline-success"
+                                            <a href="{{ Request::is('dashboard3*') ? '/dashboard3/categories/id' : '/categories/id' }}" class="btn btn-sm btn-outline-success"
                                             data-toggle="tooltip" data-placement="top" title="Detail"><i
                                                 class="fa-solid fa-eye"></i></a>
+                                                @if (Request::is('dashboard3*'))
+                                                    
+                                                @else
                                         <a href="/categories/id/edit" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
                                             data-placement="top" title="Ubah"><i
                                                 class="fa-solid fa-pen-to-square"></i></a>
@@ -67,6 +70,7 @@
                                                     data-placement="top" title="Hapus"><i
                                                         class="fa-solid fa-trash"></i></button>
                                             </span>
+                                                @endif
                                         </div>
                                     </td>
                                 </tr>
@@ -76,9 +80,12 @@
                                     <td class="text-right">3</td>
                                     <td class="text-center">
                                         <div class="">
-                                            <a href="/categories/id" class="btn btn-sm btn-outline-success"
+                                            <a href="{{ Request::is('dashboard3*') ? '/dashboard3/categories/id' : '/categories/id' }}" class="btn btn-sm btn-outline-success"
                                             data-toggle="tooltip" data-placement="top" title="Detail"><i
                                                 class="fa-solid fa-eye"></i></a>
+                                                @if (Request::is('dashboard3*'))
+                                                    
+                                                @else
                                         <a href="/categories/id/edit" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
                                             data-placement="top" title="Ubah"><i
                                                 class="fa-solid fa-pen-to-square"></i></a>
@@ -87,6 +94,7 @@
                                                     data-placement="top" title="Hapus"><i
                                                         class="fa-solid fa-trash"></i></button>
                                             </span>
+                                                @endif
                                         </div>
                                     </td>
                                 </tr>
@@ -96,9 +104,12 @@
                                     <td class="text-right">3</td>
                                     <td class="text-center">
                                         <div class="">
-                                            <a href="/category/id" class="btn btn-sm btn-outline-success"
+                                            <a href="{{ Request::is('dashboard3*') ? '/dashboard3/categories/id' : '/categories/id' }}" class="btn btn-sm btn-outline-success"
                                             data-toggle="tooltip" data-placement="top" title="Detail"><i
                                                 class="fa-solid fa-eye"></i></a>
+                                                @if (Request::is('dashboard3*'))
+                                                    
+                                                @else
                                         <a href="/category/id/edit" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
                                             data-placement="top" title="Ubah"><i
                                                 class="fa-solid fa-pen-to-square"></i></a>
@@ -107,6 +118,7 @@
                                                     data-placement="top" title="Hapus"><i
                                                         class="fa-solid fa-trash"></i></button>
                                             </span>
+                                                @endif
                                         </div>
                                     </td>
                                 </tr>
