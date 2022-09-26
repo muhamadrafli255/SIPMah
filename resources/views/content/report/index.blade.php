@@ -47,6 +47,7 @@
                         <th>Nama Peminjam</th>
                         <th>Petugas Peminjam</th>
                         <th>Estimasi Dikembalikan</th>
+                        <th>Aksi</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -56,6 +57,11 @@
                         <td>Dani Fitriani</td>
                         <td>Rudiansyah Fakhrul</td>
                         <td>12/09/2022</td>
+                        <td class="text-center">
+                            <a href="/report/borrowed" class="btn btn-sm btn-outline-success" data-toggle="tooltip" data-placement="top" title="Detail">
+                                <i class="fas fa-eye"></i>
+                            </a>
+                        </td>
                     </tr>
                     <tr>
                         <td class="text-right">2</td>
@@ -63,6 +69,11 @@
                         <td>Jujun Saputra</td>
                         <td>Rudiansyah Fakhrul</td>
                         <td>12/09/2022</td>
+                        <td class="text-center">
+                            <a href="/report/borrowed" class="btn btn-sm btn-outline-success" data-toggle="tooltip" data-placement="top" title="Detail">
+                                <i class="fas fa-eye"></i>
+                            </a>
+                        </td>
                     </tr>
                     <tr>
                         <td class="text-right">3</td>
@@ -70,6 +81,11 @@
                         <td>Robi Firmansyah</td>
                         <td>Rudiansyah Fakhrul</td>
                         <td>15/09/2022</td>
+                        <td class="text-center">
+                            <a href="/report/borrowed" class="btn btn-sm btn-outline-success" data-toggle="tooltip" data-placement="top" title="Detail">
+                                <i class="fas fa-eye"></i>
+                            </a>
+                        </td>
                     </tr>
                     <tr>
                         <td class="text-right">4</td>
@@ -77,6 +93,11 @@
                         <td>Dodi Permana</td>
                         <td>Rudiansyah Fakhrul</td>
                         <td>18/09/2022</td>
+                        <td class="text-center">
+                            <a href="/report/borrowed" class="btn btn-sm btn-outline-success" data-toggle="tooltip" data-placement="top" title="Detail">
+                                <i class="fas fa-eye"></i>
+                            </a>
+                        </td>
                     </tr>
                     <tr>
                         <td class="text-right">5</td>
@@ -84,6 +105,11 @@
                         <td>Queensha Marsya</td>
                         <td>Rudiansyah Fakhrul</td>
                         <td>18/09/2022</td>
+                        <td class="text-center">
+                            <a href="/report/borrowed" class="btn btn-sm btn-outline-success" data-toggle="tooltip" data-placement="top" title="Detail">
+                                <i class="fas fa-eye"></i>
+                            </a>
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -104,6 +130,7 @@
                         <th>Nama</th>
                         <th>Judul Buku</th>
                         <th>Jumlah Peminjaman</th>
+                        <th>Aksi</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -112,24 +139,44 @@
                         <td>Novel</td>
                         <td>Amba</td>
                         <td class="text-right">90</td>
+                        <td class="text-center">
+                            <a href="/report/books" class="btn btn-sm btn-outline-success" data-toggle="tooltip" data-placement="top" title="Detail">
+                                <i class="fas fa-eye"></i>
+                            </a>
+                        </td>
                     </tr>
                     <tr>
                         <td class="text-right">2</td>
                         <td>Novel</td>
                         <td>Negeri Diujung Tanduk</td>
                         <td class="text-right">67</td>
+                        <td class="text-center">
+                            <a href="/report/books" class="btn btn-sm btn-outline-success" data-toggle="tooltip" data-placement="top" title="Detail">
+                                <i class="fas fa-eye"></i>
+                            </a>
+                        </td>
                     </tr>
                     <tr>
                         <td class="text-right">3</td>
                         <td>Novel</td>
                         <td>Orang - Orang Biasa</td>
                         <td class="text-right">42</td>
+                        <td class="text-center">
+                            <a href="/report/books" class="btn btn-sm btn-outline-success" data-toggle="tooltip" data-placement="top" title="Detail">
+                                <i class="fas fa-eye"></i>
+                            </a>
+                        </td>
                     </tr>
                     <tr>
                         <td class="text-right">4</td>
                         <td>Novel</td>
                         <td>Matematika Kelas 11</td>
                         <td class="text-right">34</td>
+                        <td class="text-center">
+                            <a href="/report/books" class="btn btn-sm btn-outline-success" data-toggle="tooltip" data-placement="top" title="Detail">
+                                <i class="fas fa-eye"></i>
+                            </a>
+                        </td>
                     </tr>
                 </tbody>
             </table>
@@ -149,6 +196,7 @@
                         <th>No</th>
                         <th>Nama</th>
                         <th>Jumlah Peminjaman</th>
+                        <th>Aksi</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -156,21 +204,41 @@
                         <td class="text-right">1</td>
                         <td>Dani Fitriani</td>
                         <td>220</td>
+                        <td class="text-center">
+                            <a href="/report/members" class="btn btn-sm btn-outline-success" data-toggle="tooltip" data-placement="top" title="Detail">
+                                <i class="fas fa-eye"></i>
+                            </a>
+                        </td>
                     </tr>
                     <tr>
                         <td class="text-right">2</td>
                         <td>Raina Aqila</td>
                         <td>187</td>
+                        <td class="text-center">
+                            <a href="/report/members" class="btn btn-sm btn-outline-success" data-toggle="tooltip" data-placement="top" title="Detail">
+                                <i class="fas fa-eye"></i>
+                            </a>
+                        </td>
                     </tr>
                     <tr>
                         <td class="text-right">3</td>
                         <td>Andara Amanda</td>
                         <td>120</td>
+                        <td class="text-center">
+                            <a href="/report/members" class="btn btn-sm btn-outline-success" data-toggle="tooltip" data-placement="top" title="Detail">
+                                <i class="fas fa-eye"></i>
+                            </a>
+                        </td>
                     </tr>
                     <tr>
                         <td class="text-right">4</td>
                         <td>Robi Firmansyah</td>
                         <td>97</td>
+                        <td class="text-center">
+                            <a href="/report/members" class="btn btn-sm btn-outline-success" data-toggle="tooltip" data-placement="top" title="Detail">
+                                <i class="fas fa-eye"></i>
+                            </a>
+                        </td>
                     </tr>
                 </tbody>
             </table>

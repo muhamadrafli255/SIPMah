@@ -23,6 +23,11 @@ class LoansController extends Controller
         return redirect('/loans')->with('Berhasil', 'Peminjaman Berhasil Ditambahkan');
     }
 
+    public function verification()
+    {
+        return redirect('/loans')->with('Berhasil', 'Peminjaman Berhasil Diverifikasi');
+    }
+
     public function detail()
     {
         $title = "Detail Peminjaman";

@@ -162,7 +162,7 @@
                                 <td>18/09/2022</td>
                                 <td>23/09/2022</td>
                                 <td>
-                                    <h6><span class="badge badge-warning">Sedang Dipinjam</span></h6>
+                                    <h6><span class="badge badge-danger">Belum Diverifikasi</span></h6>
                                 </td>
                                 <td class="text-center">
                                     <div class="mx-auto">
@@ -171,10 +171,10 @@
                                         <a href="/loans/id/edit" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
                                             data-placement="top" title="Ubah"><i
                                                 class="fa-solid fa-pen-to-square"></i></a>
-                                            <span data-toggle="modal" data-target="#modalPengembalian">
+                                            <span data-toggle="modal" data-target="#modalVerifikasi">
                                         <button class="btn btn-sm btn-outline-info" data-toggle="tooltip"
-                                            data-placement="top" title="Pengembalian"><i
-                                                class="fa-solid fa-reply"></i></button>
+                                            data-placement="top" title="Verifikasi"><i
+                                                class="fa-solid fa-check"></i></button>
                                             </span>
                                     </div>
                                 </td>
@@ -192,7 +192,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Perhatian!</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Data Pengembalian</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -229,6 +229,27 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-sm btn-outline-secondary" data-dismiss="modal">Batal</button>
                 <a href="/loans/id/return" class="btn btn-sm btn-outline-success">Kembalikan</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Nonaktif-->
+<div class="modal fade" id="modalVerifikasi" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Perhatian!</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Apakah anda yakin akan memverifikasi peminjaman ini?</p>
+            <div class="col-lg-12 mb-2">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-sm btn-outline-secondary" data-dismiss="modal">Tidak</button>
+                <a href="/loans/id/verification" class="btn btn-sm btn-outline-success">Ya</a>
             </div>
         </div>
     </div>
