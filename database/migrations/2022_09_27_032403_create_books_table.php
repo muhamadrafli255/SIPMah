@@ -17,11 +17,13 @@ class CreateBooksTable extends Migration
             $table->id();
             $table->foreignId('category_id');
             $table->foreignId('publishers_id');
+            $table->foreignId('status_books_id');
             $table->string('code');
             $table->string('title');
             $table->string('descriptions', 1024);
             $table->string('writer');
-            $table->year('year');
+            $table->string('image');
+            $table->year('publication_year');
             $table->softDeletes();
             $table->timestamps();
         });

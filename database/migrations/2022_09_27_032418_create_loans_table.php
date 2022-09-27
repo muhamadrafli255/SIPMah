@@ -17,10 +17,10 @@ class CreateLoansTable extends Migration
             $table->id();
             $table->foreignId('user_id');
             $table->foreignId('books_id');
+            $table->foreignId('status_loans_id');
             $table->date('borrow_date');
             $table->date('returned_date');
             $table->integer('status');
-            $table->softDeletes();
             $table->timestamps();
         });
     }
