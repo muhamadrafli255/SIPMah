@@ -20,6 +20,7 @@ class CreateBooksTable extends Migration
             $table->foreignId('condition_books_id');
             $table->string('code');
             $table->string('title');
+            $table->string('slug');
             $table->string('descriptions', 1024);
             $table->string('writer');
             $table->string('image');

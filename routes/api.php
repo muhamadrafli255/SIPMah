@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\API\DatatableController;
+use App\Http\Controllers\API\RegionController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -27,5 +28,15 @@ Route::group([
         'prefix' => 'datatables',
     ], function(){
         Route::get('/members', [DatatableController::class, 'getMembers']);
+    });
+});
+
+Route::group([
+    'namespace' => 'API',
+], function(){
+    Route::group([
+        'prefix' => 'region',
+    ], function(){
+        Route::get('/provinces', [RegionController::class, 'getProvinces']);
     });
 });
