@@ -17,7 +17,7 @@ class CreateBooksTable extends Migration
             $table->id();
             $table->foreignId('category_id');
             $table->foreignId('publishers_id');
-            $table->foreignId('status_books_id');
+            $table->foreignId('condition_books_id');
             $table->string('code');
             $table->string('title');
             $table->string('descriptions', 1024);
