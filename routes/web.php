@@ -63,6 +63,8 @@ Route::get('/members/store', [MembersController::class, 'store']);
 Route::get('/members/create', [MembersController::class, 'create']);
 Route::get('/members/verify', [MembersController::class, 'verify']);
 Route::get('/members/id', [MembersController::class, 'detail']);
+Route::get('/members/id/verif', [MembersController::class, 'verif']);
+Route::get('dashboard2/members/id/verif', [MembersController::class, 'verif']);
 Route::get('/members/id/edit', [MembersController::class, 'edit']);
 Route::get('/members/id/update', [MembersController::class, 'update']);
 Route::get('/members/id/disable', [MembersController::class, 'disable']);

@@ -88,6 +88,11 @@
                                         </div>
                                         <div class="col-12">
                                             <div class="form-group">
+                                                <input type="text" id="inputCodePost" name="kodepos" class="form-control" placeholder="Kode Pos">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-group">
                                                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
                                                     placeholder="Alamat Lengkap"></textarea>
                                             </div>

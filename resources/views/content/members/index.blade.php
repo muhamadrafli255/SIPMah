@@ -133,7 +133,7 @@
                                 <td>Jujun Saputra</td>
                                 <td>jujun12@example.com</td>
                                 <td><h6><span class="badge badge-success">Aktif</span></h6></td>
-                                <td>
+                                <td class="text-center">
                                     <div class="mx-auto">
                                         <a href="/members/id" class="btn btn-sm btn-outline-success"
                                             data-toggle="tooltip" data-placement="top" title="Detail"><i
@@ -155,7 +155,7 @@
                                 <td>Dani Fitriani</td>
                                 <td>dani.fitriani@example.com</td>
                                 <td><h6><span class="badge badge-success">Aktif</span></h6></td>
-                                <td>
+                                <td class="text-center">
                                     <div class="mx-auto">
                                         <a href="/members/id" class="btn btn-sm btn-outline-success"
                                             data-toggle="tooltip" data-placement="top" title="Detail"><i
@@ -177,7 +177,7 @@
                                 <td>Andara Amanda</td>
                                 <td>andara.a.a@example.com</td>
                                 <td><h6><span class="badge badge-danger">Nonaktif</span></h6></td>
-                                <td>
+                                <td class="text-center">
                                     <div class="mx-auto">
                                         <a href="/members/id" class="btn btn-sm btn-outline-success"
                                             data-toggle="tooltip" data-placement="top" title="Detail"><i
@@ -199,17 +199,14 @@
                                 <td>Queensha Marsya</td>
                                 <td>queensha.marsya@example.com</td>
                                 <td><h6><span class="badge badge-warning">Belum Diverifikasi</span></h6></td>
-                                <td>
+                                <td class="text-center">
                                     <div class="mx-auto">
-                                        <a href="/members/id" class="btn btn-sm btn-outline-success"
+                                        <a href="/members/id/verif" class="btn btn-sm btn-outline-success"
                                             data-toggle="tooltip" data-placement="top" title="Detail"><i
                                                 class="fa-solid fa-eye"></i></a>
                                         <a href="" class="btn btn-sm btn-outline-warning" data-toggle="tooltip"
                                             data-placement="top" title="Ubah"><i
                                                 class="fa-solid fa-pen-to-square"></i></a>
-                                            <a href="/members/verify" class="btn btn-sm btn-outline-info" data-toggle="tooltip"
-                                                data-placement="top" title="Verifikasi"><i
-                                                    class="fa-solid fa-check"></i></a>
                                     </div>
                                 </td>
                             </tr>
@@ -219,7 +216,7 @@
                                 <td>Raina Aqila</td>
                                 <td>raina.aqila33@example.com</td>
                                 <td><h6><span class="badge badge-danger">Nonaktif</span></h6></td>
-                                <td>
+                                <td class="text-center">
                                     <div class="mx-auto">
                                         <a href="/members/id" class="btn btn-sm btn-outline-success"
                                             data-toggle="tooltip" data-placement="top" title="Detail"><i
@@ -241,7 +238,7 @@
                                 <td>Sadiya Marshanda</td>
                                 <td>sadiyamarshanda12@example.com</td>
                                 <td><h6><span class="badge badge-success">Aktif</span></h6></td>
-                                <td>
+                                <td class="text-center">
                                     <div class="mx-auto">
                                         <a href="/members/id" class="btn btn-sm btn-outline-success"
                                             data-toggle="tooltip" data-placement="top" title="Detail"><i
@@ -263,7 +260,7 @@
                                 <td>Robi Firmansyah</td>
                                 <td>robifirmansyah@example.com</td>
                                 <td><h6><span class="badge badge-success">Aktif</span></h6></td>
-                                <td>
+                                <td class="text-center">
                                     <div class="mx-auto">
                                         <a href="/members/id" class="btn btn-sm btn-outline-success"
                                             data-toggle="tooltip" data-placement="top" title="Detail"><i
@@ -285,7 +282,7 @@
                                 <td>Dodi Permana</td>
                                 <td>dodipermana@example.com</td>
                                 <td><h6><span class="badge badge-success">Aktif</span></h6></td>
-                                <td>
+                                <td class="text-center">
                                     <div class="mx-auto">
                                         <a href="/members/id" class="btn btn-sm btn-outline-success"
                                             data-toggle="tooltip" data-placement="top" title="Detail"><i
@@ -307,7 +304,7 @@
                                 <td>Jajang Sukmara</td>
                                 <td>jajangsukmara@example.com</td>
                                 <td><h6><span class="badge badge-success">Aktif</span></h6></td>
-                                <td>
+                                <td class="text-center">
                                     <div class="mx-auto">
                                         <a href="/members/id" class="btn btn-sm btn-outline-success"
                                             data-toggle="tooltip" data-placement="top" title="Detail"><i
@@ -329,7 +326,7 @@
                                 <td>Sinta Andini</td>
                                 <td>sintaandini89@example.com</td>
                                 <td><h6><span class="badge badge-success">Aktif</span></h6></td>
-                                <td>
+                                <td class="text-center">
                                     <div class="mx-auto">
                                         <a href="/members/id" class="btn btn-sm btn-outline-success"
                                             data-toggle="tooltip" data-placement="top" title="Detail"><i
@@ -351,7 +348,7 @@
                                 <td>Rendi Permana</td>
                                 <td>rendipermana.pwut@example.com</td>
                                 <td><h6><span class="badge badge-success">Aktif</span></h6></td>
-                                <td>
+                                <td class="text-center">
                                     <div class="mx-auto">
                                         <a href="/members/id" class="btn btn-sm btn-outline-success"
                                             data-toggle="tooltip" data-placement="top" title="Detail"><i
@@ -373,7 +370,7 @@
                                 <td>Syakila Azzahara</td>
                                 <td>syakila.azzahara@example.com</td>
                                 <td><h6><span class="badge badge-success">Aktif</span></h6></td>
-                                <td>
+                                <td class="text-center">
                                     <div class="mx-auto">
                                         <a href="/members/id" class="btn btn-sm btn-outline-success"
                                             data-toggle="tooltip" data-placement="top" title="Detail"><i
@@ -395,7 +392,7 @@
                                 <td>Perdinand Simatupang</td>
                                 <td>perdinand.simatupang@example.com</td>
                                 <td><h6><span class="badge badge-success">Aktif</span></h6></td>
-                                <td>
+                                <td class="text-center">
                                     <div class="mx-auto">
                                         <a href="/members/id" class="btn btn-sm btn-outline-success"
                                             data-toggle="tooltip" data-placement="top" title="Detail"><i
@@ -417,7 +414,7 @@
                                 <td>Akbar Rizkiana</td>
                                 <td>akbar.rizkiana@example.com</td>
                                 <td><h6><span class="badge badge-success">Aktif</span></h6></td>
-                                <td>
+                                <td class="text-center">
                                     <div class="mx-auto">
                                         <a href="/members/id" class="btn btn-sm btn-outline-success"
                                             data-toggle="tooltip" data-placement="top" title="Detail"><i
@@ -439,7 +436,7 @@
                                 <td>Refan Purnama</td>
                                 <td>refan.fur@example.com</td>
                                 <td><h6><span class="badge badge-success">Aktif</span></h6></td>
-                                <td>
+                                <td class="text-center">
                                     <div class="mx-auto">
                                         <a href="/members/id" class="btn btn-sm btn-outline-success"
                                             data-toggle="tooltip" data-placement="top" title="Detail"><i
@@ -461,7 +458,7 @@
                                 <td>Raditya Suganda</td>
                                 <td>radityaklkl@example.com</td>
                                 <td><h6><span class="badge badge-success">Aktif</span></h6></td>
-                                <td>
+                                <td class="text-center">
                                     <div class="mx-auto">
                                         <a href="/members/id" class="btn btn-sm btn-outline-success"
                                             data-toggle="tooltip" data-placement="top" title="Detail"><i
@@ -483,7 +480,7 @@
                                 <td>Rahmat Adiwidia</td>
                                 <td>rahmatadiwidia@example.com</td>
                                 <td><h6><span class="badge badge-success">Aktif</span></h6></td>
-                                <td>
+                                <td class="text-center">
                                     <div class="mx-auto">
                                         <a href="/members/id" class="btn btn-sm btn-outline-success"
                                             data-toggle="tooltip" data-placement="top" title="Detail"><i
@@ -505,7 +502,7 @@
                                 <td>Jefri Sinaga</td>
                                 <td>jefrisinaga@example.com</td>
                                 <td><h6><span class="badge badge-danger">Nonaktif</span></h6></td>
-                                <td>
+                                <td class="text-center">
                                     <div class="mx-auto">
                                         <a href="/members/id" class="btn btn-sm btn-outline-success"
                                             data-toggle="tooltip" data-placement="top" title="Detail"><i
@@ -527,7 +524,7 @@
                                 <td>Alfred Nastazio</td>
                                 <td>Alfred45@example.com</td>
                                 <td><h6><span class="badge badge-success">Aktif</span></h6></td>
-                                <td>
+                                <td class="text-center">
                                     <div class="mx-auto">
                                         <a href="/members/id" class="btn btn-sm btn-outline-success"
                                             data-toggle="tooltip" data-placement="top" title="Detail"><i
@@ -549,7 +546,7 @@
                                 <td>Muhammad Devin</td>
                                 <td>muhamaddevin@example.com</td>
                                 <td><h6><span class="badge badge-success">Aktif</span></h6></td>
-                                <td>
+                                <td class="text-center">
                                     <div class="mx-auto">
                                         <a href="/members/id" class="btn btn-sm btn-outline-success"
                                             data-toggle="tooltip" data-placement="top" title="Detail"><i
@@ -571,7 +568,7 @@
                                 <td>Muhammad Kemal</td>
                                 <td>muhamadkemal@example.com</td>
                                 <td><h6><span class="badge badge-success">Aktif</span></h6></td>
-                                <td>
+                                <td class="text-center">
                                     <div class="mx-auto">
                                         <a href="/members/id" class="btn btn-sm btn-outline-success"
                                             data-toggle="tooltip" data-placement="top" title="Detail"><i
@@ -593,7 +590,7 @@
                                 <td>Muhammad Akbar</td>
                                 <td>muhamadakbar@example.com</td>
                                 <td><h6><span class="badge badge-success">Aktif</span></h6></td>
-                                <td>
+                                <td class="text-center">
                                     <div class="mx-auto">
                                         <a href="/members/id" class="btn btn-sm btn-outline-success"
                                             data-toggle="tooltip" data-placement="top" title="Detail"><i
@@ -615,7 +612,7 @@
                                 <td>Muhammad Januar Arifin</td>
                                 <td>muhjanuarifin@example.com</td>
                                 <td><h6><span class="badge badge-success">Aktif</span></h6></td>
-                                <td>
+                                <td class="text-center">
                                     <div class="mx-auto">
                                         <a href="/members/id" class="btn btn-sm btn-outline-success"
                                             data-toggle="tooltip" data-placement="top" title="Detail"><i
@@ -636,7 +633,7 @@
                             <td>Fajar Sanjaya</td>
                             <td>fajarsanjaya@example.com</td>
                             <td><h6><span class="badge badge-success">Aktif</span></h6></td>
-                            <td>
+                            <td class="text-center">
                                 <div class="mx-auto">
                                     <a href="/members/id" class="btn btn-sm btn-outline-success" data-toggle="tooltip"
                                         data-placement="top" title="Detail"><i class="fa-solid fa-eye"></i></a>

@@ -44,7 +44,7 @@
                 @if (Request::is('dashboard3*'))
                 <a class="nav-link" href="/dashboard3/racks">
                 @else
-                <a class="nav-link" href="{{ Request::is('dashboard2*') ? '/dashboard2/racks' : '/dashboard' }}">
+                <a class="nav-link" href="{{ Request::is('dashboard2*') ? '/dashboard2/racks' : '/racks' }}">
                 @endif
                     <i class="fa-solid fa-table-list"></i>
                     <span>Rak</span>

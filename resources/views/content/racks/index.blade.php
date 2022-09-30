@@ -18,7 +18,7 @@
             @endif
             <div class="card mb-4">
                 <div class="col-lg-12 mt-3">
-                    @if (Request::is('/racks', 'dashboard2*'))
+                    @if (Request::is('racks*', 'dashboard2*'))
                     <div class="btn-group dropright">
                         <button type="button" class="btn btn-sm btn-outline-secondary rounded mb-2"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

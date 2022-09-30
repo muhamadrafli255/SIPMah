@@ -54,4 +54,10 @@ class MembersController extends Controller
     {
         return redirect('/members')->with('Berhasil', 'Data anggota Queensha Marsya berhasil diverifikasi');
     }
+
+    public function verif()
+    {
+        $title = "Detail Akun";
+        return view('content.members.detail2', compact('title'));
+    }
 }
