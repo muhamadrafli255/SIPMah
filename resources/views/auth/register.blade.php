@@ -88,7 +88,14 @@
                                         </div>
                                         <div class="col-12">
                                             <div class="form-group">
-                                                <input type="text" id="inputCodePost" name="kodepos" class="form-control" placeholder="Kode Pos">
+                                                <select name="" class="form-control" id="">
+                                                    <option value="" disabled selected>Kode Pos</option>
+                                                    <option value="">40921</option>
+                                                    <option value="">40961</option>
+                                                    <option value="">40966</option>
+                                                    <option value="">40922</option>
+                                                    <option value="">40955</option>
+                                                </select>
                                             </div>
                                         </div>
                                         <div class="col-12">
