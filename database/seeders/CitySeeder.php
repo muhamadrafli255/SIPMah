@@ -1840,194 +1840,749 @@ class CitySeeder extends Seeder
             'name'          =>  'KOTA BONTANG',
         ]);
         City::create([
-            'id'            =>  '',
-            'provinces_id'  =>  '',
-            'name'          =>  '',
+            'id'            =>  '6501',
+            'provinces_id'  =>  '65',
+            'name'          =>  'KABUPATEN MALINAU',
         ]);
         City::create([
-            'id'            =>  '',
-            'provinces_id'  =>  '',
-            'name'          =>  '',
+            'id'            =>  '6502',
+            'provinces_id'  =>  '65',
+            'name'          =>  'KABUPATEN BULUNGAN',
         ]);
         City::create([
-            'id'            =>  '',
-            'provinces_id'  =>  '',
-            'name'          =>  '',
+            'id'            =>  '6503',
+            'provinces_id'  =>  '65',
+            'name'          =>  'KABUPATEN TANA TIDUNG',
         ]);
         City::create([
-            'id'            =>  '',
-            'provinces_id'  =>  '',
-            'name'          =>  '',
+            'id'            =>  '6504',
+            'provinces_id'  =>  '65',
+            'name'          =>  'KABUPATEN NUNUKAN',
         ]);
         City::create([
-            'id'            =>  '',
-            'provinces_id'  =>  '',
-            'name'          =>  '',
+            'id'            =>  '6571',
+            'provinces_id'  =>  '65',
+            'name'          =>  'KOTA TARAKAN',
         ]);
         City::create([
-            'id'            =>  '',
-            'provinces_id'  =>  '',
-            'name'          =>  '',
+            'id'            =>  '7101',
+            'provinces_id'  =>  '71',
+            'name'          =>  'KABUPATEN BOLAANG MONGONDOW',
         ]);
         City::create([
-            'id'            =>  '',
-            'provinces_id'  =>  '',
-            'name'          =>  '',
+            'id'            =>  '7102',
+            'provinces_id'  =>  '71',
+            'name'          =>  'KABUPATEN MINAHASA',
         ]);
         City::create([
-            'id'            =>  '',
-            'provinces_id'  =>  '',
-            'name'          =>  '',
+            'id'            =>  '7103',
+            'provinces_id'  =>  '71',
+            'name'          =>  'KABUPATEN KEPULAUAN SANGIHE',
         ]);
         City::create([
-            'id'            =>  '',
-            'provinces_id'  =>  '',
-            'name'          =>  '',
+            'id'            =>  '7104',
+            'provinces_id'  =>  '71',
+            'name'          =>  'KABUPATEN KEPULAUAN TALAUD',
         ]);
         City::create([
-            'id'            =>  '',
-            'provinces_id'  =>  '',
-            'name'          =>  '',
+            'id'            =>  '7105',
+            'provinces_id'  =>  '71',
+            'name'          =>  'KABUPATEN MINAHASA SELATAN',
         ]);
         City::create([
-            'id'            =>  '',
-            'provinces_id'  =>  '',
-            'name'          =>  '',
+            'id'            =>  '7106',
+            'provinces_id'  =>  '71',
+            'name'          =>  'KABUPATEN MINAHASA UTARA',
         ]);
         City::create([
-            'id'            =>  '',
-            'provinces_id'  =>  '',
-            'name'          =>  '',
+            'id'            =>  '7107',
+            'provinces_id'  =>  '71',
+            'name'          =>  'KABUPATEN BOLAANG MONGONDOW UTARA',
         ]);
         City::create([
-            'id'            =>  '',
-            'provinces_id'  =>  '',
-            'name'          =>  '',
+            'id'            =>  '7108',
+            'provinces_id'  =>  '71',
+            'name'          =>  'KABUPATEN SIAU TAGULANDANG BIARO',
         ]);
         City::create([
-            'id'            =>  '',
-            'provinces_id'  =>  '',
-            'name'          =>  '',
+            'id'            =>  '7109',
+            'provinces_id'  =>  '71',
+            'name'          =>  'KABUPATEN MINAHASA TENGGARA',
         ]);
         City::create([
-            'id'            =>  '',
-            'provinces_id'  =>  '',
-            'name'          =>  '',
+            'id'            =>  '7110',
+            'provinces_id'  =>  '71',
+            'name'          =>  'KABUPATEN BOLAANG MONGONDOW SELATAN',
         ]);
         City::create([
-            'id'            =>  '',
-            'provinces_id'  =>  '',
-            'name'          =>  '',
+            'id'            =>  '7111',
+            'provinces_id'  =>  '71',
+            'name'          =>  'KABUPATEN BOLAANG MONGONDOW TIMUR',
         ]);
         City::create([
-            'id'            =>  '',
-            'provinces_id'  =>  '',
-            'name'          =>  '',
+            'id'            =>  '7171',
+            'provinces_id'  =>  '71',
+            'name'          =>  'KOTA MANADO',
         ]);
         City::create([
-            'id'            =>  '',
-            'provinces_id'  =>  '',
-            'name'          =>  '',
+            'id'            =>  '7172',
+            'provinces_id'  =>  '71',
+            'name'          =>  'KOTA BITUNG',
         ]);
         City::create([
-            'id'            =>  '',
-            'provinces_id'  =>  '',
-            'name'          =>  '',
+            'id'            =>  '7173',
+            'provinces_id'  =>  '71',
+            'name'          =>  'KOTA TOMOHON',
         ]);
         City::create([
-            'id'            =>  '',
-            'provinces_id'  =>  '',
-            'name'          =>  '',
+            'id'            =>  '7174',
+            'provinces_id'  =>  '71',
+            'name'          =>  'KOTA KOTAMOBAGU',
         ]);
         City::create([
-            'id'            =>  '',
-            'provinces_id'  =>  '',
-            'name'          =>  '',
+            'id'            =>  '7201',
+            'provinces_id'  =>  '72',
+            'name'          =>  'KABUPATEN BANGGAI KEPULAUAN',
         ]);
         City::create([
-            'id'            =>  '',
-            'provinces_id'  =>  '',
-            'name'          =>  '',
+            'id'            =>  '7202',
+            'provinces_id'  =>  '72',
+            'name'          =>  'KABUPATEN BANGGAI',
         ]);
         City::create([
-            'id'            =>  '',
-            'provinces_id'  =>  '',
-            'name'          =>  '',
+            'id'            =>  '7203',
+            'provinces_id'  =>  '72',
+            'name'          =>  'KABUPATEN MOROWALI',
         ]);
         City::create([
-            'id'            =>  '',
-            'provinces_id'  =>  '',
-            'name'          =>  '',
+            'id'            =>  '7204',
+            'provinces_id'  =>  '72',
+            'name'          =>  'KABUPATEN POSO',
         ]);
         City::create([
-            'id'            =>  '',
-            'provinces_id'  =>  '',
-            'name'          =>  '',
+            'id'            =>  '7205',
+            'provinces_id'  =>  '72',
+            'name'          =>  'KABUPATEN DONGGALA',
         ]);
         City::create([
-            'id'            =>  '',
-            'provinces_id'  =>  '',
-            'name'          =>  '',
+            'id'            =>  '7206',
+            'provinces_id'  =>  '72',
+            'name'          =>  'KABUPATEN TOLI-TOLI',
         ]);
         City::create([
-            'id'            =>  '',
-            'provinces_id'  =>  '',
-            'name'          =>  '',
+            'id'            =>  '7207',
+            'provinces_id'  =>  '72',
+            'name'          =>  'KABUPATEN BUOL',
         ]);
         City::create([
-            'id'            =>  '',
-            'provinces_id'  =>  '',
-            'name'          =>  '',
+            'id'            =>  '7208',
+            'provinces_id'  =>  '72',
+            'name'          =>  'KABUPATEN PARIGI MOUTONG',
         ]);
         City::create([
-            'id'            =>  '',
-            'provinces_id'  =>  '',
-            'name'          =>  '',
+            'id'            =>  '7209',
+            'provinces_id'  =>  '72',
+            'name'          =>  'KABUPATEN TOJO UNA-UNA',
         ]);
         City::create([
-            'id'            =>  '',
-            'provinces_id'  =>  '',
-            'name'          =>  '',
+            'id'            =>  '7210',
+            'provinces_id'  =>  '72',
+            'name'          =>  'KABUPATEN SIGI',
         ]);
         City::create([
-            'id'            =>  '',
-            'provinces_id'  =>  '',
-            'name'          =>  '',
+            'id'            =>  '7211',
+            'provinces_id'  =>  '72',
+            'name'          =>  'KABUPATEN BANGGAI LAUT',
         ]);
         City::create([
-            'id'            =>  '',
-            'provinces_id'  =>  '',
-            'name'          =>  '',
+            'id'            =>  '7212',
+            'provinces_id'  =>  '72',
+            'name'          =>  'KABUPATEN MOROWALI UTARA',
         ]);
         City::create([
-            'id'            =>  '',
-            'provinces_id'  =>  '',
-            'name'          =>  '',
+            'id'            =>  '7271',
+            'provinces_id'  =>  '72',
+            'name'          =>  'KOTA PALU',
         ]);
         City::create([
-            'id'            =>  '',
-            'provinces_id'  =>  '',
-            'name'          =>  '',
+            'id'            =>  '7301',
+            'provinces_id'  =>  '73',
+            'name'          =>  'KABUPATEN KEPULAUAN SELAYAR',
         ]);
         City::create([
-            'id'            =>  '',
-            'provinces_id'  =>  '',
-            'name'          =>  '',
+            'id'            =>  '7302',
+            'provinces_id'  =>  '73',
+            'name'          =>  'KABUPATEN BULUKUMBA',
         ]);
         City::create([
-            'id'            =>  '',
-            'provinces_id'  =>  '',
-            'name'          =>  '',
+            'id'            =>  '7303',
+            'provinces_id'  =>  '73',
+            'name'          =>  'KABUPATEN BANTAENG',
         ]);
         City::create([
-            'id'            =>  '',
-            'provinces_id'  =>  '',
-            'name'          =>  '',
+            'id'            =>  '7304',
+            'provinces_id'  =>  '73',
+            'name'          =>  'KABUPATEN JENEPONTO',
         ]);
         City::create([
-            'id'            =>  '',
-            'provinces_id'  =>  '',
-            'name'          =>  '',
+            'id'            =>  '7305',
+            'provinces_id'  =>  '73',
+            'name'          =>  'KABUPATEN TAKALAR',
+        ]);
+        City::create([
+            'id'            =>  '7306',
+            'provinces_id'  =>  '73',
+            'name'          =>  'KABUPATEN GOWA',
+        ]);
+        City::create([
+            'id'            =>  '7307',
+            'provinces_id'  =>  '73',
+            'name'          =>  'KABUPATEN SINJAI',
+        ]);
+        City::create([
+            'id'            =>  '7308',
+            'provinces_id'  =>  '73',
+            'name'          =>  'KABUPATEN MAROS',
+        ]);
+        City::create([
+            'id'            =>  '7309',
+            'provinces_id'  =>  '73',
+            'name'          =>  'KABUPATEN PANGKAJENE DAN KEPULAUAN',
+        ]);
+        City::create([
+            'id'            =>  '7310',
+            'provinces_id'  =>  '73',
+            'name'          =>  'KABUPATEN BARRU',
+        ]);
+        City::create([
+            'id'            =>  '7311',
+            'provinces_id'  =>  '73',
+            'name'          =>  'KABUPATEN BONE',
+        ]);
+        City::create([
+            'id'            =>  '7312',
+            'provinces_id'  =>  '73',
+            'name'          =>  'KABUPATEN SOPPENG',
+        ]);
+        City::create([
+            'id'            =>  '7313',
+            'provinces_id'  =>  '73',
+            'name'          =>  'KABUPATEN WAJO',
+        ]);
+        City::create([
+            'id'            =>  '7314',
+            'provinces_id'  =>  '73',
+            'name'          =>  'KABUPATEN SIDENRENG RAPPANG',
+        ]);
+        City::create([
+            'id'            =>  '7315',
+            'provinces_id'  =>  '73',
+            'name'          =>  'KABUPATEN PINRANG',
+        ]);
+        City::create([
+            'id'            =>  '7316',
+            'provinces_id'  =>  '73',
+            'name'          =>  'KABUPATEN ENREKANG',
+        ]);
+        City::create([
+            'id'            =>  '7317',
+            'provinces_id'  =>  '73',
+            'name'          =>  'KABUPATEN LUWU',
+        ]);
+        City::create([
+            'id'            =>  '7318',
+            'provinces_id'  =>  '73',
+            'name'          =>  'KABUPATEN TANA TORAJA',
+        ]);
+        City::create([
+            'id'            =>  '7322',
+            'provinces_id'  =>  '73',
+            'name'          =>  'KABUPATEN LUWU UTARA',
+        ]);
+        City::create([
+            'id'            =>  '7325',
+            'provinces_id'  =>  '73',
+            'name'          =>  'KABUPATEN LUWU TIMUR',
+        ]);
+        City::create([
+            'id'            =>  '7326',
+            'provinces_id'  =>  '73',
+            'name'          =>  'KABUPATEN TORAJA UTARA',
+        ]);
+        City::create([
+            'id'            =>  '7371',
+            'provinces_id'  =>  '73',
+            'name'          =>  'KOTA MAKASSAR',
+        ]);
+        City::create([
+            'id'            =>  '7372',
+            'provinces_id'  =>  '73',
+            'name'          =>  'KOTA PAREPARE',
+        ]);
+        City::create([
+            'id'            =>  '7373',
+            'provinces_id'  =>  '73',
+            'name'          =>  'KOTA PALOPO',
+        ]);
+        City::create([
+            'id'            =>  '7401',
+            'provinces_id'  =>  '74',
+            'name'          =>  'KABUPATEN BUTON',
+        ]);
+        City::create([
+            'id'            =>  '7402',
+            'provinces_id'  =>  '74',
+            'name'          =>  'KABUPATEN MUNA',
+        ]);
+        City::create([
+            'id'            =>  '7403',
+            'provinces_id'  =>  '74',
+            'name'          =>  'KABUPATEN KONAWE',
+        ]);
+        City::create([
+            'id'            =>  '7404',
+            'provinces_id'  =>  '74',
+            'name'          =>  'KABUPATEN KOLAKA',
+        ]);
+        City::create([
+            'id'            =>  '7405',
+            'provinces_id'  =>  '74',
+            'name'          =>  'KABUPATEN KONAWE SELATAN',
+        ]);
+        City::create([
+            'id'            =>  '7406',
+            'provinces_id'  =>  '74',
+            'name'          =>  'KABUPATEN BOMBANA',
+        ]);
+        City::create([
+            'id'            =>  '7407',
+            'provinces_id'  =>  '74',
+            'name'          =>  'KABUPATEN WAKATOBI',
+        ]);
+        City::create([
+            'id'            =>  '7408',
+            'provinces_id'  =>  '74',
+            'name'          =>  'KABUPATEN KOLAKA UTARA',
+        ]);
+        City::create([
+            'id'            =>  '7409',
+            'provinces_id'  =>  '74',
+            'name'          =>  'KABUPATEN BUTON UTARA',
+        ]);
+        City::create([
+            'id'            =>  '7410',
+            'provinces_id'  =>  '74',
+            'name'          =>  'KABUPATEN KONAWE UTARA',
+        ]);
+        City::create([
+            'id'            =>  '7411',
+            'provinces_id'  =>  '74',
+            'name'          =>  'KABUPATEN KOLAKA TIMUR',
+        ]);
+        City::create([
+            'id'            =>  '7412',
+            'provinces_id'  =>  '74',
+            'name'          =>  'KABUPATEN KONAWE KEPULAUAN',
+        ]);
+        City::create([
+            'id'            =>  '7413',
+            'provinces_id'  =>  '74',
+            'name'          =>  'KABUPATEN MUNA BARAT',
+        ]);
+        City::create([
+            'id'            =>  '7414',
+            'provinces_id'  =>  '74',
+            'name'          =>  'KABUPATEN BUTON TENGAH',
+        ]);
+        City::create([
+            'id'            =>  '7415',
+            'provinces_id'  =>  '74',
+            'name'          =>  'KABUPATEN BUTON SELATAN',
+        ]);
+        City::create([
+            'id'            =>  '7471',
+            'provinces_id'  =>  '74',
+            'name'          =>  'KOTA KENDARI',
+        ]);
+        City::create([
+            'id'            =>  '7472',
+            'provinces_id'  =>  '74',
+            'name'          =>  'KOTA BAUBAU',
+        ]);
+        City::create([
+            'id'            =>  '7501',
+            'provinces_id'  =>  '75',
+            'name'          =>  'KABUPATEN BOALEMO',
+        ]);
+        City::create([
+            'id'            =>  '7502',
+            'provinces_id'  =>  '75',
+            'name'          =>  'KABUPATEN GORONTALO',
+        ]);
+        City::create([
+            'id'            =>  '7503',
+            'provinces_id'  =>  '75',
+            'name'          =>  'KABUPATEN POHUWATO',
+        ]);
+        City::create([
+            'id'            =>  '7504',
+            'provinces_id'  =>  '75',
+            'name'          =>  'KABUPATEN BONE BOLANGO',
+        ]);
+        City::create([
+            'id'            =>  '7505',
+            'provinces_id'  =>  '75',
+            'name'          =>  'KABUPATEN GORONTALO UTARA',
+        ]);
+        City::create([
+            'id'            =>  '7571',
+            'provinces_id'  =>  '75',
+            'name'          =>  'KOTA GORONTALO',
+        ]);
+        City::create([
+            'id'            =>  '7601',
+            'provinces_id'  =>  '76',
+            'name'          =>  'KABUPATEN MAJENE',
+        ]);
+        City::create([
+            'id'            =>  '7602',
+            'provinces_id'  =>  '76',
+            'name'          =>  'KABUPATEN POLEWALI MANDAR',
+        ]);
+        City::create([
+            'id'            =>  '7603',
+            'provinces_id'  =>  '76',
+            'name'          =>  'KABUPATEN MAMASA',
+        ]);
+        City::create([
+            'id'            =>  '7604',
+            'provinces_id'  =>  '76',
+            'name'          =>  'KABUPATEN MAMUJU',
+        ]);
+        City::create([
+            'id'            =>  '7605',
+            'provinces_id'  =>  '76',
+            'name'          =>  'KABUPATEN MAMUJU UTARA',
+        ]);
+        City::create([
+            'id'            =>  '7606',
+            'provinces_id'  =>  '76',
+            'name'          =>  'KABUPATEN MAMUJU TENGAH',
+        ]);
+        City::create([
+            'id'            =>  '8101',
+            'provinces_id'  =>  '81',
+            'name'          =>  'KABUPATEN MALUKU TENGGARA BARAT',
+        ]);
+        City::create([
+            'id'            =>  '8102',
+            'provinces_id'  =>  '81',
+            'name'          =>  'KABUPATEN MALUKU TENGGARA',
+        ]);
+        City::create([
+            'id'            =>  '8103',
+            'provinces_id'  =>  '81',
+            'name'          =>  'KABUPATEN MALUKU TENGAH',
+        ]);
+        City::create([
+            'id'            =>  '8104',
+            'provinces_id'  =>  '81',
+            'name'          =>  'KABUPATEN BURU',
+        ]);
+        City::create([
+            'id'            =>  '8105',
+            'provinces_id'  =>  '81',
+            'name'          =>  'KABUPATEN KEPULAUAN ARU',
+        ]);
+        City::create([
+            'id'            =>  '8106',
+            'provinces_id'  =>  '81',
+            'name'          =>  'KABUPATEN SERAM BAGIAN BARAT',
+        ]);
+        City::create([
+            'id'            =>  '8107',
+            'provinces_id'  =>  '81',
+            'name'          =>  'KABUPATEN SERAM BAGIAN TIMUR',
+        ]);
+        City::create([
+            'id'            =>  '8108',
+            'provinces_id'  =>  '81',
+            'name'          =>  'KABUPATEN MALUKU BARAT DAYA',
+        ]);
+        City::create([
+            'id'            =>  '8109',
+            'provinces_id'  =>  '81',
+            'name'          =>  'KABUPATEN BURU SELATAN',
+        ]);
+        City::create([
+            'id'            =>  '8171',
+            'provinces_id'  =>  '81',
+            'name'          =>  'KOTA AMBON',
+        ]);
+        City::create([
+            'id'            =>  '8172',
+            'provinces_id'  =>  '81',
+            'name'          =>  'KOTA TUAL',
+        ]);
+        City::create([
+            'id'            =>  '8201',
+            'provinces_id'  =>  '82',
+            'name'          =>  'KABUPATEN HALMAHERA BARAT',
+        ]);
+        City::create([
+            'id'            =>  '8202',
+            'provinces_id'  =>  '82',
+            'name'          =>  'KABUPATEN HALMAHERA TENGAH',
+        ]);
+        City::create([
+            'id'            =>  '8203',
+            'provinces_id'  =>  '82',
+            'name'          =>  'KABUPATEN KEPULAUAN SULA',
+        ]);
+        City::create([
+            'id'            =>  '8204',
+            'provinces_id'  =>  '82',
+            'name'          =>  'KABUPATEN HALMAHERA SELATAN',
+        ]);
+        City::create([
+            'id'            =>  '8205',
+            'provinces_id'  =>  '82',
+            'name'          =>  'KABUPATEN HALMAHERA UTARA',
+        ]);
+        City::create([
+            'id'            =>  '8206',
+            'provinces_id'  =>  '82',
+            'name'          =>  'KABUPATEN HALMAHERA TIMUR',
+        ]);
+        City::create([
+            'id'            =>  '8207',
+            'provinces_id'  =>  '82',
+            'name'          =>  'KABUPATEN PULAU MOROTAI',
+        ]);
+        City::create([
+            'id'            =>  '8208',
+            'provinces_id'  =>  '82',
+            'name'          =>  'KABUPATEN PULAU TALIABU',
+        ]);
+        City::create([
+            'id'            =>  '8271',
+            'provinces_id'  =>  '82',
+            'name'          =>  'KOTA TERNATE',
+        ]);
+        City::create([
+            'id'            =>  '8272',
+            'provinces_id'  =>  '82',
+            'name'          =>  'KOTA TIDORE KEPULAUAN',
+        ]);
+        City::create([
+            'id'            =>  '9101',
+            'provinces_id'  =>  '91',
+            'name'          =>  'KABUPATEN FAKFAK',
+        ]);
+        City::create([
+            'id'            =>  '9102',
+            'provinces_id'  =>  '91',
+            'name'          =>  'KABUPATEN KAIMANA',
+        ]);
+        City::create([
+            'id'            =>  '9103',
+            'provinces_id'  =>  '91',
+            'name'          =>  'KABUPATEN TELUK WONDAMA',
+        ]);
+        City::create([
+            'id'            =>  '9104',
+            'provinces_id'  =>  '91',
+            'name'          =>  'KABUPATEN TELUK BINTUNI',
+        ]);
+        City::create([
+            'id'            =>  '9105',
+            'provinces_id'  =>  '91',
+            'name'          =>  'KABUPATEN MANOKWARI',
+        ]);
+        City::create([
+            'id'            =>  '9106',
+            'provinces_id'  =>  '91',
+            'name'          =>  'KABUPATEN SORONG SELATAN',
+        ]);
+        City::create([
+            'id'            =>  '9107',
+            'provinces_id'  =>  '91',
+            'name'          =>  'KABUPATEN SORONG',
+        ]);
+        City::create([
+            'id'            =>  '9108',
+            'provinces_id'  =>  '91',
+            'name'          =>  'KABUPATEN RAJA AMPAT',
+        ]);
+        City::create([
+            'id'            =>  '9109',
+            'provinces_id'  =>  '91',
+            'name'          =>  'KABUPATEN TAMBRAUW',
+        ]);
+        City::create([
+            'id'            =>  '9110',
+            'provinces_id'  =>  '91',
+            'name'          =>  'KABUPATEN MAYBRAT',
+        ]);
+        City::create([
+            'id'            =>  '9111',
+            'provinces_id'  =>  '91',
+            'name'          =>  'KABUPATEN MANOKWARI SELATAN',
+        ]);
+        City::create([
+            'id'            =>  '9112',
+            'provinces_id'  =>  '91',
+            'name'          =>  'KABUPATEN PEGUNUNGAN ARFAK',
+        ]);
+        City::create([
+            'id'            =>  '9171',
+            'provinces_id'  =>  '91',
+            'name'          =>  'KOTA SORONG',
+        ]);
+        City::create([
+            'id'            =>  '9401',
+            'provinces_id'  =>  '94',
+            'name'          =>  'KABUPATEN MERAUKE',
+        ]);
+        City::create([
+            'id'            =>  '9402',
+            'provinces_id'  =>  '94',
+            'name'          =>  'KABUPATEN JAYAWIJAYA',
+        ]);
+        City::create([
+            'id'            =>  '9403',
+            'provinces_id'  =>  '94',
+            'name'          =>  'KABUPATEN JAYAPURA',
+        ]);
+        City::create([
+            'id'            =>  '9404',
+            'provinces_id'  =>  '94',
+            'name'          =>  'KABUPATEN NABIRE',
+        ]);
+        City::create([
+            'id'            =>  '9408',
+            'provinces_id'  =>  '94',
+            'name'          =>  'KABUPATEN KEPULAUAN YAPEN',
+        ]);
+        City::create([
+            'id'            =>  '9409',
+            'provinces_id'  =>  '94',
+            'name'          =>  'KABUPATEN BIAK NUMFOR',
+        ]);
+        City::create([
+            'id'            =>  '9410',
+            'provinces_id'  =>  '94',
+            'name'          =>  'KABUPATEN PANIAI',
+        ]);
+        City::create([
+            'id'            =>  '9411',
+            'provinces_id'  =>  '94',
+            'name'          =>  'KABUPATEN PUNCAK JAYA',
+        ]);
+        City::create([
+            'id'            =>  '9412',
+            'provinces_id'  =>  '94',
+            'name'          =>  'KABUPATEN MIMIKA',
+        ]);
+        City::create([
+            'id'            =>  '9413',
+            'provinces_id'  =>  '94',
+            'name'          =>  'KABUPATEN BOVEN DIGOEL',
+        ]);
+        City::create([
+            'id'            =>  '9414',
+            'provinces_id'  =>  '94',
+            'name'          =>  'KABUPATEN MAPPI',
+        ]);
+        City::create([
+            'id'            =>  '9415',
+            'provinces_id'  =>  '94',
+            'name'          =>  'KABUPATEN ASMAT',
+        ]);
+        City::create([
+            'id'            =>  '9416',
+            'provinces_id'  =>  '94',
+            'name'          =>  'KABUPATEN YAHUKIMO',
+        ]);
+        City::create([
+            'id'            =>  '9417',
+            'provinces_id'  =>  '94',
+            'name'          =>  'KABUPATEN PEGUNUNGAN BINTANG',
+        ]);
+        City::create([
+            'id'            =>  '9418',
+            'provinces_id'  =>  '94',
+            'name'          =>  'KABUPATEN TOLIKARA',
+        ]);
+        City::create([
+            'id'            =>  '9419',
+            'provinces_id'  =>  '94',
+            'name'          =>  'KABUPATEN SARMI',
+        ]);
+        City::create([
+            'id'            =>  '9420',
+            'provinces_id'  =>  '94',
+            'name'          =>  'KABUPATEN KEEROM',
+        ]);
+        City::create([
+            'id'            =>  '9426',
+            'provinces_id'  =>  '94',
+            'name'          =>  'KABUPATEN WAROPEN',
+        ]);
+        City::create([
+            'id'            =>  '9427',
+            'provinces_id'  =>  '94',
+            'name'          =>  'KABUPATEN SUPIORI',
+        ]);
+        City::create([
+            'id'            =>  '9428',
+            'provinces_id'  =>  '94',
+            'name'          =>  'KABUPATEN MAMBERAMO RAYA',
+        ]);
+        City::create([
+            'id'            =>  '9429',
+            'provinces_id'  =>  '94',
+            'name'          =>  'KABUPATEN NDUGA',
+        ]);
+        City::create([
+            'id'            =>  '9430',
+            'provinces_id'  =>  '94',
+            'name'          =>  'KABUPATEN LANNY JAYA',
+        ]);
+        City::create([
+            'id'            =>  '9431',
+            'provinces_id'  =>  '94',
+            'name'          =>  'KABUPATEN MAMBERAMO TENGAH',
+        ]);
+        City::create([
+            'id'            =>  '9432',
+            'provinces_id'  =>  '94',
+            'name'          =>  'KABUPATEN YALIMO',
+        ]);
+        City::create([
+            'id'            =>  '9433',
+            'provinces_id'  =>  '94',
+            'name'          =>  'KABUPATEN PUNCAK',
+        ]);
+        City::create([
+            'id'            =>  '9434',
+            'provinces_id'  =>  '94',
+            'name'          =>  'KABUPATEN DOGIYAI',
+        ]);
+        City::create([
+            'id'            =>  '9435',
+            'provinces_id'  =>  '94',
+            'name'          =>  'KABUPATEN INTAN JAYA',
+        ]);
+        City::create([
+            'id'            =>  '9436',
+            'provinces_id'  =>  '94',
+            'name'          =>  'KABUPATEN DEIYAI',
+        ]);
+        City::create([
+            'id'            =>  '9471',
+            'provinces_id'  =>  '94',
+            'name'          =>  'KOTA JAYAPURA',
         ]);
     }
 }
